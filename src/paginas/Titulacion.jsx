@@ -19,7 +19,7 @@ function Titulacion() {
       </Fade>
       </div>
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-6 my-10 sm:my-20 mx-2 sm:mx-10'>
+      <div className='grid grid-cols-1 sm:grid-cols-6 my-10 sm:my-20 mx-2 sm:mx-10 lg:mx-20 '>
         <div className='col-span-1 mx-2 sm:col-span-4 sm:row-start-1 sm:col-start-1 py-10'>
           <h1 className='font-bold text-xl my-4'>¿Qué es?</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure sint at fugiat pariatur enim, voluptatibus saepe provident quisquam sed unde, ipsum, tempora voluptatum facilis? Doloremque error nesciunt modi exercitationem?

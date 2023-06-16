@@ -19,7 +19,7 @@ function Residencia() {
       </Fade>
       </div>
       </div>
-      <div className='mx-2 sm:mx-10 2xl:mx-40'>
+      <div className='mx-2 sm:mx-10 lg:mx-20 2xl:mx-40'>
       <h4 className='ml-2 font-bold my-4 text-lg  2xl:text-2xl'>Acerca del trámite</h4>
 <p className='mx-2 mb-4 2xl:text-xl'>Es una asignatura del plan de estudios de la Licenciatura cursada por el alumno que complementa su formación profesional en el Tecnológico y consiste en la aplicación de los conocimientos en el campo laboral al desarrollar un proyecto en alguna empresa.</p>
 <h5 className='ml-2 font-bold my-2 2xl:text-2xl'>Usuarios:</h5>
@@ -40,14 +40,14 @@ function Residencia() {
         <h4 className='mx-2 font-bold mt-4 mb-4 2xl:text-2xl' >Documentación necesaria:</h4>
         <p className='mx-2 my-2 font-semibold 2xl:text-xl'>¿Qué documentos requieres para la autorización y alta de la residencia profesional?</p>
       <ol className='mx-4 mb-4 list-decimal  2xl:text-xl'>
-        <li className='mx-2'>FO-TESJo-30 solicitud de reinscripción autorizada por el Jefe de División.</li>
-        <li className='mx-2'>Oficio de aceptación indicando Nombre, número de control y carrera del alumno, nombre del proyecto a desarrollar, nombre del asesor externo, fecha de inicio, fecha de término y total de horas.</li>
-        <li className='mx-2'>FO-TESJo-135.</li>
+        <li className='mx-2 my-2'>FO-TESJo-30 solicitud de reinscripción autorizada por el Jefe de División.</li>
+        <li className='mx-2 my-2'>Oficio de aceptación indicando Nombre, número de control y carrera del alumno, nombre del proyecto a desarrollar, nombre del asesor externo, fecha de inicio, fecha de término y total de horas.</li>
+        <li className='mx-2 my-2'>FO-TESJo-135.</li>
       </ol>
       <p className='mx-2 my-2 font-semibold 2xl:text-xl'>¿Qué documentos requieres durante el Desarrollo?</p>
       <ol className='mx-4 mb-4 list-decimal  2xl:text-xl'>
-        <li className='mx-2'>FO-TESJo-64 evaluación parcial de los asesores de Residencia Profesional.</li>
-        <li className='mx-2'>FO-TESJo-67 por una sola ocasión a partir del tercer mes de Residencia Profesional.</li>
+        <li className='mx-2 my-2'>FO-TESJo-64 evaluación parcial de los asesores de Residencia Profesional.</li>
+        <li className='mx-2 my-2'>FO-TESJo-67 por una sola ocasión a partir del tercer mes de Residencia Profesional.</li>
       </ol>
       <p className='mx-2 my-2 font-semibold  2xl:text-xl'>¿Qué documentos requieres para la liberación?</p>
       <ol className='mx-4 mb-4 list-decimal 2xl:text-xl'>
@@ -59,12 +59,12 @@ function Residencia() {
       <h6 className='ml-2 font-bold my-2 text-md 2xl:text-2xl'>Duración:</h6>
       <p className='mx-2 mb-3  2xl:text-xl'>El periodo de alta es variable de acuerdo al semestre correspondiente, estas fechas son establecidas por la Subdirección de Servicios Escolares en coordinación con el Departamento de Servicio Social y Residencia Profesional, con base en el calendario escolar vigente y son difundidas de forma directa con los alumnos o mediante anuncios, generalmente son los primeros días al inicio de cada semestre. El alumno deberá cubrir como mínimo 500 horas durante un lapso de 4 meses.</p>
     </div>
-    <span className='mx-2 font-bold my-4 2xl:text-2xl'>Lugar</span>
-    <p className='mx-2  2xl:text-xl'>Tecnológico de Estudios Superiores de Jocotitlán.</p>
-    <span className='mx-2 font-bold my-4 2xl:text-2xl'>Oficinas</span>
-    <p className='mx-2  2xl:text-xl'>Edificio "B" Departamento de Servicio Social y Residencia Profesional.</p>
-    <span className='mx-2 font-bold my-4 py-4 2xl:text-2xl'>Horario de atención</span>
-    <p className='mx-2 mb-4  2xl:text-xl'>Lunes a Viernes de 9:00 a 18:00 horas.</p>
+    <span className='mx-2 font-bold my-4 2xl:text-xl'>Lugar</span>
+    <p className='mx-2 my-2  2xl:text-xl'>Tecnológico de Estudios Superiores de Jocotitlán.</p>
+    <span className='mx-2 font-bold my-4 2xl:text-xl'>Oficinas</span>
+    <p className='mx-2  2xl:text-xl  my-2'>Edificio "B" Departamento de Servicio Social y Residencia Profesional.</p>
+    <span className='mx-2 font-bold my-4 py-4 2xl:text-xl'>Horario de atención</span>
+    <p className='mx-2 mb-4  2xl:text-xl my-2'>Lunes a Viernes de 9:00 a 18:00 horas.</p>
     <div className='flex flex-wrap mb-8'>
       <a href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/Estudiantes/Servicos%20Escolares/Servicio%20Social%20y%20Residencia%20Profesional/FO-TESJO-064.doc" target='_blank' className='text-blue-600 border-b border-blue-800 m-4 2xl:text-xl'>FO-TESJO-064</a>
       <a href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/2_FO-TESJo-067.doc" target='_blank' className='text-blue-600 border-b border-blue-800 m-4 2xl:text-xl'>FO-TESJO-067</a>

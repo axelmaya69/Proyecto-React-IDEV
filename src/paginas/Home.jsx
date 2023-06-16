@@ -22,8 +22,7 @@ function Home() {
     ];  
     const fondo = "https://www.esdesignbarcelona.com/sites/default/files/imagenes/animacion-digital-que-es-y-que-tipos-de-animacion-existen_0_1.jpg";
 
-  return ( 
-    
+  return (  
     <div>
       <header>
       <Menu/>
@@ -40,16 +39,12 @@ function Home() {
             <Slide direction='down'>
               <h2 className="mb-4 text-6xl font-semibold">IADEV</h2></Slide>
               <Slide direction='up'>
-              <h4 className="mb-6 text-xl sm:text-xl font-semibold overflow-y-auto px-4">  Lugar donde cohabitan las ideas </h4></Slide>
+              <h4 className="mb-6 text-xl  font-semibold overflow-y-auto px-4">  Lugar donde cohabitan las ideas </h4></Slide>
             </div>
           </div>
         </div>
       </div>
-      </div>
-
-
-
-
+      </div> 
     <div className='grid grid-cols-1 w-full'>
       <div className=' justify-center'>
       {images && images.length > 0 ? (
@@ -60,7 +55,7 @@ function Home() {
     </div>
     </div>
         
-<div  > 
+<div> 
 <Fade cascade direction='left'>
     <ArticleLeft
     title="Titulo 1"

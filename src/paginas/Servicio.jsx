@@ -20,7 +20,7 @@ function Servicio() {
       </div>
      
       </div>
-      <div>
+      <div className='mx-2 sm:mx-10 lg:mx-20 2xl:mx-40'>
         <h4 className='ml-2 font-bold my-4 text-lg'>Acerca del trámite</h4>
 
         <span className='ml-2 font-bold my-2'>Descripción:</span>

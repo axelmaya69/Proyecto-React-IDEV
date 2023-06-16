@@ -12,7 +12,7 @@ import LinkedIn from '../botones/LinkedIn';
 import WebSite from '../botones/WebSite';
 import YouTube from '../botones/YouTube';
 import Teams from '../botones/Teams';
-import { Fade, Flip, Hinge, JackInTheBox } from 'react-awesome-reveal';
+import { Fade, Flip, Slide, Hinge, JackInTheBox } from 'react-awesome-reveal';
 
 function Veintiuno() {
   useEffect(() => {
@@ -23,11 +23,10 @@ function Veintiuno() {
        <header >
       <Menu/>
       </header>
-      <div>
-        
+      <Slide direction='left'>
+      <div className='mb-10 mx-2 md:mx-10 lg:mx-20 ' >   
         <FadevComp
         titulo={<AnimatedText text={"FADEV - 2021"} 
-  
         />} 
         imagen={"https://iadevtesjo.files.wordpress.com/2021/06/perfil.png?w=1024"}
         p1={"Como cada año la División de Ingeniería en Animación Digital y Efectos Visuales adscrita al Tecnológico de Estudios Superiores de Jocotitlán organiza el Festival de Animación Digital y Efectos Visuales (FADEV)."}
@@ -37,10 +36,10 @@ function Veintiuno() {
         p4={"La IADEV te invita a participar en la edición 2021 del FADEV que se llevará a cabo durante los días 30 de junio, 01 y 02 de julio, revisa el programa para que no te pierdas de nada."}
         
         />  
-
       </div>
+      </Slide>
 
-    <div className='grid grid-cols-7 grid-rows-8 sm:gap-y-0'>
+    <div className='grid grid-cols-7 grid-rows-8 sm:gap-y-0 gap-2 '>
     <div className="col-span-3 col-start-3 row-start-1 row-span-1 md:col-span-1 md:col-start-1 md:row-span-8 text-xl text-center md:sticky md:h-32 md:top-64 md:mb-48 md:z-10 pb-4 sm:pb-10 sm:ml-4">
   <Fade cascade damping={0.1}>
     <div className="flex flex-col">
@@ -63,7 +62,6 @@ function Veintiuno() {
       <div className='col-span-7 row-span-4 row-start-2 md:col-start-2 md:col-span-6 md:row-start-1 gap-2'>
         <div className='py-2' id='invitados'>
         <span className='font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-orange-400'> Invitados </span>
-          
       <InvitadosCard
       imagen={"https://iadevtesjo.files.wordpress.com/2021/06/ficha_fadev_abimael-3.png?w=1024"}
       />
@@ -81,6 +79,7 @@ function Veintiuno() {
       <Instagram  link={"https://www.instagram.com/rubiarmass/"}/>
       <ArtStation link={"https://www.artstation.com/rubiarmass"}/>
       </div>
+      
       <InvitadosCard 
       imagen={"https://iadevtesjo.files.wordpress.com/2021/06/ficha_fadev_nuria-1.png?w=1024"}
       />
@@ -115,7 +114,7 @@ function Veintiuno() {
       imagen={"https://iadevtesjo.files.wordpress.com/2021/06/ficha_fadev_alberto-3.png?w=1024"}
       />
         </div>
-
+        
         <div id='programa'>
          <span className='font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-blue-400'> Programa</span>
          <div className="flex flex-wrap justify-center py-4 pb-4 sm:pb-10">
@@ -134,7 +133,9 @@ function Veintiuno() {
           <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2021/06/osvaldo_pasillas_bernal.png?w=1024"}/>
           <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2021/06/roxanne_soledad_escutia_gonzalez.png?w=1024"}/>
           <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2021/06/carolina_rubi_garcia_sanchez_armass.png?w=1024"}/>
+          
           </div>
+          
         <div id='talleres'>
           <span className='font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-violet-400'> Talleres </span>
           <p className='flex justify-center flex-wrap flex-row sm:py-4 items-center mx-2 sm:mx-10 sm:text-xl my-4 pb-4'>

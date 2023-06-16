@@ -10,7 +10,7 @@ const ListaDesplegable = ({ titulo, sublistas }) => {
   };
 
   return (
-    <div className=' bg-yellow-400 py-2 px-4 rounded '>
+    <div className=' bg-yellow-400 py-2 px-2 rounded '>
       <button onClick={handleToggle} className='text-back text-lg font-medium '>{titulo}</button>
       <Transition
           show={mostrarElementos}
@@ -25,7 +25,7 @@ const ListaDesplegable = ({ titulo, sublistas }) => {
       
         <ul>
           {sublistas.map((sublista, index) => (
-            <li key={index} className='rounded py-2 px-1  hover:bg-yellow-500 italic'>
+            <li key={index} className='rounded py-2 px-1 hover:bg-yellow-500 italic'>
               <Link to={`/${sublista}`}>{sublista}</Link>
             </li>
           ))}

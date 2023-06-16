@@ -15,24 +15,24 @@ function Lista() {
       
       <ul className="flex space-x-4">
         <li
-          className="relative m-auto hover:bg-yellow-500 rounded p-2 text-xl 2xl:text-2xl "
+          className="relative m-auto hover:bg-yellow-500 rounded p-2 text-xl font-semibold 2xl:text-2xl "
           onMouseEnter={() => handleHover(1)}
           onMouseLeave={() => handleHover(null)}
         >
           <Link to={"/"}>Home</Link>
           {hoveredItem === 1 && (
-            <ul className="absolute bg-teal-700 divide-y border mt-1 font-semibold ">
+            <ul className="absolute divide-y border mt-1 font-semibold ">
               <Fade cascade damping={0.1}>
-              <li className='text-sm sm:hover:scale-125 transition-all duration-400 text-white p-2 hover:bg-red-500 px-6 py-3'><Link to={"/Academia"}>Academia</Link></li>
-              <li className='text-sm text-white p-2 hover:bg-red-500 sm:hover:scale-125 transition-all duration-400 px-6 py-3 '><Link to={"/Docentes"}>Docentes</Link></li>
-              <li className='text-sm text-white p-2 hover:bg-red-500 sm:hover:scale-125 transition-all duration-400 px-6 py-3 '><Link to={"/Investigación"}>Investigación</Link></li>
-              <li className='text-sm text-white p-2 hover:bg-red-500 sm:hover:scale-125 transition-all duration-400 px-6 py-3 '><Link to={"/Proyectos"}>Proyectos</Link></li>
+              <li className='text-sm sm:hover:scale-125 transition-all bg-orange-500 duration-400 text-white p-2 hover:bg-red-500 px-6 py-3'><Link to={"/Academia"}>Academia</Link></li>
+              <li className='text-sm text-white p-2 hover:bg-red-500 sm:hover:scale-125 bg-teal-500 transition-all duration-400 px-6 py-3 '><Link to={"/Docentes"}>Docentes</Link></li>
+              <li className='text-sm text-white p-2 hover:bg-red-500 sm:hover:scale-125 transition-all bg-green-400 duration-400 px-6 py-3 '><Link to={"/Investigación"}>Investigación</Link></li>
+              <li className='text-sm text-white p-2 hover:bg-red-500 sm:hover:scale-125 transition-all bg-pink-500 duration-400 px-6 py-3 '><Link to={"/Proyectos"}>Proyectos</Link></li>
               </Fade>
             </ul>
           )}
         </li>
         <li
-          className="relative m-auto hover:bg-yellow-500 rounded p-2 text-xl 2xl:text-2xl "
+          className="relative m-auto hover:bg-yellow-500 rounded p-2 text-xl font-semibold 2xl:text-2xl "
           onMouseEnter={() => handleHover(2)}
           onMouseLeave={() => handleHover(null)}
         >
@@ -51,7 +51,7 @@ function Lista() {
           )}
         </li>
         <li
-          className="relative m-auto hover:bg-yellow-500 rounded p-2 text-xl 2xl:text-2xl "
+          className="relative m-auto hover:bg-yellow-500 rounded p-2 text-xl font-semibold 2xl:text-2xl "
           onMouseEnter={() => handleHover(3)}
           onMouseLeave={() => handleHover(null)}
         >

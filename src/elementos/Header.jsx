@@ -27,9 +27,9 @@ export default function Header() {
       <div className="block lg:hidden">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
-            <FaTimes className="text-xl mr-1 p-0" />
+            <FaTimes className="text-xl mr-1" />
           ) : (
-            <FaBars className="text-xl flex justify-end" />
+            <FaBars className="text-xl mr-1" />
           )}
         </button>
 
@@ -37,13 +37,13 @@ export default function Header() {
           show={isOpen}
           enter="transition-all duration-700 ease-in-out"
           enterFrom="opacity-0 transform translate-x-0"
-          enterTo="opacity-100 transform translate-x-7"
+          enterTo="opacity-100 transform translate-x-4"
           leave="transition-all duration-500 ease-in-out"
           leaveFrom="opacity-100 transform translate-x-0"
-          leaveTo="opacity-0 transform translate-x-8"
+          leaveTo="opacity-0 transform translate-x-5"
         >
-          <div className="fixed top-0 right-0 bottom-0 z-50 w-40">
-            <div className="m-5 ">
+          <div className="fixed top-0 right-2 bottom-0 z-50 w-28">
+            <div className="py-5 ">
               {isOpen && (
                 <>
                   <div className='z-50'>
