@@ -20,19 +20,22 @@ function Preguntas(){
       </Fade>
       </div>
       </div>
-      <article className='my-20'>
+      <article className='my-20 grid grid-cols-4'>
+        <div className='mx-2 row-start-1 col-span-4 lg:col-start-1 lg:col-span-1  border border-blue-500'>imagen</div>
+        <div className='col-span-4 lg:col-span-3 lg:col-start-2'>
         <PreguntasFrec 
-        pregunta={"hola"}
-        respuesta={"mundo"}
+        pregunta={"Pregunta uno... Similique numquam a officiis maxime eligendi. Sint ullam aspernatur odio sequi nam non rem saepe vel odit fuga eligendi, minus inventore suscipit!"}
+        respuesta={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nobis suscipit? Cupiditate nemo obcaecati suscipit tenetur esse repellat at aspernatur deserunt, dolorum cum aliquam praesentium saepe doloremque fugit vel velit?"}
         />
             <PreguntasFrec 
-        pregunta={"hola"}
-        respuesta={"mundo"}
+        pregunta={"Pregunta 2"}
+        respuesta={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nobis suscipit? Cupiditate nemo obcaecati suscipit tenetur esse repellat at aspernatur deserunt, dolorum cum aliquam praesentium saepe doloremque fugit vel velit?"}
         />
             <PreguntasFrec 
-        pregunta={"hola"}
-        respuesta={"mundo"}
+        pregunta={"Pregunta 3"}
+        respuesta={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nobis suscipit? Cupiditate nemo obcaecati suscipit tenetur esse repellat at aspernatur deserunt, dolorum cum aliquam praesentium saepe doloremque fugit vel velit?"}
         />
+        </div>
       </article>
       <footer>
       <Footer/>

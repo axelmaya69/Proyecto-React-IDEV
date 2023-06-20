@@ -19,7 +19,12 @@ function SitioOf() {
       </Fade>
       </div>
       </div>
-      <article className='py-2 lg:y-20 px-4 sm:px-20 lg:px-40 sm:mb-20 lg:mb-40'>
+      
+      <div className='grid grid-cols-4 mx-4 my-4 lg:mx-10 gap-4'>
+      <div className="col-span-4 lg:col-span-1 lg:col-start-1 border border-blue-500">
+        imagen
+      </div>
+      <article className='col-span-4 lg:col-start-2 lg:col-span-3'>
         <p className='my-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est ipsam officiis accusantium blanditiis temporibus sint quibusdam obcaecati facilis debitis nostrum, voluptate, tempore, ullam voluptatem nobis animi magni nulla at.
         lorem
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, fugit eveniet facilis quis minus perspiciatis dolores quisquam omnis non excepturi accusamus, sapiente consequuntur cum, possimus a aperiam corporis expedita. Consectetur.
@@ -60,6 +65,7 @@ function SitioOf() {
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta reiciendis, sequi molestiae fuga harum minus! Tenetur consequuntur placeat numquam ab culpa. Vero perferendis accusamus totam itaque minima quisquam nam dolor!
         </p>
       </article>
+      </div>
       <footer>
       <Footer/>
     </footer>

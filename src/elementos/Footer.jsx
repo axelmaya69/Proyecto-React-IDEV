@@ -15,8 +15,8 @@ function Footer() {
   <li className='py-1 mb-2'>Tel: (01712) 1231313</li>
   </ul>
       </div> 
-       <div className='my-4 pb-4 border-y-2 grid grid-cols-1 grid-rows-3 border-white-400 w-full'>
-        <span className='text-2xl row-span-1 col-start-1 py-2   2xl:text-4xl'>Contacto</span>
+       <div className='my-4 pb-4 border-y-2 grid grid-cols-1  grid-rows-3 border-white-400 w-full'>
+        <span className='text-2xl row-span-1 col-start-1 py-2 2xl:text-4xl'>Contacto</span>
       <ul className='flex flex-wrap text-center row-span-2 sm:items-center sm:justify-center row-start-2  gap-6 2xl:text-2xl'>
         <li className='py-1 flex-none p-2 sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400 2xl:text-3xl'>
           <a href="https://www.facebook.com/festivalfadev" target='_blank'>

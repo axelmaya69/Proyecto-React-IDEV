@@ -3,24 +3,19 @@ import React, { useState, useEffect } from 'react';
 function DestacadosCard({ videos }) {
   const [selectedVideoIndex, setSelectedVideoIndex] = useState(0);
   const [isMobileView, setIsMobileView] = useState(false);
-
   const handleVideoClick = (index) => {
     setSelectedVideoIndex(index);
   };
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth < 700);
     };
-
     window.addEventListener('resize', handleResize);
     handleResize();
-
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
   return (
     <div className={`grid ${isMobileView ? 'grid-cols-1' : 'grid-cols-2'} lg:grid-cols-3 sm:mt-10 sm:mx-10 gap-4 my-10 sm:my-20`}>
       {videos.map((video, index) => (

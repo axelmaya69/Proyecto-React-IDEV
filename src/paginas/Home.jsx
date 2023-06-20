@@ -45,6 +45,8 @@ function Home() {
         </div>
       </div>
       </div> 
+      
+
     <div className='grid grid-cols-1 w-full'>
       <div className=' justify-center'>
       {images && images.length > 0 ? (
@@ -63,8 +65,7 @@ function Home() {
     parrafoUno={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, nihil nisi. Architecto, iure maiores optio vitae nostrum fugit unde et tempora quo nulla libero provident, ab dicta ullam nihil dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum fugit cumque perferendis incidunt temporibus sed? Possimus commodi est placeat laborum."}
     parrafoDos={"Voluptatum aliquid sint temporibus autem ut quasi porro expedita.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt nesciunt blanditiis explicabo voluptatem dignissimos, porro voluptate provident delectus ex accusantium illo modi. Corporis temporibus reprehenderit praesentium porro voluptates impedit sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste voluptatem distinctio totam, magni minus possimus voluptatum assumenda beatae fugiat illo nemo quo, sint dolor quia! Quae, et. Provident, iste numquam.Lorem ipsum dolor,   "}
     /></Fade>
-    </div>
-      <div>
+ 
       <Fade cascade direction='right'>
     <ArticleRight
       title="Titulo 2"

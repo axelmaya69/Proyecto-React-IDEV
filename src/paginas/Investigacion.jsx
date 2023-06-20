@@ -19,8 +19,12 @@ function Investigacion() {
       </Fade>
       </div>
       </div>
-
-    <p className='mx-2 sm:mx-10 lg:mx-40 py-4 sm:text-xl sm:pb-20'>
+<div className='grid grid-cols-4 gap-4 my-10 mx-2'>
+  <div className='col-span-4 mx-2 border border-blue-500 lg:col-span-1'>
+    imagen
+  </div>
+  <div className='col-span-4 lg:col-span-3'>
+    <p className='mx-2 sm:mx-10 py-4 sm:text-xl sm:pb-20'>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, inventore. Iure esse doloribus debitis nostrum distinctio quasi est nulla delectus aliquid dolores harum, cupiditate quibusdam in reiciendis repudiandae nemo. Nisi.
       <br />
       <br />
@@ -39,7 +43,8 @@ function Investigacion() {
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quam, iure numquam suscipit neque excepturi in exercitationem nesciunt alias voluptas nam quo quidem illum deleniti rerum eaque veritatis est accusantium.
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, labore? Sit, odit unde commodi modi qui sequi corporis assumenda quasi optio cupiditate hic adipisci. Optio sequi asperiores ipsa adipisci accusantium.
     </p>
-
+    </div>
+    </div>
       <footer>
       <Footer/>
       </footer>

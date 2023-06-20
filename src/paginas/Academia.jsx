@@ -57,7 +57,9 @@ function Academia() {
                     Ingeniería en Animación Digital y Efectos Visuales
                   </h4>
                 
-              </div></Slide>
+              
+              </div>
+              </Slide>
             </div>
           </div>
         </div>
@@ -66,7 +68,7 @@ function Academia() {
 
 
 
-    <div className='2xl:mx-40 mx-2'>
+    <div className='2xl:mx-40 mx-2'>  
     <div className='flex flex-col items-center justify-center'>
       <Fade cascade damping={0.5}>
     <h1 className='p-5 text-3xl md:text-5xl font-bold lg:text-6xl lg:py-16'>IADEV</h1>

@@ -19,8 +19,9 @@ function Titulacion() {
       </Fade>
       </div>
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-6 my-10 sm:my-20 mx-2 sm:mx-10 lg:mx-20 '>
-        <div className='col-span-1 mx-2 sm:col-span-4 sm:row-start-1 sm:col-start-1 py-10'>
+      <div className='grid grid-cols-1 lg:grid-cols-4 my-10 lg:my-20 mx-2 lg:mx-10 '>
+      <div className='col-span-4 mx-2 lg:col-span-1 py-10 border border-blue-500'>Imágen</div>
+        <div className='col-span-4 mx-2 lg:col-span-3 lg:col-start-2 py-10'>
           <h1 className='font-bold text-xl my-4'>¿Qué es?</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure sint at fugiat pariatur enim, voluptatibus saepe provident quisquam sed unde, ipsum, tempora voluptatum facilis? Doloremque error nesciunt modi exercitationem?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil minima sequi unde magnam consequatur, illum itaque asperiores repudiandae impedit, corrupti iste earum eum commodi necessitatibus reiciendis nam temporibus. Blanditiis!
@@ -39,7 +40,7 @@ function Titulacion() {
             <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque voluptatum, natus, earum voluptatibus odio et possimus molestiae officiis, quia numquam eum. Quas accusamus neque atque rerum iste error vel!
           </p>
         </div>
-        <div className='col-span-1 mx-2 sm:col-span-2 sm:col-start-5 sm:row-start-1 py-10'>Imágen</div>
+        
       </div>  
       <footer>
       <Footer/>

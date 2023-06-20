@@ -39,18 +39,18 @@ function Veintidos() {
       />  
     </div>
     <div className='grid grid-cols-7 grid-rows-8 sm:gap-y-0'>
-    <div className='col-span-3 col-start-3 row-start-1 row-span-1 md:col-span-1 md:col-start-1 md:row-span-8 text-xl text-center md:sticky md:h-32 md:top-64 md:mb-48 md:z-10 pb-4 sm:pb-10 sm:ml-4'>
+    <div className='col-span-3 col-start-3 row-start-1 row-span-1 lg:col-span-1 lg:col-start-1 lg:row-span-8 text-xl text-center lg:sticky lg:h-32 lg:top-64 lg:mb-48 lg:z-10 pb-4 sm:pb-10 sm:ml-4'>
     <Fade cascade damping={0.1}>
-    <div className="flex flex-col">
-    <button className='bg-yellow-400 font-bold text-sm sm:text-xl flex flex-wrap md:h-16 text-center justify-center items-center p-2 my-1 w-full text-white hover:text-violet-800 transition-all duration-300' onClick={() => window.location.href = '#invitados'}>Invitados</button>
-    <button className='bg-orange-400 font-bold text-sm sm:text-xl flex flex-wrap md:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300'  onClick={() => window.location.href = '#convocatorias'}>Convocatorias
+    <div className="flex flex-col ">
+    <button className='bg-yellow-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 my-1 w-full text-white hover:text-violet-800 transition-all duration-300' onClick={() => window.location.href = '#invitados'}>Invitados</button>
+    <button className='bg-orange-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300'  onClick={() => window.location.href = '#convocatorias'}>Convocatorias
     </button>
-    <button className='bg-green-400 font-bold text-sm sm:text-xl flex flex-wrap md:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300' onClick={() => window.location.href = '#programa'}>Programa</button>
-    <button className='bg-violet-400 font-bold text-sm sm:text-xl flex flex-wrap md:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300'  onClick={() => window.location.href = '#talleres'}>Talleres</button>
+    <button className='bg-green-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300' onClick={() => window.location.href = '#programa'}>Programa</button>
+    <button className='bg-violet-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300'  onClick={() => window.location.href = '#talleres'}>Talleres</button>
     </div>
     </Fade>
     </div>
-    <div className='col-span-7 row-span-4 row-start-2 md:col-start-2 md:col-span-6 md:row-start-1 gap-2'>
+    <div className='col-span-7 row-span-4 row-start-2 lg:col-start-2 lg:col-span-6 lg:row-start-1 gap-2'>
     <div className='py-2' id='invitados'>
     <span className='font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-orange-400'> Invitados </span>      
     
