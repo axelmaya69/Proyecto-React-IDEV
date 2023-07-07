@@ -3,11 +3,23 @@ import Menu from '../elementos/Menu';
 import Footer from '../elementos/Footer';
 import { Slide ,Fade} from 'react-awesome-reveal';
 import FadevComp from '../componentes/FadevComp';
+import GridImg from '../componentes/GridImg';
 
 function Veintitres() {
   useEffect(() => {
     document.title = 'FADEV - 2023'; // Cambia 'Nuevo título de la página' por el título deseado
   }, []);
+
+  const images =[
+    'https://iadevtesjo.files.wordpress.com/2021/06/nuria_tovar_mireles.png?w=1024',
+    'https://iadevtesjo.files.wordpress.com/2021/06/alberto_ramos-1.png?w=1024',
+    'https://iadevtesjo.files.wordpress.com/2021/06/abimael_gonzalez.png?w=1024',//Arreglo de imágenes para el Slider:
+    'https://iadevtesjo.files.wordpress.com/2021/06/casa_anafre.png?w=1024',
+    'https://iadevtesjo.files.wordpress.com/2021/06/osvaldo_pasillas_bernal.png?w=1024',
+    'https://iadevtesjo.files.wordpress.com/2021/06/carolina_rubi_garcia_sanchez_armass.png?w=1024',
+    
+    ];  
+
   return (
     <div>
        <header>
@@ -51,7 +63,7 @@ function Veintitres() {
       <div className='col-span-1 lg:col-start-1 border border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32 '>
       <Fade cascade damping={0.1}>
     <div className="flex flex-col justify-center items-center ">
-      <button className="bg-red-600 text-white hover:text-violet-800 transition-all duration-300 font-bold text-sm xl:text-xl h-16 w-40 text-center justify-center sm:text-xl items-center p-2 my-1 w-full rounded shadow-lg shadow-black-500/50 hover:-translate-y-1.5"  onClick={() => window.location.href = '#invitados'}>
+      <button className="bg-red-600 text-white hover:text-violet-800 transition-all duration-300 font-bold text-sm xl:text-xl h-16 w-40 text-center justify-center sm:text-xl items-center p-2 my-1  rounded shadow-lg shadow-black-500/50 hover:-translate-y-1.5"  onClick={() => window.location.href = '#invitados'}>
         Invitados
       </button>
       <button className="bg-green-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40  hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#programa'}>
@@ -67,8 +79,9 @@ function Veintitres() {
   </Fade>
       </div>
       <div className='col-span-1 lg:col-start-2 lg:col-span-3 mx-2'>
-      <div className='bg-orange-400' id='invitados'>
-    uno
+      <div id='invitados'>
+     
+      <GridImg images={images}/>
       </div>
       <div className='bg-red-400' id='programa'>
     dos 

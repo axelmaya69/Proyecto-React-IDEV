@@ -4,8 +4,9 @@ import Footer from '../elementos/Footer';
 import ArticleLeft from '../componentes/ArticleLeft';
 import ArticleRight from '../componentes/ArticleRight';
 import Slider from '../componentes/Slider';
-import { Bounce, Fade, Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import { Slide } from "react-awesome-reveal";
+
 
 function Home() {
   useEffect(() => {
@@ -44,7 +45,7 @@ function Home() {
         </div>
       </div>
       </div> 
-      
+    
 
     <div className='grid grid-cols-1 w-full'>
       <div className=' justify-center'>
@@ -95,6 +96,8 @@ function Home() {
     </div>
     </div>
     
+    <div>
+       </div>
     <footer>
       <Footer/>
     </footer>

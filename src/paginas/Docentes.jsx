@@ -1,9 +1,7 @@
 import React, {useEffect} from 'react'
 import Menu from '../elementos/Menu';
 import Footer from '../elementos/Footer';
-import DocentesCard from '../componentes/DocentesCard';
-import AnimatedText from '../componentes/AnimatedText';
-import { AnimatedTextFt } from '../componentes/AnimatedText';
+import DocentesCard from '../componentes/DocentesCard'; 
 import { Fade,Slide } from 'react-awesome-reveal';
 import Facebook from '../botones/Facebook';
 

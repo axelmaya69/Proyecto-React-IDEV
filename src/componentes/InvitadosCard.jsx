@@ -12,3 +12,4 @@ function InvitadosCard({ imagen }) {
 }
 
 export default InvitadosCard;
+

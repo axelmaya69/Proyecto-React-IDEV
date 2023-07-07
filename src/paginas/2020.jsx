@@ -1,9 +1,7 @@
 import React,{useEffect} from 'react'
 import Menu from '../elementos/Menu';
 import Footer from '../elementos/Footer';
-import FadevComp from '../componentes/FadevComp';
-import AnimatedText from '../componentes/AnimatedText';
-import ElementosFadev from '../componentes/ElementosFadev';
+import FadevComp from '../componentes/FadevComp';  
 import { Slide } from 'react-awesome-reveal';
 
 function Veinte() {

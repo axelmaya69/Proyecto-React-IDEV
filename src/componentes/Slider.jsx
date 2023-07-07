@@ -9,7 +9,7 @@ function Slider({ images }) {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
   useEffect(() => {
-    const interval = setInterval(goToNextSlide, 12000);
+    const interval = setInterval(goToNextSlide, 9500);
 
     return () => {
       clearInterval(interval);

@@ -1,8 +1,7 @@
 import React,{useEffect} from 'react'
 import Menu from '../elementos/Menu';
 import Footer from '../elementos/Footer';
-import FadevComp from '../componentes/FadevComp';
-import AnimatedText from '../componentes/AnimatedText';
+import FadevComp from '../componentes/FadevComp'; 
 import InvitadosCard from '../componentes/InvitadosCard';
 import ArtStation from '../botones/ArtStation';
 import Behance from '../botones/Behance';
@@ -13,11 +12,25 @@ import WebSite from '../botones/WebSite';
 import YouTube from '../botones/YouTube';
 import Teams from '../botones/Teams';
 import { Fade, Slide} from 'react-awesome-reveal';
+import GridImg from '../componentes/GridImg';
 
 function Veintiuno() {
   useEffect(() => {
     document.title = 'FADEV - 2021'; // Cambia 'Nuevo título de la página' por el título deseado
   }, []);
+
+
+const images=[
+  "https://iadevtesjo.files.wordpress.com/2021/06/nuria_tovar_mireles.png?w=1024",
+  "https://iadevtesjo.files.wordpress.com/2021/06/alberto_ramos-1.png?w=1024",
+  "https://iadevtesjo.files.wordpress.com/2021/06/abimael_gonzalez.png?w=1024",
+  "https://iadevtesjo.files.wordpress.com/2021/06/casa_anafre.png?w=1024",
+  "https://iadevtesjo.files.wordpress.com/2021/06/osvaldo_pasillas_bernal.png?w=1024",
+  "https://iadevtesjo.files.wordpress.com/2021/06/roxanne_soledad_escutia_gonzalez.png?w=1024",
+  "https://iadevtesjo.files.wordpress.com/2021/06/carolina_rubi_garcia_sanchez_armass.png?w=1024"
+  
+]
+
   return (
     <div>
        <header >
@@ -62,27 +75,27 @@ function Veintiuno() {
       </div>
       </Slide>
 
-    <div className='grid grid-cols-7 grid-rows-8 xl:gap-y-0 gap-2 '>
-    <div className="col-span-3 col-start-3 row-start-1 row-span-1 lg:col-span-1 lg:col-start-1 lg:row-span-8 text-xl text-center lg:sticky lg:h-32 lg:top-64 lg:mb-48 lg:z-10 pb-4 xl:pb-10 xl:ml-4">
+    <div className='grid grid-cols-1 lg:grid-cols-4 my-5 lg:mx-5 lg:relative'>
+    <div className="col-span-1 lg:col-start-1 border border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32">
   <Fade cascade damping={0.1}>
-    <div className="flex flex-col">
-      <button className="bg-red-600 text-white hover:text-violet-800 transition-all duration-300 font-bold text-sm xl:text-xl h-16 text-center justify-center sm:text-xl items-center p-2 my-1 lg:mx-2 w-full rounded shadow-lg shadow-black-500/50 hover:-translate-y-1.5"  onClick={() => window.location.href = '#invitados'}>
+    <div className="flex flex-col justify-center items-center  text-white mt-48">
+      <button className="bg-red-600 font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5"  onClick={() => window.location.href = '#invitados'}>
         Invitados
       </button>
-      <button className="bg-green-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-full hover:text-violet-800 sm:text-xl transition-all lg:mx-2 duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#programa'}>
+      <button className="bg-green-400 font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#programa'}>
         Programa
       </button>
-      <button className="bg-yellow-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-full hover:text-violet-800 sm:text-xl transition-all lg:mx-2 duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#conferencias'}> 
+      <button className="bg-yellow-400 font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#conferencias'}> 
         Conferencias
       </button>
-      <button className="bg-indigo-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-full hover:text-violet-800 sm:text-xl lg:mx-2 transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#talleres'}>
+      <button className="bg-indigo-400 font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#talleres'}>
         Talleres
       </button>
     </div>
   </Fade>
 </div>
 
-      <div className='col-span-7 row-span-4 row-start-2 lg:col-start-2 lg:col-span-6 lg:row-start-1 gap-2'>
+      <div className='col-span-1 lg:col-start-2 lg:col-span-3 mx-2'>
         <div className='py-2' id='invitados'>
         <span className='font-bold text-xl mx-2 xl:mx-10 xl:text-3xl py-4 px-2 border-b-2 border-orange-400'> Invitados </span>
       <InvitadosCard
@@ -149,14 +162,9 @@ function Veintiuno() {
         <div id='conferencias'>
           <span className='font-bold text-xl mx-2 xl:mx-10 xl:text-3xl py-4 px-2 border-b-2 border-green-400'> Conferencias </span>
           <p className='flex justify-center flex-wrap flex-row  xl:py-4 items-center mx-2 xl:mx-10 xl:text-xl my-4 pb-4'>Las conferencias se realizarán en vivo vía streaming  por el canal oficial de la IADEV. Tienen una duración aproximada de 40 minutos más la sesión de Q&A a los ponentes, posterior a la tranxlisión del video se subirá la grabación a esta plataforma.</p>
-          <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2021/06/nuria_tovar_mireles.png?w=1024"}/>
-          <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2021/06/alberto_ramos-1.png?w=1024"}/>
-          <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2021/06/abimael_gonzalez.png?w=1024"}/>
-          <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2021/06/casa_anafre.png?w=1024"}/>
-          <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2021/06/osvaldo_pasillas_bernal.png?w=1024"}/>
-          <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2021/06/roxanne_soledad_escutia_gonzalez.png?w=1024"}/>
-          <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2021/06/carolina_rubi_garcia_sanchez_armass.png?w=1024"}/>
-          
+
+        <GridImg images={images}/>
+
           </div>
           
         <div id='talleres'>

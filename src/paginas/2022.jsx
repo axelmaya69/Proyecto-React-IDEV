@@ -1,16 +1,32 @@
 import React, {useEffect} from 'react'
 import Menu from '../elementos/Menu';
 import Footer from '../elementos/Footer';
-import FadevComp from '../componentes/FadevComp';
-import AnimatedText from '../componentes/AnimatedText';
+import FadevComp from '../componentes/FadevComp'; 
 import InvitadosCard from '../componentes/InvitadosCard';
 import { Fade, Slide } from 'react-awesome-reveal';
 import Slider from '../componentes/Slider';
+import GridImg from '../componentes/GridImg';
 
 function Veintidos() {
   useEffect(() => {
     document.title = 'FADEV - 2022'; // Cambia 'Nuevo título de la página' por el título deseado
   }, []);
+
+  const images =[
+    "https://iadevtesjo.files.wordpress.com/2022/06/roman-llanos_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/cesar-cepeda_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/eliud-gil-samaniego_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/gustavo-cosio_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/javier-chavez_mesa-de-trabajo-1_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/jose-trello_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/juan-martin-rivera-gonzalez_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/luis-de-la-cerda_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/pixel-estudio_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/ricardo-martinez-vargas_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/un33doce_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/roman-llanos_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/cesar-cepeda_mesa-de-trabajo-1.png",
+  ]
 
   const convocatoriasTesjo=[
     "https://iadevtesjo.files.wordpress.com/2022/06/basquet.png",
@@ -20,6 +36,19 @@ function Veintidos() {
     "https://iadevtesjo.files.wordpress.com/2022/06/torneorumble.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/rally.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/futbol.png",
+    ];
+    const programa=[
+    "https://iadevtesjo.files.wordpress.com/2022/06/auditorio-azul_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/auditorio_edificio_c_mesa-de-trabajo-1_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/auditorio_verde_mesa-de-trabajo-1_mesa-de-trabajo-1.png"
+    ];
+
+    const talleres=[
+    "https://iadevtesjo.files.wordpress.com/2022/06/taller_redessociales.png?w=1024",
+    "https://iadevtesjo.files.wordpress.com/2022/06/taller_videojuegos.png?w=1024",
+    "https://iadevtesjo.files.wordpress.com/2022/06/taller_audio.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/taller_storyboard.png?w=1024",
+    "https://iadevtesjo.files.wordpress.com/2022/06/taller_drone.png?w=1024"
     ];
 
   return (
@@ -63,67 +92,44 @@ function Veintidos() {
       p4={"La IADEV te invita a participar en la edición 2022 del FADEV que se llevará a cabo durante los días 20 al 24 de Junio, revisa el programa para que no te pierdas de nada."}
       />  
     </div>
-    <div className='grid grid-cols-7 grid-rows-8 sm:gap-y-0'>
-    <div className='col-span-3 col-start-3 row-start-1 row-span-1 lg:col-span-1 lg:col-start-1 lg:row-span-8 text-xl text-center lg:sticky lg:h-32 lg:top-64 lg:mb-48 lg:z-10 pb-4 sm:pb-10 sm:ml-4'>
+    <div className='grid grid-cols-1 lg:grid-cols-4 my-5 lg:mx-5 lg:relative'>
+    <div className='col-span-1 lg:col-start-1 border border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32'>
     <Fade cascade damping={0.1}>
-    <div className="flex flex-col ">
-    <button className='bg-yellow-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 my-1 w-full text-white hover:text-violet-800 transition-all duration-300 rounded hover:-translate-y-1.5' onClick={() => window.location.href = '#invitados'}>Invitados</button>
-    <button className='bg-orange-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300 rounded hover:-translate-y-1.5'  onClick={() => window.location.href = '#convocatorias'}>Convocatorias
+    <div className="flex flex-col justify-center items-center  text-white">
+    <button className='bg-yellow-400 font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5' onClick={() => window.location.href = '#invitados'}>Invitados</button>
+    <button className='bg-orange-400 font-bold text-sm text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5'  onClick={() => window.location.href = '#convocatorias'}>Convocatorias
     </button>
-    <button className='bg-green-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300 rounded hover:-translate-y-1.5' onClick={() => window.location.href = '#programa'}>Programa</button>
-    <button className='bg-violet-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300 rounded hover:-translate-y-1.5'  onClick={() => window.location.href = '#talleres'}>Talleres</button>
+    <button className='bg-green-400 font-bold text-sm text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5' onClick={() => window.location.href = '#programa'}>Programa</button>
+    <button className='bg-violet-400 font-bold text-sm text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5'  onClick={() => window.location.href = '#talleres'}>Talleres</button>
     </div>
     </Fade>
     </div>
-    <div className='col-span-7 row-span-4 row-start-2 lg:col-start-2 lg:col-span-6 lg:row-start-1 gap-2'>
+    <div className='col-span-1 lg:col-start-2 lg:col-span-3 mx-2'>
     <div className='py-2' id='invitados'>
     <span className='font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-orange-400'> Invitados </span>      
     
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/roman-llanos_mesa-de-trabajo-1.png"} />
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/cesar-cepeda_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/eliud-gil-samaniego_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/gustavo-cosio_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/javier-chavez_mesa-de-trabajo-1_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/jose-trello_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/juan-martin-rivera-gonzalez_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/luis-de-la-cerda_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/pixel-estudio_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/ricardo-martinez-vargas_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/un33doce_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/roman-llanos_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/cesar-cepeda_mesa-de-trabajo-1.png"}/>
+  <div className='mx-2 z-30'>
+    <GridImg images={images}/>
+    </div>
     </div>
 
     <div id='convocatorias' className='flex flex-col items-center justify-center'>
   <span className='font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-green-400'>Convocatorias</span>
-  <div className='my-8 first-letter:grid grid-cols-1 w-full  sm:w-8/12 flex items-center justify-center'>
-    <div>
-      {convocatoriasTesjo && convocatoriasTesjo.length > 0 ? (
-        <Slider images={convocatoriasTesjo} />
-      ) : (
-        <p>No hay imágenes disponibles</p>
-      )}
-    </div>
-  </div>
+  <div >
+    <GridImg images={convocatoriasTesjo}/>
 </div>
-
+</div>
 
 
     <div id='programa'>
     <span className='font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-blue-400'> Programa</span>
-    <div className="flex flex-wrap justify-center py-4 pb-4 sm:pb-10">
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/auditorio-azul_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/auditorio_edificio_c_mesa-de-trabajo-1_mesa-de-trabajo-1.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/auditorio_verde_mesa-de-trabajo-1_mesa-de-trabajo-1.png"}/>
+    <div >
+    <GridImg images={programa}/>
     </div>
     </div>
     <div id='talleres'>
     <span className='font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-violet-400'> Talleres </span>           
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/taller_redessociales.png?w=1024"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/taller_videojuegos.png?w=1024"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/taller_audio.png"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/taller_storyboard.png?w=1024"}/>
-    <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2022/06/taller_drone.png?w=1024"}/>
+    <GridImg images={talleres}/>
     </div>
     </div> 
     </div>
