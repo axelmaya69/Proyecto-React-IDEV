@@ -45,11 +45,11 @@ function SitioOf() {
       </div>
       </div>
       
-      <div className='grid grid-cols-4 mx-4 my-4 lg:mx-10 gap-4 lg:relative'>
+      <div className='grid grid-cols-4 mx-4 my-4 lg:gap-10 gap-4 lg:relative'>
       <div className="col-span-4 lg:col-span-1 lg:col-start-1 border border-blue-500 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32 ">
         imagen
       </div>
-      <article className='col-span-4 lg:col-start-2 lg:col-span-3'>
+      <article className='col-span-4 lg:col-start-2 lg:col-span-3 lg:mr-10'>
         <p className='my-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est ipsam officiis accusantium blanditiis temporibus sint quibusdam obcaecati facilis debitis nostrum, voluptate, tempore, ullam voluptatem nobis animi magni nulla at.
         lorem
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, fugit eveniet facilis quis minus perspiciatis dolores quisquam omnis non excepturi accusamus, sapiente consequuntur cum, possimus a aperiam corporis expedita. Consectetur.

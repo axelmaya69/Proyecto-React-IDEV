@@ -44,7 +44,7 @@ function Servicio() {
       </div>
       </div>
       
-    <div className='grid grid-cols-1 lg:grid-cols-4 mx-4 lg:mx-10 my-5 lg:relative'>
+    <div className='grid grid-cols-1 lg:grid-cols-4 mx-4 lg:mx-10 my-5 lg:relative gap-10'>
      <div className='col-span-1 lg:col-start-1 border border-blue-500 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32 '>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ut quod iste vero, placeat consequatur aut aspernatur alias voluptatibus earum quas ipsum magni, quisquam numquam quis tempora ab dicta labore!</p>
      </div>

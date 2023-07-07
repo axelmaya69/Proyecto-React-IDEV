@@ -40,7 +40,7 @@ function Proyectos() {
       </Fade>
       </div>
       </div>
-      <div className='grid grid-cols-1 lg:grid-cols-4 mx-2 my-5 lg:mx-10 lg:relative'>
+      <div className='grid grid-cols-1 lg:grid-cols-4 mx-2 my-5 lg:mx-10 lg:relative lg:gap-10'>
       <div className='col-span-1 lg:col-start-1 border border-blue-500 p-2 lg:sticky lg:top-0 lg:left-0 lg:max-h-screen lg:mb-48'>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio ea omnis itaque, tempore saepe ratione sint accusantium laborum, impedit, illum vel. Cupiditate architecto minima commodi quaerat mollitia, quae deserunt?</p>
       </div>

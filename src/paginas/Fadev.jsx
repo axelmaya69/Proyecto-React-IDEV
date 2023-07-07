@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import Menu from '../elementos/Menu';
 import Footer from '../elementos/Footer';
-import { Fade } from 'react-awesome-reveal';
+import { Bounce, Fade } from 'react-awesome-reveal';
 import { Slide } from 'react-awesome-reveal';
 
 function Fadev() {
@@ -49,7 +49,7 @@ function Fadev() {
         <span className='font-bold text-6xl border-b-2 border-violet-400'>FADEV</span>
       </Fade>
       </div>
-      <div className='grid grid-cols-4 mx-2 lg:mx-10 lg:my-10 lg:relative'>
+      <div className='grid grid-cols-4 mx-2 lg:mx-10 lg:my-10 lg:relative gap-10'>
       <div className='col-span-4 lg:col-span-1 border flex flex-col items-center justify-center border-blue-500 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32 '>
   <img className="m-auto" src="https://www.procine.cdmx.gob.mx/storage/app/uploads/public/644/fe2/954/644fe2954deea427920675.jpg" alt="animacion imagen" />
 </div>
@@ -63,25 +63,27 @@ function Fadev() {
           <p className='mx-2 pb-8'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur velit reiciendis cupiditate laudantium, incidunt amet ratione quas consequatur nihil dolorem dolor. Aliquid quidem consectetur earum aspernatur minima commodi ratione.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nesciunt sequi mollitia id dicta iusto libero ratione odit ullam in vero voluptatibus atque veritatis voluptatem qui laboriosam. Voluptatibus, nemo sunt.</p>
           <h3 className='mx-4 font-bold text-2xl my-4'>Nuestros Festivales:</h3>
-          <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 font-bold lg:mx-10 text-white text-xl  cursor-pointer'>
-          <div className='bg-orange-400 my-10 mx-5 flex p-2 items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded' onClick={() => window.location.href = '/2020'} >FADEV 2020
-          <img src="https://1.bp.blogspot.com/-c7mjdVl384Y/YRdK_17JlXI/AAAAAAAAAaM/rHfwINv-LWkdD5GLn67fSivSA76COQdawCLcBGAsYHQ/s750/Main%2Bpicture%2Bnew%2B%25283%2529.png" alt="fadev-2020" />
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-3 font-bold lg:mx-10 text-white text-xl  cursor-pointer '>
+            <Fade cascade={true} delay={150} damping={0.2}>
+
+          <div className='bg-orange-400 my-10 mx-5 flex p-2 items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded hover:-translate-y-6 w-4/5 h-4/5' onClick={() => window.location.href = '/2020'} ><span className='my-3'>FADEV 2020</span>
+          <img src="https://1.bp.blogspot.com/-c7mjdVl384Y/YRdK_17JlXI/AAAAAAAAAaM/rHfwINv-LWkdD5GLn67fSivSA76COQdawCLcBGAsYHQ/s750/Main%2Bpicture%2Bnew%2B%25283%2529.png" alt="fadev-2020" className='w-full h-full object-cover' />
           </div  >
-          <div className='bg-blue-400 my-10 mx-5 p-2 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded'  onClick={() => window.location.href = '/2021'}  >FADEV 2021
-          <img src="https://iadevtesjo.files.wordpress.com/2021/06/perfil.png?w=1024" alt="fadev-2021" /></div>
-          <div className='bg-violet-400 my-10 mx-5 p-2 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded'  onClick={() => window.location.href = '/2022'} >FADEV 2022 
+          <div className='bg-blue-400 my-10 mx-5 p-2 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded hover:-translate-y-6 w-4/5 h-4/5'  onClick={() => window.location.href = '/2021'}  ><span className='my-3'>FADEV 2021</span>
+          <img src="https://iadevtesjo.files.wordpress.com/2021/06/perfil.png?w=1024" alt="fadev-2021" className='w-full h-full object-cover' />
+          </div>
+          <div className='bg-violet-400 my-10 mx-5 p-2 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded hover:-translate-y-6 w-4/5 h-4/5'  onClick={() => window.location.href = '/2022'} > <span className='my-3'>FADEV 2022 </span>
           <img src="https://iadevtesjo.files.wordpress.com/2022/06/propuesta_logo_grises.png?w=153" alt="fadev-2022" />
           </div>
-          <div className='bg-red-400 my-10 mx-5 p-2 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded' onClick={() => window.location.href = '/2023'} >FADEV 2023
+          <div className='bg-red-400 my-10 mx-5 p-2 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded hover:-translate-y-6 w-4/5 h-4/5' onClick={() => window.location.href = '/2023'} ><span className='my-3'>FADEV 2023</span>
           <img src="https://esfadev.com/wp-content/uploads/2023/06/PortadaFB-1024x576.png" alt="fadev-2023" />
           </div>
-          <div className='bg-yellow-400 my-10 mx-2 p-2 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded' onClick={() => alert("En Planeación... \n  ;)") } >#RoadToFADEV-2024
+          <div className='bg-yellow-400 my-10 mx-2 p-2 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded hover:-translate-y-6 w-4/5 h-4/5' onClick={() => alert("En Planeación... \n  ;)") } ><span className='my-3'>#RoadToFADEV-2024</span>
           <img src="https://www.popsci.com/uploads/2019/04/22/RACMJSXXIK7BFWBEPV5KGO6TNA.jpg?auto=webp&width=1440&height=865.6875" alt="fadev-2024" />
           </div>
+          </Fade>
           </div>
-        </div>
-        
-    
+        </div> 
       </div>
       
       <footer>

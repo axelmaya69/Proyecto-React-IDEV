@@ -40,7 +40,7 @@ function Veinte() {
 
 
 
-    <div className='mb-10 mx-2 lg:mx-20 '>
+    <div className='mb-10 mx-2 sm:mx-10 lg:mx-20 '>
         <FadevComp
         titulo={"FADEV - 2020"}
         imagen={"https://1.bp.blogspot.com/-c7mjdVl384Y/YRdK_17JlXI/AAAAAAAAAaM/rHfwINv-LWkdD5GLn67fSivSA76COQdawCLcBGAsYHQ/s750/Main%2Bpicture%2Bnew%2B%25283%2529.png"}

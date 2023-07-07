@@ -66,16 +66,16 @@ function Veintiuno() {
     <div className="col-span-3 col-start-3 row-start-1 row-span-1 lg:col-span-1 lg:col-start-1 lg:row-span-8 text-xl text-center lg:sticky lg:h-32 lg:top-64 lg:mb-48 lg:z-10 pb-4 xl:pb-10 xl:ml-4">
   <Fade cascade damping={0.1}>
     <div className="flex flex-col">
-      <button className="bg-red-600 text-white hover:text-violet-800 transition-all duration-300 font-bold text-sm xl:text-xl h-16 text-center justify-center sm:text-xl items-center hover:bg-red-700 p-2 my-1 xl:mx-2 w-full rounded shadow-lg shadow-black-500/50"  onClick={() => window.location.href = '#invitados'}>
+      <button className="bg-red-600 text-white hover:text-violet-800 transition-all duration-300 font-bold text-sm xl:text-xl h-16 text-center justify-center sm:text-xl items-center p-2 my-1 lg:mx-2 w-full rounded shadow-lg shadow-black-500/50 hover:-translate-y-1.5"  onClick={() => window.location.href = '#invitados'}>
         Invitados
       </button>
-      <button className="bg-green-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-full hover:text-violet-800 sm:text-xl hover:bg-green-500 transition-all xl:mx-2 duration-300 rounded" onClick={() => window.location.href = '#programa'}>
+      <button className="bg-green-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-full hover:text-violet-800 sm:text-xl transition-all lg:mx-2 duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#programa'}>
         Programa
       </button>
-      <button className="bg-yellow-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-full hover:text-violet-800 hover:bg-yellow-500 sm:text-xl transition-all xl:mx-2 duration-300 rounded" onClick={() => window.location.href = '#conferencias'}> 
+      <button className="bg-yellow-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-full hover:text-violet-800 sm:text-xl transition-all lg:mx-2 duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#conferencias'}> 
         Conferencias
       </button>
-      <button className="bg-indigo-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-full hover:text-violet-800 sm:text-xl xl:mx-2 hover:bg-indigo-500 transition-all duration-300 rounded" onClick={() => window.location.href = '#talleres'}>
+      <button className="bg-indigo-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-full hover:text-violet-800 sm:text-xl lg:mx-2 transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#talleres'}>
         Talleres
       </button>
     </div>

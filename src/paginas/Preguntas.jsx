@@ -44,11 +44,11 @@ function Preguntas(){
       </Fade>
       </div>
       </div>
-      <article className='my-20 grid grid-cols-4 mx-2 lg:mx-10 lg:relative'>
+      <article className='my-20 grid grid-cols-4 mx-2 lg:relative lg:gap-10'>
         <div className='mx-2 row-start-1 col-span-4 lg:col-start-1 lg:col-span-1 border border-blue-500 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32 '>
           imagen
         </div>
-        <div className='col-span-4 lg:col-span-3 lg:col-start-2'>
+        <div className='col-span-4 lg:col-span-3 lg:col-start-2 mx-2 sm:mr-10 lg:mr-20'>
         <PreguntasFrec 
         pregunta={"Pregunta uno... Similique numquam a officiis maxime eligendi. Sint ullam aspernatur odio sequi nam non rem saepe vel odit fuga eligendi, minus inventore suscipit!"}
         respuesta={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nobis suscipit? Cupiditate nemo obcaecati suscipit tenetur esse repellat at aspernatur deserunt, dolorum cum aliquam praesentium saepe doloremque fugit vel velit?"}

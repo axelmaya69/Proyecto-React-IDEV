@@ -43,7 +43,7 @@ export default function Header() {
           leaveTo="opacity-0 transform translate-x-5"
         >
           <div className="fixed top-0 right-2 bottom-0 z-50 w-28">
-            <div className="py-5 ">
+            <div className="py-4 ">
               {isOpen && (
                 <>
                   <div className='z-50'>

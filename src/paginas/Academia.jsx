@@ -77,26 +77,26 @@ function Academia() {
     <div className='col-span-4 lg:col-span-1 col-start-1  px-2 border border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-48 '>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam officia sit repellat commodi exercitationem id! Veniam a, iusto, enim ipsam molestias unde dolor nisi quibusdam quae ab vero velit?</p>
     </div>
-    <div className='col-span-4 lg:col-span-3 lg:col-start-2'>
+    <div className='col-span-4 lg:col-span-3 lg:col-start-2 lg:mx-10'>
       <AcademiaCard titulo={"Objetivo General"}
       parrafo={"Formar profesionistas capaces de adaptar, desarrollar y aplicar recursos tecnológicos en la producción de animación digital y efectos visuales, impulsando la tecnología para responder a los desafíos de las industrias de la animación digital y los efectos visuales, en un contexto global, multidisciplinario y sustentable."}/>
      
     <div className=' py-2'>
       
-    <div className='mx-2 py-2'>
+    <div className=' py-2'>
       <h4 className='font-bold text-xl'>Objetivos Educacionales</h4>
       <OrderList items={items} />
       </div>      
       </div>   
-      <div className='mx-2 py-2'>
+      <div className='  py-2'>
       <span className=' font-bold text-xl py-2 '>Perfil de Egreso</span>
        
        <OrderList items={perfilEgreso}/>
      
       </div>
-      <span className=' font-bold text-xl py-2 mx-2'>Campo Laboral</span>
-      <p className='py-2 px-4 mx-4'>El Ingeniero en Animación Digital y Efectos Visuales desarrolla su actividad profesional en la:</p>
-      <ul className=' px-4 mx-4 list-disc'>
+      <span className=' font-bold text-xl py-2'>Campo Laboral</span>
+      <p className='py-2 '>El Ingeniero en Animación Digital y Efectos Visuales desarrolla su actividad profesional en la:</p>
+      <ul className=' mx-2 px-2 list-disc'>
         <li className='py-2 '><Negrita negrita={"Industria cinematográfica: "}/>en las áreas de dirección, producción, dirección de arte, animación, efectos especiales, guionismo. </li>
         <li className='py-2 '>
           <Negrita negrita={"Industria de la comunicación: "}/> radio y televisión.
@@ -108,12 +108,13 @@ function Academia() {
         <Negrita negrita={"Industria de la construcción: "}/> diseño arquitectónico.
         </li>
       </ul>
-    <p className='py-2 mb-10 mx-4 px-4'>Los egresados y las egresadas serán capaces de adaptar los recursos tecnológicos vigentes en la industria de la animación digital y efectos visuales dentro del sector público, privado y social, para satisfacer las necesidades con un sentido creativo e innovador de una manera eficaz y eficiente con actitud propositiva.
+    <p className='py-2 mb-10'>Los egresados y las egresadas serán capaces de adaptar los recursos tecnológicos vigentes en la industria de la animación digital y efectos visuales dentro del sector público, privado y social, para satisfacer las necesidades con un sentido creativo e innovador de una manera eficaz y eficiente con actitud propositiva.
+    <br></br>
 El ingeniero en Animación Digital y Efectos Visuales es capaz de identificar, formular, analizar, sintetizar, diseñar, desarrollar y conducir proyectos en una diversidad de ramas del sector productivo, tales como: <Italica italica={"Videojuegos, Pre, pro y postproducción de Audio y Video, Fotografía, Modelado 3D, contenido digital en campañas de publicidad y páginas web, Realidad Virtual, Realidad Aumentada, así como la creación de materiales multimedia para promover el arte, la cultura, la ciencia, la tecnología, los deportes y todas las actividades del quehacer humano"}/> aplicando su conocimiento técnico y su sensibilidad artística de forma humana, ética y responsable.</p>
 
    <div className='mb-20'>
     
-      <h6 className='mx-4 px-4'> <a href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/reticulas/Reticulas2022/Ret%C3%ADcula%20Ingenier%C3%ADa%20en%20Animaci%C3%B3n%20Digital%20y%20Efectos%20Visuales.pdf" target='_blank' className='text-xl lg:text-xl text-blue-400 hover:text-blue-700 border-b border-blue-400 font-semibold'>
+      <h6  > <a href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/reticulas/Reticulas2022/Ret%C3%ADcula%20Ingenier%C3%ADa%20en%20Animaci%C3%B3n%20Digital%20y%20Efectos%20Visuales.pdf" target='_blank' className='text-xl lg:text-xl text-blue-400 hover:text-blue-700 border-b border-blue-400 font-semibold'>
         Retícula Ingeniería en Animación Digital y Efectos Visuales</a></h6>
         
    </div>

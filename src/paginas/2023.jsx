@@ -1,7 +1,7 @@
 import React ,{useEffect} from 'react'
 import Menu from '../elementos/Menu';
 import Footer from '../elementos/Footer';
-import { Slide } from 'react-awesome-reveal';
+import { Slide ,Fade} from 'react-awesome-reveal';
 import FadevComp from '../componentes/FadevComp';
 
 function Veintitres() {
@@ -35,7 +35,7 @@ function Veintitres() {
         </div>
       </div>
       </div> 
-      <div className='mb-10 mx-2 lg:mx-10 lg:mx-20 '>
+      <div className='mb-10 mx-2 lg:mx-20 '>
         <FadevComp
         titulo={"FADEV - 2023"}
         imagen={"https://esfadev.com/wp-content/uploads/2023/06/PortadaFB-1024x576.png"}
@@ -47,12 +47,38 @@ function Veintitres() {
         />
         
       </div>
-      <div className='grid grid-cols-1 lg:grid-cols-4 my-5 lg:mx-10'>
-      <div className='col-span-1 lg:col-start-1 border border-blue-500 mx-2'>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae temporibus aliquid ipsum! Voluptatibus magni soluta, mollitia sit aspernatur nemo ullam repudiandae vel voluptatum tenetur itaque? Minus exercitationem odio dicta.</p>
+      <div className='grid grid-cols-1 lg:grid-cols-4 my-5 lg:mx-10 lg:relative'>
+      <div className='col-span-1 lg:col-start-1 border border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32 '>
+      <Fade cascade damping={0.1}>
+    <div className="flex flex-col justify-center items-center ">
+      <button className="bg-red-600 text-white hover:text-violet-800 transition-all duration-300 font-bold text-sm xl:text-xl h-16 w-40 text-center justify-center sm:text-xl items-center p-2 my-1 w-full rounded shadow-lg shadow-black-500/50 hover:-translate-y-1.5"  onClick={() => window.location.href = '#invitados'}>
+        Invitados
+      </button>
+      <button className="bg-green-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40  hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#programa'}>
+        Programa
+      </button>
+      <button className="bg-yellow-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#conferencias'}> 
+        Conferencias
+      </button>
+      <button className="bg-indigo-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#talleres'}>
+        Talleres
+      </button>
+    </div>
+  </Fade>
       </div>
       <div className='col-span-1 lg:col-start-2 lg:col-span-3 mx-2'>
-      Veintitres
+      <div className='bg-orange-400' id='invitados'>
+    uno
+      </div>
+      <div className='bg-red-400' id='programa'>
+    dos 
+      </div>
+      <div className='bg-yellow-400' id='conferencias'>
+    tres
+      </div>
+      <div className='bg-blue-400' id='talleres'>
+    cuatro
+      </div>
       </div>
     </div>
  

@@ -15,22 +15,22 @@ function Footer() {
   <li className='py-1 mb-2'>Tel: (01712) 1231313</li>
   </ul>
       </div> 
-       <div className='my-4 pb-4 border-y-2 grid grid-cols-1  grid-rows-3 border-white-400 w-full'>
+       <div className='my-4 pb-4 border-y-2 grid grid-cols-1  grid-rows-3 border-white-400 w-full gap-8'>
         <span className='text-2xl row-span-1 col-start-1 py-2 2xl:text-4xl'>Contacto</span>
-      <ul className='flex flex-wrap text-center row-span-2 items-center  justify-around row-start-2 2xl:text-2xl'>
-        <li className='sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400 2xl:text-3xl'>
+      <ul className='flex flex-wrap text-center row-span-2 items-center justify-around row-start-2 2xl:text-2xl gap-2 lg:gap-8'>
+        <li className='sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400 2xl:text-3xl hover:-translate-y-6 '>
           <a href="https://www.facebook.com/festivalfadev" target='_blank'>
             Facebook <CiFacebook size={32} className='ml-6 sm:ml-6 2xl:ml-14'/>
           </a>
         </li>
-        <li className='sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400  2xl:text-3xl'>
+        <li className='sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400 hover:-translate-y-6 2xl:text-3xl'>
           Instagram <CiInstagram size={32} className='ml-6 sm:ml-6 2xl:ml-16' />
         </li>
-        <li className='sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400 2xl:text-3xl'>
+        <li className='sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400 2xl:text-3xl hover:-translate-y-6 '>
           YouTube <CiYoutube size={32} className='ml-4 sm:ml-6 2xl:ml-10'/>
         </li>
-        <li className='sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400 2xl:text-3xl'>
-          TikTok <FaTiktok size={32} className='ml-4 sm:ml-6 '/>
+        <li className='sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400 2xl:text-3xl hover:-translate-y-6 '>
+          TikTok <FaTiktok size={32} className='ml-4 '/>
         </li>
       </ul>
     </div>

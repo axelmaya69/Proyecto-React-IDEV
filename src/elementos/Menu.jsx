@@ -12,7 +12,7 @@ function Menu() {
           <Link to={"/"}><img src={logoIadev} alt="Logo-IADEV" /></Link>
         </div>
 
-        <div className=' my-5 z-50'>
+        <div className='z-50'>
           <Header />
         </div>
       </div>
