@@ -3,14 +3,12 @@ import { Slide } from 'react-awesome-reveal';
 
 function OrderList({items}) {
   return (
-    <div className='py-4'>  
-    <Slide direction='right'>
-<ol className="list-decimal lg:mx-36 ">
+    <div className='py-4'>   
+<ol className="list-decimal mx-4 px-4 ">
       {items.map((item, index) => (
-        <li className='mx-6 py-2'  key={index}>{item}</li>
+        <li className=' py-2'  key={index}>{item}</li>
       ))}
     </ol> 
-    </Slide>
     </div>
   );        
 }

@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <div>
       <div className="block lg:hidden">
-        <button onClick={() => setIsOpen(!isOpen)}>
+        <button onClick={() => setIsOpen(!isOpen)} aria-label='desplegar/cerrar menu'>
           {isOpen ? (
             <FaTimes className="text-xl mr-1" />
           ) : (

@@ -2,7 +2,7 @@ import React from 'react';
 
 function ArticleLeft({ title, image, parrafoUno, parrafoDos }) {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 mb-20 my-10 mt-10 lg:mt-20   mx-2 lg:mx-10 md:mx-20 lg:my-20 lg:py-20">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 my-10 mt-10 lg:mt-20 mx-2 lg:mx-10 md:mx-20 lg:my-10  ">
       <div className="col-span-1 lg:col-span-1   ">
         <h2 className="text-lg font-bold mx-2 text-center lg:col-span-2 mb-5  mt-4
         lg:text-3xl lg:font-bold 2xl:text-4xl ">{title}</h2>

@@ -4,7 +4,7 @@ import Footer from '../elementos/Footer';
 import FadevComp from '../componentes/FadevComp';
 import AnimatedText from '../componentes/AnimatedText';
 import InvitadosCard from '../componentes/InvitadosCard';
-import { Fade } from 'react-awesome-reveal';
+import { Fade, Slide } from 'react-awesome-reveal';
 import Slider from '../componentes/Slider';
 
 function Veintidos() {
@@ -28,9 +28,34 @@ function Veintidos() {
     <header >
     <Menu/>
     </header>
+
     <div>
+      <div
+        className="relative min-h-full overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
+        style={{ height: '900px',backgroundPosition: 'start center'}}
+      >
+        <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed bg-black bg-opacity-60">
+          <div className="h-full " >
+            <div className="my-40 lg:my-32">
+              <div>
+            <Slide direction='up'>
+              <h2 className="text-7xl sm:text-9xl my:10 mx-4 lg:text-[200px] text-white font-bold">FADEV</h2> 
+              </Slide>
+              </div> 
+              <Slide direction='right' damping={0.3}>
+              <h4 className="text-3xl sm:text-4xl lg:text-6xl font-semibold px-4 my-4 flex flex-wrap text-yellow-400">2022</h4>
+              </Slide>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div> 
+
+
+
+    <div className='mb-10 mx-2 lg:mx-20 '>
     <FadevComp
-      titulo={<AnimatedText text={"FADEV - 2022"}/>}
+      titulo={ "FADEV - 2022" }
       imagen={"https://iadevtesjo.files.wordpress.com/2022/06/propuesta_logo_grises.png?w=153"}
       p1={"FADEV, lugar donde cohabitan ideas y toman forma a través de animación, cómic, videojuegos, VFX, publicidad, fotografía y vídeo."}
       p2={"Como cada año la División de Ingeniería en Animación Digital y Efectos Visuales adscrita al Tecnológico de Estudios Superiores de Jocotitlán organiza el Festival de Animación Digital y Efectos Visuales (FADEV). Este año tenemos la primera edición presencial, con grandes invitados, talleres y proyecciones de trabajos. "}
@@ -42,11 +67,11 @@ function Veintidos() {
     <div className='col-span-3 col-start-3 row-start-1 row-span-1 lg:col-span-1 lg:col-start-1 lg:row-span-8 text-xl text-center lg:sticky lg:h-32 lg:top-64 lg:mb-48 lg:z-10 pb-4 sm:pb-10 sm:ml-4'>
     <Fade cascade damping={0.1}>
     <div className="flex flex-col ">
-    <button className='bg-yellow-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 my-1 w-full text-white hover:text-violet-800 transition-all duration-300' onClick={() => window.location.href = '#invitados'}>Invitados</button>
-    <button className='bg-orange-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300'  onClick={() => window.location.href = '#convocatorias'}>Convocatorias
+    <button className='bg-yellow-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 my-1 w-full text-white hover:text-violet-800 transition-all duration-300 rounded' onClick={() => window.location.href = '#invitados'}>Invitados</button>
+    <button className='bg-orange-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300 rounded'  onClick={() => window.location.href = '#convocatorias'}>Convocatorias
     </button>
-    <button className='bg-green-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300' onClick={() => window.location.href = '#programa'}>Programa</button>
-    <button className='bg-violet-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300'  onClick={() => window.location.href = '#talleres'}>Talleres</button>
+    <button className='bg-green-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300 rounded' onClick={() => window.location.href = '#programa'}>Programa</button>
+    <button className='bg-violet-400 font-bold text-sm sm:text-xl flex flex-wrap lg:h-16 text-center justify-center items-center p-2 text-white my-1 w-full hover:text-violet-800 transition-all duration-300 rounded'  onClick={() => window.location.href = '#talleres'}>Talleres</button>
     </div>
     </Fade>
     </div>

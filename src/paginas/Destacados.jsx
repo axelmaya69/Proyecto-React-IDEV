@@ -2,7 +2,7 @@ import React,{useEffect} from 'react'
 import Menu from '../elementos/Menu'
 import Footer from '../elementos/Footer';
 import DestacadosCard from '../componentes/DestacadosCard';
-import { Fade } from 'react-awesome-reveal'; 
+import { Fade, Slide } from 'react-awesome-reveal'; 
 
 function Destacados() {
   useEffect(() => {
@@ -32,6 +32,31 @@ function Destacados() {
    <header >
       <Menu/>
       </header>
+
+      <div>
+      <div
+        className="relative min-h-full overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
+        style={{ height: '900px',backgroundPosition: 'start center'}}
+      >
+        <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed bg-black bg-opacity-60">
+          <div className="h-full " >
+            <div className="my-40 lg:my-32">
+              <div>
+            <Slide direction='up'>
+              <h2 className="text-5xl sm:text-7xl my:10 mx-4 lg:text-9xl text-white font-bold">Alumnos</h2> 
+              </Slide>
+              </div> 
+              <Slide direction='right' damping={0.3}>
+              <h4 className="text-3xl sm:text-4xl lg:text-6xl lg:ml-2 font-semibold px-4 my-4 flex flex-wrap text-yellow-400">Destacados</h4>
+              </Slide>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div> 
+
+
+
       <div className='flex justify-center items-center align-center'>
       <div className='my-4'>
       <Fade cascade duration={1500}>

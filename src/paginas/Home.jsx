@@ -28,7 +28,7 @@ function Home() {
       <Menu/>
       </header>
 
-      <div>
+      <div> 
       <div
         className="relative min-h-full overflow-hidden bg-[url('https://uzink.es/wp-content/uploads/2022/05/%C2%BFQue-poner-en-un-banner-5-ejemplos-de-banner-para-inspirartebrastemp-ejemplo-de-banner-creativofedex-ejemplo-de-bannerbanner-volkswagenbanner-ejemplo-mcdonalds-nissan-ejemplos-de-banner-copia.jpg')] bg-cover bg-no-repeat p-12 text-center"
         style={{ height: '900px',backgroundPosition: 'center center'}}
@@ -36,10 +36,10 @@ function Home() {
         <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed bg-black bg-opacity-60">
           <div className="flex h-full items-center justify-center" >
             <div className="text-white">
-            <Slide direction='down'>
-              <h2 className="mb-4 text-6xl font-semibold">IADEV</h2></Slide>
+            <Slide direction='left'>
+              <h1 className="mb-4 text-6xl lg:text-[200px] font-bold">IADEV</h1></Slide>
               <Slide direction='up'>
-              <h4 className="mb-6 text-xl  font-semibold overflow-y-auto px-4">  Lugar donde cohabitan las ideas </h4></Slide>
+              <h2 className="mb-6 text-xl lg:text-6xl font-semibold  px-4">  Lugar donde cohabitan las ideas </h2></Slide>
             </div>
           </div>
         </div>
@@ -57,24 +57,45 @@ function Home() {
     </div>
     </div>
         
-<div> 
-<Fade cascade direction='left'>
+<div className='grid grid-cols-4 gap-2 mx-2 lg:mx-10 lg:relative'> 
+<div className='col-span-4 m-2 mb-10 h-auto p-4 lg:col-span-1 lg:col-start-1 border my-10 border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-48 '>
+  <p>Contenido random aqui...</p>
+  <img className="m-auto my-2" src="https://www.ipp.edu.pe/blog/wp-content/uploads/2021/04/animacion-digital.jpg" alt="animacion imagen" />
+  <img className="m-auto" src="https://www.procine.cdmx.gob.mx/storage/app/uploads/public/644/fe2/954/644fe2954deea427920675.jpg" alt="animacion imagen" />
+</div>
+  <div className='col-span-4 lg:col-span-3 lg:col-start-2 mb-10'>
+<Fade cascade direction='right'>
     <ArticleLeft
     title="Titulo 1"
     image={"https://uvp.mx/uvpblog/wp-content/uploads/2021/05/Animacio%CC%81n.jpg"}
-    parrafoUno={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, nihil nisi. Architecto, iure maiores optio vitae nostrum fugit unde et tempora quo nulla libero provident, ab dicta ullam nihil dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum fugit cumque perferendis incidunt temporibus sed? Possimus commodi est placeat laborum."}
-    parrafoDos={"Voluptatum aliquid sint temporibus autem ut quasi porro expedita.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt nesciunt blanditiis explicabo voluptatem dignissimos, porro voluptate provident delectus ex accusantium illo modi. Corporis temporibus reprehenderit praesentium porro voluptates impedit sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste voluptatem distinctio totam, magni minus possimus voluptatum assumenda beatae fugiat illo nemo quo, sint dolor quia! Quae, et. Provident, iste numquam.Lorem ipsum dolor,   "}
-    /></Fade>
- 
-      <Fade cascade direction='right'>
+    parrafoUno={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, nihil nisi. Architecto, iure maiores optio vitae nostrum fu tur adipisicing elit. Odit harum fugit cumque perferendis incidunt temporibus sed? Possimus commodi est placeat laborum."}
+    parrafoDos={"Voluptatum aliquid sint temporibus autem ut quasi porro expedita.lorem Lorem ipsum dolor sit amet consectetur, adipisic e fugiat illo nemo quo, sint dolor quia! Quae, et. Provident, iste numquam.Lorem ipsum dolor,   "}
+    /> 
     <ArticleRight
       title="Titulo 2"
         image={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPbkXnZBJoiFZJo3N8TAZyE1Y54JGilGCPmwXBzEU43J8_1h0g8v0nt-dPwG4Cwkxjlxw&usqp=CAU"}
-      parrafoUno={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, nihil nisi. Architecto, iure maiores optio vitae nostrum fugit unde et tempora quo nulla libero provident, ab dicta ullam nihil dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum fugit cumque perferendis incidunt temporibus sed? Possimus commodi est placeat laborum."}
-    parrafoDos={"Voluptatum aliquid sint temporibus autem ut quasi porro expedita.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt nesciunt blanditiis explicabo voluptatem dignissimos, porro voluptate provident delectus ex accusantium illo modi. Corporis temporibus reprehenderit praesentium porro voluptates impedit sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste voluptatem distinctio totam, magni minus possimus voluptatum assumenda beatae fugiat illo nemo quo, sint dolor quia! Quae, et. Provident, iste numquam.Lorem ipsum dolor,   "}
+      parrafoUno={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, nihil nisi. Architecto, iure maiores optio vitae nostrum  r adipisicing elit. Odit harum fugit cumque perferendis incidunt temporibus sed? Possimus commodi est placeat laborum."}
+    parrafoDos={"Voluptatum aliquid sint temporibus autem ut quasi porro expedita.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ne o, sint dolor quia! Quae, et. Provident, iste numquam.Lorem ipsum dolor,   "}
     />
     </Fade>
-    </div>    
+      {/* <div className='grid grid-cols-2'>
+    <div className='col-span-2 m-6 '>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MrMbJ-kUH_k" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div> */}
+
+    <p className='px-6 mx-2 lg:mx-6 pt-10 '> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quia labore distinctio a exercitationem ab! 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quia labore distinctio a exercitationem ab! Repudiandae nisi, vitae dicta dolore ex corrupti omnis, vel dignissimos reiciendis alias consequatur optio soluta?   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quia labore distinctio a exercitationem ab! Repudiandae nisi, vita 
+    </p>
+    <ArticleLeft
+    title={"Otro parrafo"}
+    image={"https://i.blogs.es/9e2b7d/animacion-2023/1366_2000.jpeg"}
+    parrafoUno={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni voluptatem exercitationem aut sit quas velit architecto fugit eos similique unde, dolor placeat esse doloremque, fugiat ipsa ut, voluptate neque minima."}
+    parrafoDos={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni voluptatem exercitationem aut sit quas velit architecto fugit eos similique unde, dolor placeat esse doloremque, fugiat ipsa ut, voluptate neque minima."}
+    />
+    </div>
+    </div>
+    
     <footer>
       <Footer/>
     </footer>

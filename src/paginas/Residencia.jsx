@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import Menu from '../elementos/Menu';
 import Footer from '../elementos/Footer';
-import { Fade } from 'react-awesome-reveal';
+import { Fade, Slide } from 'react-awesome-reveal';
 
 function Residencia() {
   useEffect(() => {
@@ -12,6 +12,30 @@ function Residencia() {
       <header>
       <Menu/>
       </header>
+
+      <div>
+      <div
+        className="relative min-h-full overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
+        style={{ height: '900px',backgroundPosition: 'start center'}}
+      >
+        <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed bg-black bg-opacity-60">
+          <div className="h-full " >
+            <div className="my-40 lg:my-32">
+              <div>
+            <Slide direction='up'>
+              <h2 className="text-5xl sm:text-7xl my:10 mx-4 lg:text-9xl text-white font-bold">Residencia</h2> 
+              </Slide>
+              </div> 
+              <Slide direction='right' damping={0.3}>
+              <h4 className="text-3xl sm:text-4xl lg:text-6xl lg:ml-2 font-semibold px-4 my-4 flex flex-wrap text-yellow-400">Profesional</h4>
+              </Slide>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div> 
+
+
       <div className='flex justify-center items-center align-center'>
       <div className='my-4'>
       <Fade cascade duration={1500}>
@@ -19,7 +43,13 @@ function Residencia() {
       </Fade>
       </div>
       </div>
-      <div className='mx-2 sm:mx-10 lg:mx-20 2xl:mx-40'>
+      
+      <div className='grid grid-cols-1 lg:grid-cols-4 mx-2 lg:mx-10 lg:relative'>
+      <div className='col-span-1 lg:col-start-1 border border-blue-500 my-5 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-48 '>
+        <p className='mt-20'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci ad nulla voluptates sequi rerum suscipit illo ratione nobis optio sit fugiat blanditiis dolores ullam impedit accusamus, perspiciatis facere expedita dolorum?</p>
+      </div>
+      <div className='col-span-1 lg:col-span-3 lg:col-start-2'>
+      <div className='mx-2 sm:mx-10  '>
       <h4 className='ml-2 font-bold my-4 text-lg  2xl:text-2xl'>Acerca del trámite</h4>
 <p className='mx-2 mb-4 2xl:text-xl'>Es una asignatura del plan de estudios de la Licenciatura cursada por el alumno que complementa su formación profesional en el Tecnológico y consiste en la aplicación de los conocimientos en el campo laboral al desarrollar un proyecto en alguna empresa.</p>
 <h5 className='ml-2 font-bold my-2 2xl:text-2xl'>Usuarios:</h5>
@@ -74,8 +104,11 @@ function Residencia() {
       <a href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/6_Carta%20de%20aceptacio%CC%81n%20de%20RP.docx" target='_blank' className='text-blue-600 border-b border-blue-800 m-4 2xl:text-xl'>Oficio de Aceptación</a>
       <a href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/7_CARTA%20DE%20LIBERACIO%CC%81N%20RP.doc" target='_blank' className='text-blue-600 border-b border-blue-800 m-4 2xl:text-xl'>Carta de Liberación</a>
       <a href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/8_Portada%20del%20proyecto%20de%20Residencia%20Profesional.docx" target='_blank' className='text-blue-600 border-b border-blue-800 m-4 2xl:text-xl'>Portada de Proyecto de Residencia Profesional</a>
+      </div>
+    </div>
     </div>
       </div>
+
       <footer>
       <Footer/>
     </footer>
