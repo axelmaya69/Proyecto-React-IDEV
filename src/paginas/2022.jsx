@@ -96,11 +96,11 @@ function Veintidos() {
     <div className='col-span-1 lg:col-start-1 border border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32'>
     <Fade cascade damping={0.1}>
     <div className="flex flex-col justify-center items-center  text-white">
-    <button className='bg-yellow-400 font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5' onClick={() => window.location.href = '#invitados'}>Invitados</button>
-    <button className='bg-orange-400 font-bold text-sm text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5'  onClick={() => window.location.href = '#convocatorias'}>Convocatorias
+    <button className='bg-yellow-400 font-bold shadow-2xl text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5' onClick={() => window.location.href = '#invitados'}>Invitados</button>
+    <button className='bg-orange-400 font-bold shadow-2xl text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5'  onClick={() => window.location.href = '#convocatorias'}>Convocatorias
     </button>
-    <button className='bg-green-400 font-bold text-sm text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5' onClick={() => window.location.href = '#programa'}>Programa</button>
-    <button className='bg-violet-400 font-bold text-sm text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5'  onClick={() => window.location.href = '#talleres'}>Talleres</button>
+    <button className='bg-green-400 font-bold shadow-2xl text-sm  xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5' onClick={() => window.location.href = '#programa'}>Programa</button>
+    <button className='bg-violet-400 font-bold shadow-2xl text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5'  onClick={() => window.location.href = '#talleres'}>Talleres</button>
     </div>
     </Fade>
     </div>

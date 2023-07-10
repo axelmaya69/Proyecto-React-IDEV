@@ -56,7 +56,7 @@ function Destacados() {
       </div> 
 
 
-
+    <div>
       <div className='flex justify-center items-center align-center'>
       <div className='my-4'>
       <Fade cascade duration={1500}>
@@ -64,12 +64,16 @@ function Destacados() {
       </Fade>
       </div>
       </div>
+    
       <div className='mx-2'>
+          <Fade cascade={true} damping={0.3}>
         <h1 className='font-semibold text-lg lg:font-bold lg:text-xl mx-2 sm:mx-20 mt-4 sm:mt-20'>En esta sección...</h1>
         <p className='mx-2 sm:mx-20 my-4 sm:mb-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perferendis, quisquam, quaerat tempore praesentium vero deleniti impedit nobis aliquid rem facere, harum delectus distinctio accusantium beatae officia commodi dicta labore.</p>
       <DestacadosCard
         videos={videos}
-      />
+      />  </Fade>
+      </div>
+    
       </div>
       <footer>
       <Footer/>

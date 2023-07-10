@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import Menu from '../elementos/Menu';
 import Footer from '../elementos/Footer';
-import { Fade, Slide} from 'react-awesome-reveal';
+import { Fade, Slide, Zoom} from 'react-awesome-reveal';
 
 function Servicio() {
   useEffect(() => {
@@ -46,7 +46,10 @@ function Servicio() {
       
     <div className='grid grid-cols-1 lg:grid-cols-4 mx-4 lg:mx-10 my-5 lg:relative gap-10'>
      <div className='col-span-1 lg:col-start-1 border border-blue-500 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32 '>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ut quod iste vero, placeat consequatur aut aspernatur alias voluptatibus earum quas ipsum magni, quisquam numquam quis tempora ab dicta labore!</p>
+    
+      <img src="https://www.gob.mx/cms/uploads/document/main_image/46398/Servicio_social.jpg" alt="servicio social img" />
+     
+      <p className='px-2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ut quod iste vero, placeat consequatur aut aspernatur alias voluptatibus earum quas ipsum magni, quisquam numquam quis tempora ab dicta labore!</p>  
      </div>
      <div className='col-span-1 lg:col-span-3 lg:col-start-2'>
       <div className='mx-2  '>

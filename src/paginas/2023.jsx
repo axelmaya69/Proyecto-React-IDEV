@@ -62,17 +62,17 @@ function Veintitres() {
       <div className='grid grid-cols-1 lg:grid-cols-4 my-5 lg:mx-10 lg:relative'>
       <div className='col-span-1 lg:col-start-1 border border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32 '>
       <Fade cascade damping={0.1}>
-    <div className="flex flex-col justify-center items-center ">
-      <button className="bg-red-600 text-white hover:text-violet-800 transition-all duration-300 font-bold text-sm xl:text-xl h-16 w-40 text-center justify-center sm:text-xl items-center p-2 my-1  rounded shadow-lg shadow-black-500/50 hover:-translate-y-1.5"  onClick={() => window.location.href = '#invitados'}>
+    <div className="flex flex-col justify-center items-center  ">
+      <button className="bg-red-600 text-white shadow-2xl hover:text-violet-800 transition-all duration-300 font-bold text-sm xl:text-xl h-16 w-40 text-center justify-center sm:text-xl items-center p-2 my-1  rounded shadow-black-500/50 hover:-translate-y-1.5"  onClick={() => window.location.href = '#invitados'}>
         Invitados
       </button>
-      <button className="bg-green-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40  hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#programa'}>
+      <button className="bg-green-400 text-white shadow-2xl font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40  hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#programa'}>
         Programa
       </button>
-      <button className="bg-yellow-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#conferencias'}> 
+      <button className="bg-yellow-400 text-white shadow-2xl font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#conferencias'}> 
         Conferencias
       </button>
-      <button className="bg-indigo-400 text-white font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#talleres'}>
+      <button className="bg-indigo-400 text-white shadow-2xl font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#talleres'}>
         Talleres
       </button>
     </div>

@@ -35,9 +35,9 @@ function Investigacion() {
 
 
       <div className='flex justify-center items-center align-center'>
-      <div className='my-4'>
+      <div className='my-4 flex-wrap'>
       <Fade cascade duration={1500}>
-        <span className='font-bold text-xl sm:text-2xl lg:text-4xl border-b-2 py-2 border-violet-400  '>Investigación</span>
+        <h1 className='font-bold text-xl sm:text-2xl flex-wrap lg:text-4xl border-b-2 py-2 border-violet-400  '>Investigación</h1>
       </Fade>
       </div>
       </div>

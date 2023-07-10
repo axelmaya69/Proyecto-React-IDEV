@@ -69,8 +69,7 @@ const images=[
         p2={"Este año nuevamente tenemos edición online, con grandes invitado, talleres y proyecciones de trabajos que nos dan una idea del trabajo realizado durante este tiempo."}
         p3={`El tema de este año es: «La industria de la animación», teniendo diferentes puntos de vista de cómo se cera la industria día con día dentro y fuera el país, cuáles son las oportunidades laborales actuales y cómo está el panorama general.`}
         
-        p4={"La IADEV te invita a participar en la edición 2021 del FADEV que se llevará a cabo durante los días 30 de junio, 01 y 02 de julio, revisa el programa para que no te pierdas de nada."}
-        
+        p4={"La IADEV te invita a participar en la edición 2021 del FADEV que se llevará a cabo durante los días 30 de junio, 01 y 02 de julio, revisa el programa para que no te pierdas de nada."} 
         />  
       </div>
       </Slide>
@@ -78,24 +77,24 @@ const images=[
     <div className='grid grid-cols-1 lg:grid-cols-4 my-5 lg:mx-5 lg:relative'>
     <div className="col-span-1 lg:col-start-1 border border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32">
   <Fade cascade damping={0.1}>
-    <div className="flex flex-col justify-center items-center  text-white mt-48">
-      <button className="bg-red-600 font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5"  onClick={() => window.location.href = '#invitados'}>
+    <div className="flex flex-col justify-center items-center  text-white  text-2xl">
+      <button className="bg-red-600 font-bold shadow-2xl text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5"  onClick={() => window.location.href = '#invitados'}>
         Invitados
       </button>
-      <button className="bg-green-400 font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#programa'}>
+      <button className="bg-green-400 font-bold shadow-2xl text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#programa'}>
         Programa
-      </button>
-      <button className="bg-yellow-400 font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#conferencias'}> 
+      </button> 
+      <button className="bg-yellow-400 font-bold shadow-2xl text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#conferencias'}> 
         Conferencias
       </button>
-      <button className="bg-indigo-400 font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#talleres'}>
+      <button className="bg-indigo-400 font-bold shadow-2xl text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5" onClick={() => window.location.href = '#talleres'}>
         Talleres
       </button>
     </div>
   </Fade>
 </div>
 
-      <div className='col-span-1 lg:col-start-2 lg:col-span-3 mx-2'>
+      <div className='col-span-1 lg:col-start-2 lg:col-span-3 '>
         <div className='py-2' id='invitados'>
         <span className='font-bold text-xl mx-2 xl:mx-10 xl:text-3xl py-4 px-2 border-b-2 border-orange-400'> Invitados </span>
       <InvitadosCard
@@ -165,8 +164,7 @@ const images=[
 
         <GridImg images={images}/>
 
-          </div>
-          
+          </div> 
         <div id='talleres'>
           <span className='font-bold text-xl mx-2 xl:mx-10 xl:text-3xl py-4 px-2 border-b-2 border-violet-400'> Talleres </span>
           <p className='flex justify-center flex-wrap flex-row xl:py-4 items-center mx-2 xl:mx-10 xl:text-xl my-4 pb-4'>
@@ -185,8 +183,7 @@ const images=[
           <InvitadosCard imagen={"https://iadevtesjo.files.wordpress.com/2021/06/taller-diana.png?w=1024"}/>
           </div> 
       </div> 
-    </div>
-
+    </div> 
       <footer>
       <Footer/>
     </footer>

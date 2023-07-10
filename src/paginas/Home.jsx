@@ -19,17 +19,15 @@ function Home() {
     'https://iadevtesjo.files.wordpress.com/2021/06/casa_anafre.png?w=1024',
     'https://iadevtesjo.files.wordpress.com/2021/06/osvaldo_pasillas_bernal.png?w=1024',
     'https://iadevtesjo.files.wordpress.com/2021/06/carolina_rubi_garcia_sanchez_armass.png?w=1024',
+    "https://esfadev.com/wp-content/uploads/2023/06/PortadaFB-1024x576.png"
     
     ];  
     const fondo = "https://www.esdesignbarcelona.com/sites/default/files/imagenes/animacion-digital-que-es-y-que-tipos-de-animacion-existen_0_1.jpg";
 
   return (  
-    <div>
-      <header>
-      <Menu/>
-      </header>
-
+    <div> 
       <div> 
+      <Menu/>
       <div className="relative min-h-full overflow-hidden bg-[url('https://uzink.es/wp-content/uploads/2022/05/%C2%BFQue-poner-en-un-banner-5-ejemplos-de-banner-para-inspirartebrastemp-ejemplo-de-banner-creativofedex-ejemplo-de-bannerbanner-volkswagenbanner-ejemplo-mcdonalds-nissan-ejemplos-de-banner-copia.jpg')] bg-cover  bg-no-repeat p-12 text-center"
         style={{ height: '800px',backgroundPosition: 'center center'}}
       >
@@ -57,7 +55,7 @@ function Home() {
     </div>
     </div>
         
-<div className='grid grid-cols-4 gap-2 mx-2 lg:mx-10 lg:relative'> 
+<div className='grid grid-cols-4 gap-2 mx-2 lg:relative'> 
 <div className='col-span-4 m-2 mb-10 h-auto p-4 lg:col-span-1 lg:col-start-1 border my-10 border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-48 '>
   <Fade cascade damping={0.3} >
   <img className="m-auto my-2" src="https://www.ipp.edu.pe/blog/wp-content/uploads/2021/04/animacion-digital.jpg" alt="animacion imagen" />

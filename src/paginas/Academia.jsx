@@ -78,22 +78,25 @@ function Academia() {
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam officia sit repellat commodi exercitationem id! Veniam a, iusto, enim ipsam molestias unde dolor nisi quibusdam quae ab vero velit?</p>
     </div>
     <div className='col-span-4 lg:col-span-3 lg:col-start-2 lg:mx-10'>
+    <Slide direction='left' >
       <AcademiaCard titulo={"Objetivo General"}
       parrafo={"Formar profesionistas capaces de adaptar, desarrollar y aplicar recursos tecnológicos en la producción de animación digital y efectos visuales, impulsando la tecnología para responder a los desafíos de las industrias de la animación digital y los efectos visuales, en un contexto global, multidisciplinario y sustentable."}/>
-     
+     </Slide>
     <div className=' py-2'>
-      
-    <div className=' py-2'>
+    <Slide direction='left' >
       <h4 className='font-bold text-xl'>Objetivos Educacionales</h4>
       <OrderList items={items} />
-      </div>      
-      </div>   
+      </Slide>
+      
+      </div>  
       <div className='  py-2'>
+      <Slide direction='left' >
       <span className=' font-bold text-xl py-2 '>Perfil de Egreso</span>
        
        <OrderList items={perfilEgreso}/>
-     
+     </Slide>
       </div>
+      <Slide direction='left' >
       <span className=' font-bold text-xl py-2'>Campo Laboral</span>
       <p className='py-2 '>El Ingeniero en Animación Digital y Efectos Visuales desarrolla su actividad profesional en la:</p>
       <ul className=' mx-2 px-2 list-disc'>
@@ -111,7 +114,7 @@ function Academia() {
     <p className='py-2 mb-10'>Los egresados y las egresadas serán capaces de adaptar los recursos tecnológicos vigentes en la industria de la animación digital y efectos visuales dentro del sector público, privado y social, para satisfacer las necesidades con un sentido creativo e innovador de una manera eficaz y eficiente con actitud propositiva.
     <br></br>
 El ingeniero en Animación Digital y Efectos Visuales es capaz de identificar, formular, analizar, sintetizar, diseñar, desarrollar y conducir proyectos en una diversidad de ramas del sector productivo, tales como: <Italica italica={"Videojuegos, Pre, pro y postproducción de Audio y Video, Fotografía, Modelado 3D, contenido digital en campañas de publicidad y páginas web, Realidad Virtual, Realidad Aumentada, así como la creación de materiales multimedia para promover el arte, la cultura, la ciencia, la tecnología, los deportes y todas las actividades del quehacer humano"}/> aplicando su conocimiento técnico y su sensibilidad artística de forma humana, ética y responsable.</p>
-
+</Slide>
    <div className='mb-20'>
     
       <h6  > <a href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/reticulas/Reticulas2022/Ret%C3%ADcula%20Ingenier%C3%ADa%20en%20Animaci%C3%B3n%20Digital%20y%20Efectos%20Visuales.pdf" target='_blank' className='text-xl lg:text-xl text-blue-400 hover:text-blue-700 border-b border-blue-400 font-semibold'>
