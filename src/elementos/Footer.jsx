@@ -4,7 +4,7 @@ import { FaTiktok } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <div className='grid grid-cols-1 bg-black text-white p-10 sm:grid-cols-2 gap-10 sm:text-md'> 
+    <div className='grid grid-cols-1 bg-black text-white p-10 sm:grid-cols-2 gap-10 sm:text-md h-full'> 
     <div className='my-4 pb-4 border-y-2 border-white-400 w-full'>
     <span className='text-2xl py-2 sm:py-6 sm:my-4  2xl:text-4xl'> Información</span>
     <ul className='py-2 2xl:text-2xl'>

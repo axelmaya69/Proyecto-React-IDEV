@@ -2,8 +2,9 @@ import React from 'react'
 
 function DocentesCard({nombre,imagen,grado,texto,enlace,red}) {
   return (
-    <div className=' flex bg-neutral-200 w-auto h-auto pb-5 flex-wrap sm:flex-row sm:grid-cols-3 m-2 rounded max-w-xl sm:pt-9'>
-    <div className='grid grid-cols-3 grid-rows-2 gap-1'>
+    <div className=' flex bg-neutral-200 w-auto h-auto pb-5 flex-wrap sm:flex-row sm:grid-cols-3 m-2 rounded max-w-xl sm:pt-9 '>
+      
+    <div className='grid grid-cols-3 grid-rows-2 gap-1 '>
      <div className="flex justify-center items-center col-span-1 row-span-2 sm:col-span-3 sm:row-span-2">
         <div className="rounded-full overflow-hidden w-20 h-20 my-3 sm:rounded-none sm:w-80 sm:h-auto">
           <img src={imagen} alt='imagen'className='object-cover w-full h-full'/>
@@ -14,6 +15,7 @@ function DocentesCard({nombre,imagen,grado,texto,enlace,red}) {
     <p className='col-span-3 row-span-1 mx-2 sm:col-start-1 sm:p-4 '>{texto}</p>
     <a href={enlace} className='col-start-2 col-span-1 row-span-1 bg-blue-600 p-2 text-white rounded-sm text-center hover:bg-blue-800'>{red}</a>
     </div>
+    
     </div>
   )}
 export default DocentesCard;

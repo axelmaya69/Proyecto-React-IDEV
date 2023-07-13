@@ -62,7 +62,7 @@ function Lista() {
               <li className='p-2 text-white text-sm hover:bg-red-500 sm:hover:scale-125 transition-all duration-400 py-3 flex w-full'><Link to={"/2021"} className='w-full'>2021</Link></li>
               <li className='p-2 text-white text-sm hover:bg-red-500 sm:hover:scale-125 transition-all duration-400 py-3 flex w-full'><Link to={"/2022"} className='w-full'>2022</Link></li>
               <li className='p-2 text-white text-sm hover:bg-red-500 sm:hover:scale-125 transition-all duration-400 py-3 flex w-full'><Link to={"/2023"} className='w-full'>2023</Link></li>
-              <li className='p-2 text-white text-sm hover:bg-red-500 sm:hover:scale-125 transition-all duration-400 flex flex w-full w-full py-3'><Link to={"/Sitio Oficial"} className='w-full'>Sitio Oficial</Link></li>
+              <li className='p-2 text-white text-sm hover:bg-red-500 sm:hover:scale-125 transition-all duration-400 flex  w-full py-3'><Link to={"/Sitio Oficial"} className='w-full'>Sitio Oficial</Link></li>
               </Fade>
             </ul>
           )}

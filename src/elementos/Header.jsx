@@ -1,8 +1,8 @@
- import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import ListaDesplegable from '../componentes/ListaDesplegable';
-import Lista from '../componentes/Lista';
-import { Transition } from '@headlessui/react';
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import ListaDesplegable from "../componentes/ListaDesplegable";
+import Lista from "../componentes/Lista";
+import { Transition } from "@headlessui/react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,10 @@ export default function Header() {
   return (
     <div>
       <div className="block lg:hidden">
-        <button onClick={() => setIsOpen(!isOpen)} aria-label='desplegar/cerrar menu'>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="desplegar/cerrar menu"
+        >
           {isOpen ? (
             <FaTimes className="text-xl mr-1" />
           ) : (
@@ -46,10 +49,16 @@ export default function Header() {
             <div className="py-4 ">
               {isOpen && (
                 <>
-                  <div className='z-50'>
+                  <div className="z-50">
                     <ListaDesplegable
                       titulo={"Principal"}
-                      sublistas={['Home', 'Academia', 'Docentes', 'Investigación', 'Proyectos']}
+                      sublistas={[
+                        "Home",
+                        "Academia",
+                        "Docentes",
+                        "Investigación",
+                        "Proyectos",
+                      ]}
                       activeIndexes={activeIndexes}
                       toggleMenu={toggleMenu}
                       index={0}
@@ -58,7 +67,15 @@ export default function Header() {
                   <div>
                     <ListaDesplegable
                       titulo={"Alumnado"}
-                      sublistas={['Alumnos', 'Destacados', 'Preguntas', 'Residencia', 'Servicio', 'Dual', 'Titulación']}
+                      sublistas={[
+                        "Alumnos",
+                        "Destacados",
+                        "Preguntas",
+                        "Residencia",
+                        "Servicio",
+                        "Dual",
+                        "Titulación",
+                      ]}
                       activeIndexes={activeIndexes}
                       toggleMenu={toggleMenu}
                       index={1}
@@ -67,7 +84,14 @@ export default function Header() {
                   <div>
                     <ListaDesplegable
                       titulo={"Festival"}
-                      sublistas={['FADEV', '2020', '2021', '2022', '2023', 'Sitio Oficial']}
+                      sublistas={[
+                        "FADEV",
+                        "2020",
+                        "2021",
+                        "2022",
+                        "2023",
+                        "Sitio Oficial",
+                      ]}
                       activeIndexes={activeIndexes}
                       toggleMenu={toggleMenu}
                       index={2}
@@ -83,5 +107,3 @@ export default function Header() {
     </div>
   );
 }
-
-

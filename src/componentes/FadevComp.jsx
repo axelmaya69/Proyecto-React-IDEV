@@ -1,32 +1,39 @@
-import React from 'react'
+import React from "react";
 import { Fade } from "react-awesome-reveal";
 
-function FadevComp({imagen,titulo,p1,p2,p3,p4}) {
+function FadevComp({ imagen, titulo, p1, p2, p3, p4 }) {
   return (
-    <Fade >
-    <div className='grid grid-cols-1 sm:grid-cols-3 sm:mt-24  mx-2 '>
-        <div className="flex justify-center mx-4 items-center sm:row-start-1 sm:col-span-1 sm:row-span-3 order-2">
-        <div className="w-80 h-auto my-3">
-          <img src={imagen} alt='imagen'className='object-cover w-full h-full'/>
+    <Fade>
+      <div className="grid grid-cols-1 lg:grid-cols-4 sm:mt-24 border sm:border-2 rounded shadow-xl lg:min-h-screen mx-2 mb-10 my-4 ">
+        <div className="col-span-4 lg:col-span-1 flex justify-center">
+          <div className="flex flex-col justify-center items-center p-4 ">
+            <div className="flex flex-col justify-center items-center p-4">
+              <img src={imagen} alt="imagen" className="min-w-full mx-4" />
+            </div>
+          </div>
+        </div>
+        <div className="col-span-4 lg:col-span-3 lg:col-start-2 py-10">
+          <div className="flex flex-col justify-center items-center font-bold lg:text-5xl py-10 text-2xl sm:text-4xl">
+            <h1 className="border-b-2 pb-1 border-yellow-300 shadow-2xl">
+              {titulo}
+            </h1>
+          </div>
+          <div className="py-2 text-lg mx-2 px-2 sm:mx-10 lg:px-20">
+            <p>{p1}</p>
+          </div>
+          <div className="py-2 text-lg mx-2 px-2 sm:mx-10 lg:px-20">
+            <p>{p2}</p>
+          </div>
+          <div className="py-2 text-lg mx-2 px-2 sm:mx-10  lg:px-20">
+            <p>{p3}</p>
+          </div>
+          <div className="py-2 text-lg mx-2 px-2 sm:mx-10  lg:px-20">
+            <p>{p4}</p>
+          </div>
         </div>
       </div>
-      <span className='sm:col-start-2 sm:col-span-2 sm:row-span-1 text-center text-xl font-medium mt-4 order-1 lg:text-3xl lg:font-bold'>{titulo}</span>
-      
-      <p className='sm:col-span-2 order-3 my-2 lg:text-xl'>{p1}</p>
-      <p className='sm:col-span-2 order-4 my-2 lg:text-xl'>{p2}</p>
-      <p className='sm:col-start-2 sm:col-span-2 order-5 my-2 lg:text-xl'>{p3}</p>
-      <p className='sm:col-start-2 sm:col-span-2 order-6 my-2 lg:text-xl'>{p4}</p>
-        
-        {/* <div className='bg-orange-400 row-start-2 col-span-1 row-span-3'>IMAGEN</div>
-        <div className='bg-orange-400 col-start-2 col-span-2 row-span-1'>TITULO</div>
-        <div className='bg-orange-400 col-span-2 row-span-1'>P1</div>
-        <div className='bg-orange-400 col-span-2 row-span-1'>P2</div>
-        <div className='bg-orange-400 col-start-2 col-span-2 row-span-1'>P3</div>
-        <div className='bg-orange-400 col-start-2 col-span-2 row-span-1'>P4</div> */}
- 
-    </div> 
     </Fade>
-  )
+  );
 }
 
 export default FadevComp;
