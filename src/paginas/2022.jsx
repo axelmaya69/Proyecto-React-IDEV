@@ -103,8 +103,8 @@ function Veintidos() {
           }
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-4  lg:relative">
-        <div className="col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 lg:bg-slate-200 border sm:border-2 rounded shadow-xl lg:min-h-screen pb-8">
+      <div className="grid grid-cols-1 lg:grid-cols-4  lg:relative ">
+        <div className="col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 lg:bg-slate-200 border sm:border-2 rounded shadow-xl lg:min-h-screen pb-8 sm:mx-20 lg:mx-2">
           <Fade cascade={true} damping={0.1}>
             <div className="flex flex-col justify-center items-center text-white">
               <img
@@ -139,7 +139,7 @@ function Veintidos() {
             </div>
           </Fade>
         </div>
-        <div className="col-span-1 lg:col-start-2 lg:col-span-3 mx-2 ">
+        <div className="col-span-1 lg:col-start-2 lg:col-span-3 mx-2 border lg:border-2 rounded p-2 sm:p-4 mr-2 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
           <div className="py-2" id="invitados">
             <span className="font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-orange-400">
               Invitados

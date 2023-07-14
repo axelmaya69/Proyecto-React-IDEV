@@ -40,18 +40,25 @@ function Residencia() {
       </div>
 
       <div className="flex justify-center items-center align-center">
-        <div className="my-4">
+        <div className="my-10">
           <Fade cascade={true} duration={1500}>
-            <span className="font-bold text-xl sm:text-2xl lg:text-4xl border-b-2 py-2 border-red-400  ">
+            <span className="font-bold text-xl sm:text-2xl lg:text-4xl border-b-2 py-2 border-red-400  shadow-2xl">
               Residencia Profesional
             </span>
           </Fade>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 mx-2 lg:relative">
-        <div className="col-span-4 m-2 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 shadow-2xl bg-white my-10 border-2">
-          <div className="flex flex-col justify-center align-center items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-4 mx-2 lg:relative my-10">
+        <div className="col-span-4 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 lg:shadow-2xl bg-white lg:border-2">
+          <div className="flex flex-col justify-items-center m-4 lg:mt-0">
+            <img
+              src="http://www.itssmt.edu.mx/images/Imagen.png"
+              alt="residencia profesional"
+              className="mx-10 md:m-20 lg:m-0 lg:my-4 w-auto h-auto"
+            />
+          </div>
+          <div className="hidden lg:flex flex-col justify-center align-center items-center">
             <span className="font-bold px-4 py-3  ">Ir a:</span>
             <button
               className="lg:hover:scale-110 transition-all duration-400 lg:hover:font-semibold text-center items-center align-center justify-center w-32 lg:w-full  my-2 px-2 text-white rounded-full py-1  bg-green-700 shadow-2xl"
@@ -73,7 +80,7 @@ function Residencia() {
             </button>
           </div>
         </div>
-        <div className="col-span-1 lg:col-span-3 lg:col-start-2">
+        <div className="col-span-1 lg:col-span-3 lg:col-start-2 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
           <div className="mx-2 sm:mx-10  ">
             <h4 className="ml-2 font-bold my-4 text-lg  2xl:text-2xl">
               Acerca del trámite

@@ -70,7 +70,7 @@ function Veintitres() {
           }
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-4 my-5 lg:relative">
+      <div className="grid grid-cols-1 lg:grid-cols-4 my-5 lg:relative  sm:mx-20 lg:mx-10">
         <div className="col-span-1 lg:col-start-1 border border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32 ">
           <Fade cascade={true} damping={0.1}>
             <div className="flex flex-col justify-center items-center  ">

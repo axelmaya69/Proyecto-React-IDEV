@@ -43,19 +43,24 @@ function Fadev() {
         </div>
       </div>
       <div className="my-10 flex align-center justify-center">
-        <Fade cascade={true} duration={1500}>
-          <span className="font-bold text-6xl border-b-2 border-violet-400">
-            FADEV
-          </span>
-        </Fade>
+        <div className="my-10">
+          <Fade cascade={true} duration={1500}>
+            <span className="font-bold text-6xl border-b-2 border-violet-400 shadow-2xl">
+              FADEV
+            </span>
+          </Fade>
+        </div>
       </div>
       <div className="grid grid-cols-4 mx-2 my-2 lg:relative">
-        <div className="col-span-4 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 lg:shadow-2xl lg:bg-slate-100 lg:border-2 ">
-          <div className="flex flex-col justify-center align-center items-center my-10">
+        <div className="col-span-4 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 lg:shadow-2xl lg:bg-slate-100 lg:border-2 flex flex-col justify-items-center">
+          <div className="flex flex-col justify-items-center m-4 lg:mt-0">
             <img
               src="https://www.procine.cdmx.gob.mx/storage/app/uploads/public/644/fe2/954/644fe2954deea427920675.jpg"
               alt="animacion imagen"
+              className="mx-10 md:m-20 lg:m-0 lg:my-4 w-auto h-auto"
             />
+          </div>
+          <div className="hidden lg:flex flex-col justify-center align-center items-center my-10">
             <span className="font-bold px-4 py-3  ">Ir a:</span>
             <button
               className="lg:hover:scale-110 transition-all duration-400 lg:hover:font-semibold text-center items-center align-center justify-center w-32 lg:w-full  my-2 px-2 text-white rounded-full py-1  bg-green-700 shadow-2xl"
@@ -78,8 +83,8 @@ function Fadev() {
           </div>
         </div>
 
-        <div className=" col-span-4 lg:col-span-3 lg:col-start-2 mb-56">
-          <div className="border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-10">
+        <div className=" col-span-4 lg:col-span-3 lg:col-start-2 mb-56 min-h-screen sm:mx-20 lg:mx-10">
+          <div className="border sm:border-2 rounded p-2 sm:p-4 shadow-2xl bg-white mb-10 ">
             <h1 className="font-bold text-xl m-4">¿Qué es?</h1>
             <p className="mx-2 pb-8">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
@@ -101,7 +106,7 @@ function Fadev() {
               Voluptatibus, nemo sunt.
             </p>
             <h2 className="font-bold text-xl m-4">Por qué hacemos todo esto</h2>
-            <p className="mx-2 ">
+            <p className="mx-2 pb-10">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
               tenetur velit reiciendis cupiditate laudantium, incidunt amet
               ratione quas consequatur nihil dolorem dolor. Aliquid quidem
@@ -112,7 +117,7 @@ function Fadev() {
               Voluptatibus, nemo sunt.
             </p>
           </div>
-          <div className="flex justify-start items-start flex-col border sm:border-2 rounded p-2 sm:p-4  shadow-2xl min-h-screen bg-white  ">
+          <div className="flex justify-start items-start flex-col border sm:border-2 rounded p-2 sm:p-4 bg-white shadow-2xl ">
             <h3 className="mx-4 font-bold text-2xl my-4 justify-start">
               Nuestros Festivales:
             </h3>

@@ -36,19 +36,19 @@ function Home() {
       <div>
         <Menu />
         <div
-          className="relative  min-h-screen overflow-hidden bg-[url('https://uzink.es/wp-content/uploads/2022/05/%C2%BFQue-poner-en-un-banner-5-ejemplos-de-banner-para-inspirartebrastemp-ejemplo-de-banner-creativofedex-ejemplo-de-bannerbanner-volkswagenbanner-ejemplo-mcdonalds-nissan-ejemplos-de-banner-copia.jpg')] bg-cover  bg-no-repeat p-12 text-center"
-          style={{ height: "800px", backgroundPosition: "center center" }}
+          className="relative  min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover  bg-no-repeat p-12 text-center"
+          style={{ height: "600px", backgroundPosition: "start center" }}
         >
           <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed bg-black bg-opacity-60">
             <div className="flex h-full items-center justify-center">
               <div className="text-white">
                 <Slide direction="left">
-                  <h1 className="mb-4 text-6xl lg:text-[200px] font-bold">
+                  <h1 className="mb-4 text-6xl sm:text-[100px] lg:text-[200px] font-bold">
                     IADEV
                   </h1>
                 </Slide>
                 <Slide direction="up">
-                  <h2 className="mb-6 text-xl lg:text-6xl font-semibold  px-4">
+                  <h2 className="mb-6 text-xl sm:text-4xl lg:text-6xl font-semibold  px-4">
                     Lugar donde cohabitan las ideas
                   </h2>
                 </Slide>
@@ -68,15 +68,17 @@ function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-2 mx-2 lg:relative">
-        <div className="col-span-4 m-2 md:mx-20 lg:mx-0 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 lg:shadow-2xl lg:bg-slate-100 my-10 lg:border-2">
+      <div className="grid grid-cols-4 gap-2 my-10 mx-2 lg:relative">
+        <div className="col-span-4 lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded sm:px-4 lg:shadow-2xl lg:bg-slate-100 lg:border-2 flex flex-col justify-items-center">
           <Fade cascade={true} damping={0.3}>
-            <img
-              className="m-auto pt-5"
-              src="https://www.procine.cdmx.gob.mx/storage/app/uploads/public/644/fe2/954/644fe2954deea427920675.jpg"
-              alt="animacion imagen"
-            />
-            <div className="flex flex-col justify-center align-center items-center">
+            <div className="mt-20 flex flex-col justify-items-center m-4 lg:mt-0">
+              <img
+                className="m-10 md:m-20 lg:m-0 lg:my-4 w-auto h-auto"
+                src="https://www.procine.cdmx.gob.mx/storage/app/uploads/public/644/fe2/954/644fe2954deea427920675.jpg"
+                alt="animacion imagen"
+              />
+            </div>
+            <div className=" flex-col justify-center align-center items-center hidden lg:flex">
               <span className="font-bold px-4 py-3  ">Ir a:</span>
               <button
                 className="lg:hover:scale-110 transition-all duration-400 lg:hover:font-semibold text-center items-center align-center justify-center w-32 lg:w-full  my-2 px-2 text-white rounded-full py-1  bg-green-700 shadow-2xl"
@@ -100,7 +102,7 @@ function Home() {
           </Fade>
         </div>
 
-        <div className="col-span-4 lg:col-span-3 lg:col-start-2 mb-36 ">
+        <div className="col-span-4 lg:col-span-3 lg:col-start-2 rounded  min-h-screen bg-white mb-36">
           <Fade cascade={true} damping={0.5}>
             <div id="p1">
               <ArticleLeft

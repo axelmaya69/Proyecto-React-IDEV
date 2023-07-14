@@ -30,9 +30,9 @@ export default function Header() {
           aria-label="desplegar/cerrar menu"
         >
           {isOpen ? (
-            <FaTimes className="text-xl mr-1" />
+            <FaTimes className="text-xl mr-1 sm:text-2xl" />
           ) : (
-            <FaBars className="text-xl mr-1" />
+            <FaBars className="text-xl mr-1 sm:text-2xl" />
           )}
         </button>
 
@@ -45,11 +45,11 @@ export default function Header() {
           leaveFrom="opacity-100 transform translate-x-0"
           leaveTo="opacity-0 transform translate-x-5"
         >
-          <div className="fixed top-0 right-2 bottom-0 z-50 w-28">
-            <div className="py-4 ">
+          <div className="fixed top-0 right-2 sm:right-3 bottom-0 sm:top-2 z-50 w-28 sm:w-56 md:w-72">
+            <div className="py-4">
               {isOpen && (
                 <>
-                  <div className="z-50">
+                  <div className="z-50 sm:mt-3">
                     <ListaDesplegable
                       titulo={"Principal"}
                       sublistas={[

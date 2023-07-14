@@ -63,7 +63,7 @@ function Veintiuno() {
       </div>
 
       <Slide direction="left">
-        <div className="mb-10 ">
+        <div>
           <FadevComp
             titulo={"FADEV - 2021"}
             imagen={
@@ -83,8 +83,8 @@ function Veintiuno() {
         </div>
       </Slide>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4  lg:relative">
-        <div className="col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 roundedborder sm:border-2 rounded p-2 sm:p-4 shadow-2xl lg:min-h-screen bg-slate-100">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-20 lg:gap-0 lg:relative ">
+        <div className="col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 roundedborder sm:border-2 rounded p-2 sm:p-4 shadow-2xl lg:min-h-screen bg-slate-100 sm:mx-20 lg:mx-2">
           <Fade cascade={true}>
             <div className="flex flex-col justify-center items-center text-white text-2xl ">
               <img
@@ -123,7 +123,7 @@ function Veintiuno() {
           </Fade>
         </div>
 
-        <div className="col-span-1 lg:col-start-2 lg:col-span-3 lg:mb-52">
+        <div className="col-span-1 lg:col-start-2 lg:col-span-3 lg:mb-56 border lg:border-2 rounded  shadow-2xl min-h-screen bg-white sm:mx-20 lg:mx-10 mx-2 ">
           <div className="my-6" id="invitados">
             <span className="font-bold text-xl mx-2 xl:mx-10 xl:text-3xl py-1 px-2 border-b-2 border-orange-400">
               Invitados

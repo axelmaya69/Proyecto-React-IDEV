@@ -42,36 +42,23 @@ function Alumnos() {
       <div className="flex justify-center items-center align-center">
         <div className="my-4">
           <Fade cascade={true} duration={1500}>
-            <span className="font-bold text-xl sm:text-2xl lg:text-4xl border-b-2 py-2 border-red-400  ">
+            <span className="font-bold text-xl sm:text-2xl lg:text-4xl border-b-2 py-2 border-red-400  shadow-2xl">
               Alumnos
             </span>
           </Fade>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-4 my-4  mx-2 lg:relative">
-        <div className="mx-2 lg:col-start-1 lg:col-span-1 border-blue-500 lg:sticky lg:top-0 lg:left-0  lg:bottom-0 lg:max-h-screen lg:mb-56 bg-white border sm:border-2 rounded p-2 sm:p-4 shadow-2xl">
-          <img
-            className="lg:mt-1"
-            src="https://media.istockphoto.com/id/1002859060/es/foto/todo-en-el-camino-de-un-futuro-mejor.jpg?s=612x612&w=0&k=20&c=6tTsHzS_mtvFFtDrBfDxfz7I9pLTJfAFEaaTRl_46_o="
-            alt="almnos"
-          />
-          {/* <div className="flex flex-wrap justify-center items-center lg:w-full sm:my-10 ">
-            <div className="lg:w-full">
-              <button
-                className="bg-teal-300 font-semibold lg:hover:scale-110  transition duration-150  px-3 py-2 rounded lg:rounded-none my-4 lg:my-0 text-white shadow-lg  w-full border-b border-white"
-                onClick={() => (window.location.href = "#titulouno")}
-              >
-                Titulo 1
-              </button>
-              <button
-                className="bg-violet-700 font-semibold lg:hover:scale-110  transition duration-150  px-3 py-2 rounded lg:rounded-none text-white shadow-2xl w-full border-b border-white "
-                onClick={() => (window.location.href = "#titulodos")}
-              >
-                Titulo 2
-              </button>
-            </div>
-          </div> */}
-          <div className="flex flex-col justify-center align-center items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-4 my-10  mx-2 lg:relative">
+        <div className="mx-2 lg:col-start-1 lg:col-span-1 lg:sticky lg:top-0 lg:left-0  lg:bottom-0 lg:max-h-screen lg:mb-56 bg-white lg:border-2 rounded p-2 sm:p-4 lg:shadow-2xl py-10 lg:py-0">
+          <div className="flex flex-col justify-center items-center my-10 lg:my-4">
+            <img
+              className="lg:mt-1"
+              src="https://media.istockphoto.com/id/1002859060/es/foto/todo-en-el-camino-de-un-futuro-mejor.jpg?s=612x612&w=0&k=20&c=6tTsHzS_mtvFFtDrBfDxfz7I9pLTJfAFEaaTRl_46_o="
+              alt="almnos"
+            />
+          </div>
+
+          <div className="lg:flex hidden flex-col justify-center align-center items-center">
             <span className="font-bold px-4 py-3  ">Ir a:</span>
             <button
               className="lg:hover:scale-110 transition-all duration-400 lg:hover:font-semibold text-center items-center align-center justify-center w-32 lg:w-full  my-2 px-2 text-white rounded-full py-1  bg-green-700 shadow-2xl"
@@ -94,7 +81,7 @@ function Alumnos() {
           </div>
         </div>
 
-        <div className=" mx-2 lg:col-start-2 lg:col-span-3 lg:row-start-1 lg:mx-10">
+        <div className=" mx-2 lg:col-start-2 lg:col-span-3 lg:row-start-1 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56  sm:mx-20 lg:mx-10">
           <h1 className="font-bold text-xl my-4" id="titulouno">
             Titulo 1
           </h1>

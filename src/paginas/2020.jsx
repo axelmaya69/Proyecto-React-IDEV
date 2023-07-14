@@ -40,7 +40,7 @@ function Veinte() {
         </div>
       </div>
 
-      <div className="mb-10 mx-2 sm:mx-10 lg:mx-20 ">
+      <div className="mb-10  ">
         <FadevComp
           titulo={"FADEV - 2020"}
           imagen={

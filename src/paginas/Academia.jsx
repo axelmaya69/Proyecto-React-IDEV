@@ -69,8 +69,8 @@ function Academia() {
         </div>
       </div>
 
-      <div className="2xl:mx-40 mx-2">
-        <div className="flex flex-col items-center justify-center border sm:border-2 rounded p-2 sm:p-4 shadow-2xl my-4 mx-2">
+      <div className="2xl:mx-40 ">
+        <div className="flex flex-col items-center justify-center border sm:border-2 rounded p-2 sm:p-4 shadow-2xl my-4 mx-2 ">
           <Fade cascade={true} damping={0.5}>
             <h1 className="p-5 text-3xl md:text-5xl font-bold lg:text-8xl lg:py-16">
               IADEV
@@ -81,8 +81,8 @@ function Academia() {
           </Fade>
         </div>
 
-        <div className="grid grid-cols-4 gap-4 my-10 mx-2 lg:relative">
-          <div className="col-span-4 lg:col-span-1 col-start-1 px-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 lg:bg-slate-100 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl lg:min-h-screen">
+        <div className="grid grid-cols-4 gap-4 sm:mx-5 my-10 mx-2 lg:relative min-h-screen">
+          <div className="col-span-4 lg:col-span-1 sm:mx-20 lg:mx-2 col-start-1 px-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 lg:bg-slate-100 lg:border-2 rounded p-2 sm:p-4 lg:shadow-2xl ">
             <img className="flex max-w-full" src={MiImagen} alt="tesjo" />
             <Fade cascade={true}>
               <p className="px-2 py-2 my-10 font-semibold">
@@ -114,8 +114,8 @@ function Academia() {
               </button>
             </div>
           </div>
-          <div className="col-span-4 lg:col-span-3 lg:col-start-2 lg:mx-10 bg-white lg:px-4 lg:mb-56">
-            <div className="border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen">
+          <div className="col-span-4 lg:col-span-3 lg:col-start-2 bg-white lg:px-4 lg:mb-56 sm:mx-20 lg:mx-10">
+            <div className="border sm:border-2 rounded p-2 sm:p-4 shadow-2xl  ">
               <Fade cascade={true}>
                 <AcademiaCard
                   titulo={"Objetivo General"}
@@ -131,7 +131,7 @@ function Academia() {
                 </Fade>
               </div>
             </div>
-            <div className="mt-10 py-2 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen">
+            <div className="mt-10 py-2 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl ">
               <Fade cascade={true}>
                 <span className=" font-bold text-xl py-2 ">
                   Perfil de Egreso
@@ -140,7 +140,7 @@ function Academia() {
                 <OrderList items={perfilEgreso} />
               </Fade>
             </div>
-            <div className="border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen mt-10">
+            <div className="border sm:border-2 rounded p-2 sm:p-4 shadow-2xl  mt-10">
               <Fade cascade={true}>
                 <span className=" font-bold text-xl py-2">Campo Laboral</span>
                 <p className="p-2 ">
@@ -189,7 +189,7 @@ function Academia() {
                 </p>
               </Fade>
             </div>
-            <div className=" border sm:border-2 rounded p-2 sm:p-4 shadow-2xl lg:min-h-screen mt-10">
+            <div className=" border sm:border-2 rounded p-2 sm:p-4 shadow-2xl mt-10">
               <h6 className="py-3">
                 <a
                   href={Reticula}
