@@ -46,20 +46,20 @@ function Footer() {
             </a>
           </li>
           <li className="sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400 2xl:text-3xl">
-            <a href="" target="_blank">
+            <a href="https://www.instagram.com/tesjoanimacion/" target="_blank">
               {/* ENLACE A PAGINA DE  INSTAGRAM */}
               Instagram
               <CiInstagram size={32} className="ml-6 sm:ml-6 2xl:ml-16" />
             </a>
           </li>
           <li className="sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400 2xl:text-3xl ">
-            <a href="" target="_blank">
+            <a href="https://www.youtube.com/@FESTIVALFADEV" target="_blank">
               {/* ENLACE A PAGINA DE  YOUTUBE */}
               YouTube <CiYoutube size={32} className="ml-4 sm:ml-6 2xl:ml-10" />
             </a>
           </li>
           <li className="sm:w-auto sm:text-xl sm:hover:scale-125 transition-all duration-400 2xl:text-3xl ">
-            <a href="" target="_blank">
+            <a href="https://www.tiktok.com/@festival_fadev" target="_blank">
               {/* ENLACE A PAGINA DE TIK TOK */}
               TikTok <FaTiktok size={32} className="ml-4 " />
             </a>
