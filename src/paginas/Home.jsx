@@ -27,7 +27,7 @@ function Home() {
 
   return (
     // <div
-    //   className="bg-fill bg-center"
+    //   className="bg-fill bg-center sticky"
     //   style={{
     //     backgroundImage: `url(${festival})`,
     //   }}
@@ -37,7 +37,7 @@ function Home() {
         <Menu />
         <div
           className="relative  min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover  bg-no-repeat p-12 text-center"
-          style={{ height: "600px", backgroundPosition: "start center" }}
+          style={{ height: "900px", backgroundPosition: "start center" }}
         >
           <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed bg-black bg-opacity-60">
             <div className="flex h-full items-center justify-center">
@@ -102,7 +102,7 @@ function Home() {
           </Fade>
         </div>
 
-        <div className="col-span-4 lg:col-span-3 lg:col-start-2 rounded  min-h-screen bg-white mb-36">
+        <div className="col-span-4 lg:col-span-3 lg:col-start-2 rounded  min-h-screen  mb-36">
           <Fade cascade={true} damping={0.5}>
             <div id="p1">
               <ArticleLeft

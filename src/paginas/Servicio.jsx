@@ -82,7 +82,7 @@ function Servicio() {
         </div>
 
         <div className="col-span-1 lg:col-span-3 lg:col-start-2 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
-          <div className="mx-2  ">
+          <div>
             <h4 className="ml-2 font-bold my-4 text-lg">Acerca del trámite</h4>
 
             <span className="ml-2 font-bold my-2">Descripción:</span>

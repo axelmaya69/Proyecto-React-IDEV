@@ -4,6 +4,9 @@ import { Fade } from "react-awesome-reveal";
 function FadevComp({ imagen, titulo, p1, p2, p3, p4 }) {
   return (
     <Fade>
+      {/* ESTE COMPONENTE SIRVE PARA MOSTRAR INFORMACION DEL FADEV.
+      ES USADO EN TODOS, DESDE 2020 HASTA 2023
+      */}
       <div className="grid grid-cols-1 lg:grid-cols-4 sm:mt-24 border sm:border-2 rounded shadow-xl lg:min-h-screen mx-2 mb-10 my-4 sm:mx-20 lg:mx-10">
         <div className="col-span-4 lg:col-span-1 flex justify-center">
           <div className="flex flex-col justify-center items-center p-4 ">

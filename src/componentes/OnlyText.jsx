@@ -1,6 +1,10 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 
+// ESTE ES UN COMPONENTE QUE TIENE 2 PROPIEDADES,
+// COMO SU NOMBRE LO INDICA, TIENE UN TITULO Y UN TEXTO
+// SIRVE PARA MOSTRAR UN TEXTO UNICAMENTE
+
 function OnlyText({ title, text }) {
   return (
     <div className="border sm:border-2 rounded p-2 my-10 sm:p-4 shadow-2xl lg:mx-10 md:mx-20 lg:pt-10 lg:pb-20 py-10 bg-white ">

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 function DestacadosCard({ videos }) {
+  // COMPONENTE PARA MOSTRAR VIDEOS IMPORTADOS DE LINKS DE FACEBOOK
+  // PARA MOSTRAR A LOS ALUMNOS DESTACADOS
   const [selectedVideoIndex, setSelectedVideoIndex] = useState(0);
   const [isMobileView, setIsMobileView] = useState(false);
   const handleVideoClick = (index) => {
@@ -17,6 +19,8 @@ function DestacadosCard({ videos }) {
     };
   }, []);
   return (
+    // SE HACE USO DE GRID PARA DIVIDIR LOS VIDEOS DE ACUERDO
+    // CON EL TAMAÑO DE PANTALLA
     <div
       className={`grid ${
         isMobileView ? "grid-cols-1" : "grid-cols-2"
@@ -31,6 +35,7 @@ function DestacadosCard({ videos }) {
           onClick={() => handleVideoClick(index)}
         >
           <div className="aspect-video">
+            {/* SE CONFIGURAN ALGUNOS ASPECTOS DEL VIDEO */}
             <iframe
               className="w-full h-full"
               src={video.embedUrl}
@@ -40,6 +45,7 @@ function DestacadosCard({ videos }) {
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
             />
           </div>
+          {/* ESTE <p> ES DEL TTULO QUE LLEVARÁ EL VIDEO */}
           <p className="pt-2 font-bold text-center border-b-2 border-yellow-400 sm:border-orange-500 ">
             {video.descripcion}
           </p>

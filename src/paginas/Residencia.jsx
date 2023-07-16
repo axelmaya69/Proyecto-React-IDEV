@@ -53,7 +53,7 @@ function Residencia() {
         <div className="col-span-4 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 lg:shadow-2xl bg-white lg:border-2">
           <div className="flex flex-col justify-items-center m-4 lg:mt-0">
             <img
-              src="http://www.itssmt.edu.mx/images/Imagen.png"
+              src="https://queretaro.tecnm.mx/wp-content/uploads/2022/11/residencias-pro-1024x934.png"
               alt="residencia profesional"
               className="mx-10 md:m-20 lg:m-0 lg:my-4 w-auto h-auto"
             />
@@ -81,7 +81,7 @@ function Residencia() {
           </div>
         </div>
         <div className="col-span-1 lg:col-span-3 lg:col-start-2 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
-          <div className="mx-2 sm:mx-10  ">
+          <div className="sm:mx-10  ">
             <h4 className="ml-2 font-bold my-4 text-lg  2xl:text-2xl">
               Acerca del trámite
             </h4>

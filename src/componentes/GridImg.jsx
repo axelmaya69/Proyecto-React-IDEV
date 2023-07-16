@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { GrNext, GrPrevious } from "react-icons/gr";
 
+// ESTE COMPONENTE SIRVE PARA MOSTRAR IMAGENES EN 2 COLUMNAS EN
+// TAMAÑOS GRANDES Y QUE AL DARLES CLIC
+// SE ABRAN AL 100%, ES USADO EN EL FADEV 2022 Y PARTE DEL 2021
+
 function GridImg({ images }) {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);

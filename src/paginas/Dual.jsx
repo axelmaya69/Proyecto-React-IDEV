@@ -80,7 +80,7 @@ function Dual() {
           </div>
         </div>
 
-        <div className="col-span-2 mx-2 sm:col-span-3 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
+        <div className="col-span-2 sm:col-span-3 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
           <h1 className="font-bold text-xl">¿En qué consiste?</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur

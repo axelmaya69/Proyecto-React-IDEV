@@ -1,6 +1,9 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 
+// ESTE ES UN COMPONENTE PARA MOSTRAR
+// UNA LISTA CON NUMEROS, SE USA EN LA PAGINA DE ACADEMIA
+
 function OrderList({ items }) {
   return (
     <div className="py-4">

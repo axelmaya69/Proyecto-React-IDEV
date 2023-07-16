@@ -77,7 +77,7 @@ function Preguntas() {
             </button>
           </div>
         </div>
-        <div className="col-span-4 lg:col-span-3 lg:col-start-2 mx-2  border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
+        <div className="col-span-4 lg:col-span-3 lg:col-start-2 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
           <PreguntasFrec
             pregunta={
               "Pregunta uno... Similique numquam a officiis maxime eligendi. Sint ullam aspernatur odio sequi nam non rem saepe vel odit fuga eligendi, minus inventore suscipit!"

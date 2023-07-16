@@ -59,27 +59,29 @@ function Docentes() {
             imagen={
               "https://www.wikihow.com/images/6/68/Link-Within-a-Page-Using-HTML-Step-8.jpg"
             }
-            nombre={"Axel Daniel Bartolo Maya"}
-            grado={"Ingeniero en Sistemas"}
+            nombre={"ALFREDO BARRAGAN MOLINA"}
+            grado={"MAESTRIA EN DISEÑO DE MULTIMEDIA "}
             texto={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorem, ea quod alias et vel blanditiis soluta. Reprehenderit quod, exercitationem fugiat, perspiciatis omnis commodi dolores mollitia laborum sapiente rerum quis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, aliquid repellat, velit necessitatibus maxime iusto, fuga dolores expedita adipisci laborum cumque dolorem perspiciatis minus fugit? Exercitationem culpa omnis accusantium dolorum!"
+              "CEDULA EN TRAMITE SUPERIOR. TECNOLÓGICO DE ESTUDIOS SUPERIORES DE ECATEPEC LICENCIATURA EN “INGENIERÍA EN SISTEMAS COMPUTACIONALES” CEDULA: 4671236."
             }
-            enlace={"https://www.facebook.com/"}
-            red={"Facebook"}
+            enlace={"https://www.linkedin.com/in/alfredo-barragan-b4b964164"}
+            red={"LinkedIn"}
           />
         </div>
         <div className="flex">
           <DocentesCard
             imagen={
-              "https://concepto.de/wp-content/uploads/2018/08/persona-e1533759204552.jpg"
+              // "https://concepto.de/wp-content/uploads/2018/08/persona-e1533759204552.jpg"
+              "Imagen del docente"
             }
-            nombre={"Julio César Chávez"}
-            grado={"Ingeniero en Animación Digital"}
+            nombre={"Nombre del Docente:"}
+            grado={"Grado actual que presenta:"}
             texto={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorem, ea quod alias et vel blanditiis soluta. Reprehenderitatibus maxime iusto, fuga dolores expedita adipisci laborum cumque dolorem perspiciatis minus fugit? Exercitationem culpa omnis accusantium dolorum!"
+              "Biografía corta o similar:"
+              // "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorem, ea quod alias et vel blanditiis soluta. Reprehenderitatibus maxime iusto, fuga dolores expedita adipisci laborum cumque dolorem perspiciatis minus fugit? Exercitationem culpa omnis accusantium dolorum!"
             }
-            enlace={"https://www.facebook.com/"}
-            red={"LinkedIn"}
+            enlace={""}
+            red={"Enlace a alguna red social pública"}
           />
         </div>
       </div>

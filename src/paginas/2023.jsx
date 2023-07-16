@@ -5,6 +5,8 @@ import { Slide, Fade } from "react-awesome-reveal";
 import FadevComp from "../componentes/FadevComp";
 import GridImg from "../componentes/GridImg";
 
+// PAGINA DEL FADEV-2023
+
 function Veintitres() {
   useEffect(() => {
     document.title = "FADEV - 2023"; // Cambia 'Nuevo título de la página' por el título deseado
@@ -13,8 +15,8 @@ function Veintitres() {
   const images = [
     "https://iadevtesjo.files.wordpress.com/2021/06/nuria_tovar_mireles.png?w=1024",
     "https://iadevtesjo.files.wordpress.com/2021/06/alberto_ramos-1.png?w=1024",
-    "https://iadevtesjo.files.wordpress.com/2021/06/abimael_gonzalez.png?w=1024", //Arreglo de imágenes para el Slider:
-    "https://iadevtesjo.files.wordpress.com/2021/06/casa_anafre.png?w=1024",
+    "https://iadevtesjo.files.wordpress.com/2021/06/abimael_gonzalez.png?w=1024", //Arreglo de imágenes para el
+    "https://iadevtesjo.files.wordpress.com/2021/06/casa_anafre.png?w=1024", //COMPONENTE GRIDIMG
     "https://iadevtesjo.files.wordpress.com/2021/06/osvaldo_pasillas_bernal.png?w=1024",
     "https://iadevtesjo.files.wordpress.com/2021/06/carolina_rubi_garcia_sanchez_armass.png?w=1024",
   ];
@@ -27,6 +29,7 @@ function Veintitres() {
 
       <div>
         <div
+          // IMAGEN CON TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -51,6 +54,8 @@ function Veintitres() {
         </div>
       </div>
       <div className="mb-10 ">
+        {/* IMPORTACION DE COMPONENTE FADEVCOMP Y 
+        ASIGNACION DE PROPIEDADES */}
         <FadevComp
           titulo={"FADEV - 2023"}
           imagen={
@@ -70,7 +75,9 @@ function Veintitres() {
           }
         />
       </div>
+      {/* GRID PARA ASIDE Y ARTICLE */}
       <div className="grid grid-cols-1 lg:grid-cols-4 my-5 lg:relative  sm:mx-20 lg:mx-10">
+        {/* INICIA ASIDE */}
         <div className="col-span-1 lg:col-start-1 border border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32 ">
           <Fade cascade={true} damping={0.1}>
             <div className="flex flex-col justify-center items-center  ">
@@ -100,9 +107,13 @@ function Veintitres() {
               </button>
             </div>
           </Fade>
+          {/* TERMINA ASIDE */}
         </div>
+        {/* INICIA ARTICLE */}
         <div className="col-span-1 lg:col-start-2 lg:col-span-3 mx-2">
+          {/* INICIA SECCION INVITADOS */}
           <div id="invitados">
+            {/* MUESTRA A LOS INVITADOS */}
             <GridImg images={images} />
           </div>
           <div className="bg-red-400" id="programa">
@@ -118,6 +129,7 @@ function Veintitres() {
       </div>
 
       <footer>
+        {/* IMPORTACION DE COMPONENTE FOOTER */}
         <Footer />
       </footer>
     </div>

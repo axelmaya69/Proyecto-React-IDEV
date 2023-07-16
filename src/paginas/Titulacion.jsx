@@ -74,9 +74,9 @@ function Titulacion() {
             </button>
           </div>
         </div>
-        <div className="col-span-4 mx-2 lg:col-span-3 lg:col-start-2  border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
-          <h1 className="font-bold text-xl">¿Qué es?</h1>
-          <p>
+        <div className="col-span-4 lg:col-span-3 lg:col-start-2  border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
+          <h1 className="font-bold text-xl px-2">¿Qué es?</h1>
+          <p className="px-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
             iure sint at fugiat pariatur enim, voluptatibus saepe provident
             quisquam sed unde, ipsum, tempora voluptatum facilis? Doloremque
@@ -91,7 +91,7 @@ function Titulacion() {
             officiis, quia numquam eum. Quas accusamus neque atque rerum iste
             error vel!
           </p>
-          <p className="mt-4">
+          <p className="mt-4 px-2">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
             non excepturi voluptatum ipsa corrupti neque odit, nihil totam aut
             iure magnam, sed, incidunt tempora similique error quia enim nostrum
@@ -101,10 +101,10 @@ function Titulacion() {
             voluptatem officia sit, asperiores alias facilis?
           </p>
 
-          <h2 className="font-bold text-xl my-4">
+          <h2 className="font-bold text-xl my-4 px-2">
             ¿Cuáles son los requisitos?
           </h2>
-          <p>
+          <p className="px-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
             iure sint at fugiat pariatur enim, voluptatibus saepe provident
             quisquam sed unde, ipsum, tempora voluptatum facilis? Doloremque
@@ -119,8 +119,8 @@ function Titulacion() {
             officiis, quia numquam eum. Quas accusamus neque atque rerum iste
             error vel!
           </p>
-          <h3 className="font-bold text-xl my-4">Finalmente</h3>
-          <p>
+          <h3 className="font-bold text-xl my-4 px-2">Finalmente</h3>
+          <p className="px-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
             iure sint at fugiat pariatur enim, voluptatibus saepe provident
             quisquam sed unde, ipsum, tempora voluptatum facilis? Doloremque

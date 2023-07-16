@@ -177,7 +177,7 @@ function Fadev() {
                   className="bg-gradient-to-r from-red-700 to-blue-600 shadow-2xl my-10 mx-2 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded w-4/5 h-4/5 cursor-pointer border sm:border-2 border-black p-2 sm:p-4 lg:border-none"
                   onClick={() => alert("En Planeación... \n  ;)")}
                 >
-                  <span className="my-3 border-b-2 border-green-600">
+                  <span className="my-3 border-b-2 border-green-600 text-sm sm:text-lg">
                     #RoadToFADEV-2024
                   </span>
                   <img

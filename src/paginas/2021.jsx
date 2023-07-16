@@ -5,15 +5,14 @@ import FadevComp from "../componentes/FadevComp";
 import InvitadosCard from "../componentes/InvitadosCard";
 import ArtStation from "../botones/ArtStation";
 import Behance from "../botones/Behance";
-import Facebook from "../botones/Facebook";
-import Instagram from "../botones/Instagram";
+import Facebook from "../botones/Facebook"; //SE IMPORTAN LOS BOTONES A LAS REDES
+import Instagram from "../botones/Instagram"; //SOCIALES
 import LinkedIn from "../botones/LinkedIn";
 import WebSite from "../botones/WebSite";
 import YouTube from "../botones/YouTube";
 import Teams from "../botones/Teams";
 import { Fade, Slide } from "react-awesome-reveal";
 import GridImg from "../componentes/GridImg";
-import DestacadosCard from "../componentes/DestacadosCard";
 
 function Veintiuno() {
   useEffect(() => {
@@ -22,9 +21,9 @@ function Veintiuno() {
 
   const images = [
     "https://iadevtesjo.files.wordpress.com/2021/06/nuria_tovar_mireles.png?w=1024",
-    "https://iadevtesjo.files.wordpress.com/2021/06/alberto_ramos-1.png?w=1024",
-    "https://iadevtesjo.files.wordpress.com/2021/06/abimael_gonzalez.png?w=1024",
-    "https://iadevtesjo.files.wordpress.com/2021/06/casa_anafre.png?w=1024",
+    "https://iadevtesjo.files.wordpress.com/2021/06/alberto_ramos-1.png?w=1024", // SE IMPORTA UN ARREGLO DE
+    "https://iadevtesjo.files.wordpress.com/2021/06/abimael_gonzalez.png?w=1024", //IMAGENES PARA EL COMPONENTE
+    "https://iadevtesjo.files.wordpress.com/2021/06/casa_anafre.png?w=1024", //<GRIDIMG>
     "https://iadevtesjo.files.wordpress.com/2021/06/osvaldo_pasillas_bernal.png?w=1024",
     "https://iadevtesjo.files.wordpress.com/2021/06/roxanne_soledad_escutia_gonzalez.png?w=1024",
     "https://iadevtesjo.files.wordpress.com/2021/06/carolina_rubi_garcia_sanchez_armass.png?w=1024",
@@ -33,11 +32,13 @@ function Veintiuno() {
   return (
     <div>
       <header>
+        {/* SE IMPORTA EL MENU RESPONSIVE */}
         <Menu />
       </header>
 
       <div>
         <div
+          // BANNER CON IMAGEN Y TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -64,6 +65,7 @@ function Veintiuno() {
 
       <Slide direction="left">
         <div>
+          {/* IMPORTACION DEL COMPONENTE <FadevComp> Y SE LE PASAN LAS PROPIEDADES*/}
           <FadevComp
             titulo={"FADEV - 2021"}
             imagen={
@@ -82,8 +84,9 @@ function Veintiuno() {
           />
         </div>
       </Slide>
-
+      {/* GRID PARA HACER QUE LA PAGINA SE VEA CON UN ASIDE Y ARTICLE */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-20 lg:gap-0 lg:relative ">
+        {/* AQUI INICIA LA PARTE DEL ASIDE */}
         <div className="col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 roundedborder sm:border-2 rounded p-2 sm:p-4 shadow-2xl lg:min-h-screen bg-slate-100 sm:mx-20 lg:mx-2">
           <Fade cascade={true}>
             <div className="flex flex-col justify-center items-center text-white text-2xl ">
@@ -121,18 +124,24 @@ function Veintiuno() {
               </div>
             </div>
           </Fade>
+          {/* TERMINA EL ASIDE */}
         </div>
-
+        {/* INCIA LA OTRA PARTE DEL GRID 
+            QUE SIRVE COMO ARTICLE */}
         <div className="col-span-1 lg:col-start-2 lg:col-span-3 lg:mb-56 border lg:border-2 rounded  shadow-2xl min-h-screen bg-white sm:mx-20 lg:mx-10 mx-2 ">
           <div className="my-6" id="invitados">
             <span className="font-bold text-xl mx-2 xl:mx-10 xl:text-3xl py-1 px-2 border-b-2 border-orange-400">
               Invitados
             </span>
+            {/* SE IMPORTA AL COMPONENTE INVITADOS CARD Y SE LE PASA EL LINK DE LAS IMAGENES DE
+            INVITADOS Y DEMAS */}
             <InvitadosCard
               imagen={
                 "https://iadevtesjo.files.wordpress.com/2021/06/ficha_fadev_abimael-3.png?w=1024"
               }
             />
+            {/* DIVS PARA MOSTRAR LAS
+             REDES SOCIALES DEL INVITADO */}
             <div className="flex flex-wrap justify-center pb-4 xl:pb-10">
               <LinkedIn
                 link={"https://www.linkedin.com/in/abimael-gonzalez-42a00697/"}
@@ -202,7 +211,8 @@ function Veintiuno() {
               }
             />
           </div>
-
+          {/* INCIA EL APARTADO 
+          DE "PROGRAMA" */}
           <div id="programa" className="my-6">
             <span className="font-bold text-xl mx-2 xl:mx-10 xl:text-3xl py-1 px-2 border-b-2 border-blue-400">
               Programa
@@ -215,6 +225,8 @@ function Veintiuno() {
               />
             </div>
           </div>
+          {/* APARTADO DE 
+          CONFERENCIAS */}
           <div id="conferencias" className="mt-6">
             <span className="font-bold text-xl mx-2 xl:mx-10 xl:text-3xl py-1 px-2 border-b-2 border-green-400">
               Conferencias
@@ -225,9 +237,13 @@ function Veintiuno() {
               más la sesión de Q&A a los ponentes, posterior a la transmisión
               del video se subirá la grabación a esta plataforma.
             </p>
-
+            {/* APARTADO DE CONFERENCIAS, USANDO EL COMPONENTE GRIDIMG
+            RECIBE LAS IMAGENES DECLARADAS AL INICIO EN IMAGES
+             */}
             <GridImg images={images} />
           </div>
+          {/* INICIA EL 
+          APARTADO DE TALLERES */}
           <div id="talleres" className="mt-6">
             <span className="font-bold text-xl mx-2 xl:mx-10 xl:text-3xl px-2 border-b-2 border-violet-400">
               Talleres
@@ -269,6 +285,7 @@ function Veintiuno() {
         </div>
       </div>
       <footer>
+        {/* IMPORTACION DE COMPONENTE FOOTER */}
         <Footer />
       </footer>
     </div>

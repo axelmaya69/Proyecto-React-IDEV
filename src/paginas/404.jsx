@@ -1,6 +1,8 @@
 import React from "react";
-import { JackInTheBox, Roll, Rotate, Zoom } from "react-awesome-reveal";
-import { Link } from "react-router-dom";
+import { Zoom } from "react-awesome-reveal";
+
+// ESTA ES UNA PAGINA DE <404> QUE APARECERA CUANDO SE ACCEDA A UN LINK
+// NO CONOCIDO DENTRO DEL SITIO
 
 function Error() {
   return (

@@ -1,15 +1,13 @@
-import React from 'react';
+import React from "react";
 
-function Italica({italica}){
-    return(
-    <span className='italic'>{italica}</span>
-    );
+// COMPONENTE PARA CAMBIARLES LA FUENTE A
+// LAS IMAGENES, YA SEA EN BOLD O ITALICA
+
+function Italica({ italica }) {
+  return <span className="italic">{italica}</span>;
 }
 export default Italica;
 
-export function Negrita({negrita}){
-    return(
-    <span className='font-bold'>{negrita}</span>
-    );
+export function Negrita({ negrita }) {
+  return <span className="font-bold">{negrita}</span>;
 }
-

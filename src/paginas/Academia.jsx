@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Menu from "../elementos/Menu";
-import Footer from "../elementos/Footer";
+import Footer from "../elementos/Footer"; //IMPORTACION DE IMAGENES Y COMPONENTES
 import MiImagen from "../imagenes/portada_web.jpg";
 import AcademiaCard from "../componentes/AcademiaCard";
 import OrderList from "../componentes/OrderList";
@@ -12,6 +12,7 @@ function Academia() {
   useEffect(() => {
     document.title = "IADEV - Academia"; // Cambia 'Nuevo título de la página' por el título deseado
   }, []);
+  // ARREGLO DE TEXTO PARA COLOCARLO EN EL COMPONENTE DE LISTA ORDENADA
   const items = [
     "Los egresados y las egresadas serán capaces de comprender y adaptar los Recursos Tecnológicos vigentes en la industria de la Animación Digital y Efectos Visuales dentro del sector público y privado, para satisfacer las necesidades con un sentido creativo e innovador.",
     "Los egresados y las egresadas serán capaces de planear, crear, desarrollar e implementar proyectos digitales, artísticos y tecnológicos, con liderazgo y ética profesional, a través del emprendimiento o en proyectos empresariales en el sector público o privado.",
@@ -19,6 +20,7 @@ function Academia() {
     "Los egresados y las egresadas tendrán la capacidad de gestionar, administrar, dirigir y supervisar proyectos audiovisuales con visión humanística, ética, respetando la propiedad intelectual con un sentido sustentable y global.",
     "Los egresados y las egresadas, conscientes de los cambios tecnológicos, se actualizan de manera constante e independiente en el uso de tecnologías emergentes, aplicadas a la industria de la animación, el entretenimiento y la comunicación social para el desarrollo innovador de proyectos.",
   ];
+  // ARREGLO 2 PARA LISTA ORDENADA
   const perfilEgreso = [
     "Crea gráficas computacionales de calidad utilizando software especializado.",
     "Implementa técnicas y procesos de producción de actualidad en las industrias de la animación digital y los efectos visuales.",
@@ -38,10 +40,12 @@ function Academia() {
   return (
     <div>
       <header>
+        {/* IMPORTA MENU RESPONSIVE */}
         <Menu />
       </header>
       <div>
         <div
+          // IMAGEN CON TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -133,16 +137,16 @@ function Academia() {
             </div>
             <div className="mt-10 py-2 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl ">
               <Fade cascade={true}>
-                <span className=" font-bold text-xl py-2 ">
+                <h3 className=" font-bold text-xl py-2 pt-3 ">
                   Perfil de Egreso
-                </span>
+                </h3>
 
                 <OrderList items={perfilEgreso} />
               </Fade>
             </div>
             <div className="border sm:border-2 rounded p-2 sm:p-4 shadow-2xl  mt-10">
               <Fade cascade={true}>
-                <span className=" font-bold text-xl py-2">Campo Laboral</span>
+                <h4 className=" font-bold text-xl py-2 pt-3">Campo Laboral</h4>
                 <p className="p-2 ">
                   El Ingeniero en Animación Digital y Efectos Visuales
                   desarrolla su actividad profesional en la:

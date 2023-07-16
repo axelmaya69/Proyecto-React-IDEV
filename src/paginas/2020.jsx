@@ -4,6 +4,8 @@ import Footer from "../elementos/Footer";
 import FadevComp from "../componentes/FadevComp";
 import { Slide } from "react-awesome-reveal";
 
+// PAGINA DEL FADEV 2020
+
 function Veinte() {
   useEffect(() => {
     document.title = "FADEV - 2020"; // Cambia 'Nuevo título de la página' por el título deseado
@@ -11,11 +13,13 @@ function Veinte() {
   return (
     <div>
       <header>
+        {/* SE IMPORTA EL COMPONENTE MENU  */}
         <Menu />
       </header>
 
       <div>
         <div
+          // SE ASIGNA UNA IMAGEN DE FONDO CON UN TEXTO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -41,6 +45,9 @@ function Veinte() {
       </div>
 
       <div className="mb-10  ">
+        {/* SE IMPORTA AL COMPONENTE FadevComp Y SE LE PASAN PROPIEDADES 
+        
+        */}
         <FadevComp
           titulo={"FADEV - 2020"}
           imagen={
@@ -61,6 +68,7 @@ function Veinte() {
         />
       </div>
       <footer>
+        {/* SE IMPORTA AL COMPONENTE FOOTER */}
         <Footer />
       </footer>
     </div>

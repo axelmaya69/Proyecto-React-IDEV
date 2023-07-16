@@ -2,21 +2,20 @@ import React, { useEffect } from "react";
 import Menu from "../elementos/Menu";
 import Footer from "../elementos/Footer";
 import FadevComp from "../componentes/FadevComp";
-import InvitadosCard from "../componentes/InvitadosCard";
 import { Fade, Slide } from "react-awesome-reveal";
-import Slider from "../componentes/Slider";
 import GridImg from "../componentes/GridImg";
 
 function Veintidos() {
   useEffect(() => {
     document.title = "FADEV - 2022"; // Cambia 'Nuevo título de la página' por el título deseado
   }, []);
-
+  //SE DECLARAN 3 ARREGLOS DE IMAGENES PARA MOSTRARLAS EN EL COMPONENTE GRIDIMG
+  // DE ACUERDO CON EL ASPECTO
   const images = [
     "https://iadevtesjo.files.wordpress.com/2022/06/roman-llanos_mesa-de-trabajo-1.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/cesar-cepeda_mesa-de-trabajo-1.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/eliud-gil-samaniego_mesa-de-trabajo-1.png",
-    "https://iadevtesjo.files.wordpress.com/2022/06/gustavo-cosio_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/gustavo-cosio_mesa-de-trabajo-1.png", //ARREGLO DE INVITADOS
     "https://iadevtesjo.files.wordpress.com/2022/06/javier-chavez_mesa-de-trabajo-1_mesa-de-trabajo-1.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/jose-trello_mesa-de-trabajo-1.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/juan-martin-rivera-gonzalez_mesa-de-trabajo-1.png",
@@ -31,14 +30,14 @@ function Veintidos() {
   const convocatoriasTesjo = [
     "https://iadevtesjo.files.wordpress.com/2022/06/basquet.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/ilustracion.png",
-    "https://iadevtesjo.files.wordpress.com/2022/06/fotografia.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/fotografia.png", //ARREGLO DE CONVOCATORIAS
     "https://iadevtesjo.files.wordpress.com/2022/06/animacion.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/torneorumble.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/rally.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/futbol.png",
   ];
   const programa = [
-    "https://iadevtesjo.files.wordpress.com/2022/06/auditorio-azul_mesa-de-trabajo-1.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/auditorio-azul_mesa-de-trabajo-1.png", //ARREGLO DEL PROGRAMA
     "https://iadevtesjo.files.wordpress.com/2022/06/auditorio_edificio_c_mesa-de-trabajo-1_mesa-de-trabajo-1.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/auditorio_verde_mesa-de-trabajo-1_mesa-de-trabajo-1.png",
   ];
@@ -54,11 +53,13 @@ function Veintidos() {
   return (
     <div>
       <header>
+        {/* IMPORTACION DEL MENU RESPONSIVE */}
         <Menu />
       </header>
 
       <div>
         <div
+          // IMAGEN CON TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -84,6 +85,8 @@ function Veintidos() {
       </div>
 
       <div>
+        {/* IMPORTACION DEL COMPONENTE FADEV, SE LE 
+        ASIGNAN TAMBIEN SUS PROPIEDADES */}
         <FadevComp
           titulo={"FADEV - 2022"}
           imagen={
@@ -103,7 +106,12 @@ function Veintidos() {
           }
         />
       </div>
+      {/* GRID PARA MOSTRAR
+       UN ASIDE Y 
+      ARTICLE EN PANTALLAS 
+      GRANDES */}
       <div className="grid grid-cols-1 lg:grid-cols-4  lg:relative ">
+        {/* INCIO DEL ASIDE */}
         <div className="col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 lg:bg-slate-200 border sm:border-2 rounded shadow-xl lg:min-h-screen pb-8 sm:mx-20 lg:mx-2">
           <Fade cascade={true} damping={0.1}>
             <div className="flex flex-col justify-center items-center text-white">
@@ -138,18 +146,23 @@ function Veintidos() {
               </button>
             </div>
           </Fade>
+          {/* TERMINA ASIDE */}
         </div>
+        {/* INICIA LA 
+        SECCION ARTICLE */}
         <div className="col-span-1 lg:col-start-2 lg:col-span-3 mx-2 border lg:border-2 rounded p-2 sm:p-4 mr-2 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
           <div className="py-2" id="invitados">
             <span className="font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-orange-400">
               Invitados
             </span>
-
+            {/* SE MUESTRAN A 
+        LOS INVITADOS DENTRO DE GRIDIMG */}
             <div className="mx-2 z-30">
               <GridImg images={images} />
             </div>
           </div>
-
+          {/* INCIA SECCION
+         CONVOCATORIAS */}
           <div
             id="convocatorias"
             className="flex flex-col items-center justify-center"
@@ -158,27 +171,37 @@ function Veintidos() {
               Convocatorias
             </span>
             <div>
+              {/* SE MUESTRAN LAS
+               CONVOCATORIAS */}
               <GridImg images={convocatoriasTesjo} />
             </div>
           </div>
-
+          {/* INCIA SECCION PROGRAMA */}
           <div id="programa">
             <span className="font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-blue-400">
               Programa
             </span>
             <div>
+              {/* SE MUESTRAN LAS 
+              IMAGENES DEL PROGRAMA */}
               <GridImg images={programa} />
             </div>
           </div>
+          {/* INICIA SECCION
+           TALLERES */}
           <div id="talleres">
             <span className="font-bold text-xl mx-2 sm:mx-10 sm:text-3xl py-4 px-2 border-b-2 border-violet-400">
               Talleres
             </span>
+            {/* SE MUESTRAN LAS IMAGENES 
+            DE LOS TALLERES */}
             <GridImg images={talleres} />
           </div>
         </div>
       </div>
+
       <footer>
+        {/* IMPORTACION DE COMPONENTE FOOTER */}
         <Footer />
       </footer>
     </div>

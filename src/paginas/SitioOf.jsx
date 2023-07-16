@@ -78,100 +78,103 @@ function SitioOf() {
           </div>
         </div>
         <article className="col-span-2  sm:col-span-3 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 ">
-          <p className="my-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est
-            ipsam officiis accusantium blanditiis temporibus sint quibusdam
-            obcaecati facilis debitis nostrum, voluptate, tempore, ullam
-            voluptatem nobis animi magni nulla at. lorem Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Eos, fugit eveniet facilis quis
-            minus perspiciatis dolores quisquam omnis non excepturi accusamus,
-            sapiente consequuntur cum, possimus a aperiam corporis expedita.
-            Consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Dicta reiciendis, sequi molestiae fuga harum minus! Tenetur
-            consequuntur placeat numquam ab culpa. Vero perferendis accusamus
-            totam itaque minima quisquam nam dolor!
-          </p>
-          <p className="my-2">
-            officiis accusantium blanditiis temporibus sint quibusdam obcaecati
-            facilis debitis nostrum, voluptate, tempore, ullam voluptatem nobis
-            animi magni nulla at. lorem Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Eos, fugit eveniet facilis quis minus perspiciatis
-            dolores quisquam omnis non excepturi accusamus, sapiente
-            consequuntur cum, possimus a aperiam corporis expedita. Consectetur.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
-            reiciendis, sequi molestiae fuga harum minus! Tenetur consequuntur
-            placeat numquam ab culpa. Vero perferendis accusamus totam itaque
-            minima quisquam nam dolor! officiis accusantium blanditiis
-            temporibus sint quibusdam obcaecati facilis debitis nostrum,
-            voluptate, tempore, ullam voluptatem nobis animi magni nulla at.
-            lorem
-          </p>
-          <p className="my-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, fugit
-            eveniet facilis quis minus perspiciatis dolores quisquam omnis non
-            excepturi accusamus, sapiente consequuntur cum, possimus a aperiam
-            corporis expedita. Consectetur. Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Dicta reiciendis, sequi molestiae fuga
-            harum minus! Tenetur consequuntur placeat numquam ab culpa. Vero
-            perferendis accusamus totam itaque minima quisquam nam dolor!
-            officiis accusantium blanditiis temporibus sint quibusdam obcaecati
-            facilis debitis nostrum, voluptate, tempore, ullam voluptatem nobis
-            animi magni nulla at. lorem Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Eos, fugit eveniet facilis quis minus perspiciatis
-            dolores quisquam omnis non excepturi accusamus, sapiente
-            consequuntur cum, possimus a aperiam corporis expedita. Consectetur.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
-            reiciendis, sequi molestiae fuga harum minus! Tenetur consequuntur
-            placeat numquam ab culpa. Vero perferendis accusamus totam itaque
-            minima quisquam nam dolor! sit amet consectetur adipisicing elit.
-            Dicta reiciendis, sequi molestiae fuga harum minus! Tenetur
-            consequuntur placeat numquam ab culpa. Vero perferendis accusamus
-            totam itaque minima quisquam nam dolor! officiis accusantium
-            blanditiis temporibus sint quibusdam obcaecati facilis debitis
-            nostrum, voluptate, tempore, ullam voluptatem nobis animi magni
-            nulla at. lorem Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Eos, fugit eveniet facilis quis minus perspiciatis dolores
-            quisquam omnis non excepturi accusamus, sapiente consequuntur cum,
-            possimus a aperiam corporis expedita. Consectetur. Lorem ipsum
-            dolor, sit amet consectetur adipisicing elit. Dicta reiciendis,
-            sequi molestiae fuga harum minus! Tenetur consequuntur placeat
-            numquam ab culpa. Vero perferendis accusamus totam itaque minima
-            quisquam nam dolor! officiis accusantium blanditiis temporibus sint
-            quibusdam obcaecati facilis debitis nostrum, voluptate, tempore,
-            ullam voluptatem nobis animi magni nulla at. lorem Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Eos, fugit eveniet facilis
-            quis minus perspiciatis dolores quisquam omnis non excepturi
-            accusamus, sapiente consequuntur cum, possimus a aperiam corporis
-            expedita. Consectetur.
-          </p>
-          <p className="my-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
-            reiciendis, sequi molestiae fuga harum minus! Tenetur consequuntur
-            placeat numquam ab culpa. Vero perferendis accusamus totam itaque
-            minima quisquam nam dolor!sit amet consectetur adipisicing elit.
-            Dicta reiciendis, sequi molestiae fuga harum minus! Tenetur
-            consequuntur placeat numquam ab culpa. Vero perferendis accusamus
-            totam itaque minima quisquam nam dolor! officiis accusantium
-            blanditiis temporibus sint quibusdam obcaecati facilis debitis
-            nostrum, voluptate, tempore, ullam voluptatem nobis animi magni
-            nulla at. lorem Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Eos, fugit eveniet facilis quis minus perspiciatis dolores
-            quisquam omnis non excepturi accusamus, sapiente consequuntur cum,
-            possimus a aperiam corporis expedita. Consectetur. Lorem ipsum
-            dolor, sit amet consectetur adipisicing elit. Dicta reiciendis,
-            sequi molestiae fuga harum minus! Tenetur consequuntur placeat
-            numquam ab culpa. Vero perferendis accusamus totam itaque minima
-            quisquam nam dolor! officiis accusantium blanditiis temporibus sint
-            quibusdam obcaecati facilis debitis nostrum, voluptate, tempore,
-            ullam voluptatem nobis animi magni nulla at. lorem Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Eos, fugit eveniet facilis
-            quis minus perspiciatis dolores quisquam omnis non excepturi
-            accusamus, sapiente consequuntur cum, possimus a aperiam corporis
-            expedita. Consectetur. Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Dicta reiciendis, sequi molestiae fuga harum
-            minus! Tenetur consequuntur placeat numquam ab culpa. Vero
-            perferendis accusamus totam itaque minima quisquam nam dolor!
-          </p>
+          <div className="px-2">
+            <p className="my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est
+              ipsam officiis accusantium blanditiis temporibus sint quibusdam
+              obcaecati facilis debitis nostrum, voluptate, tempore, ullam
+              voluptatem nobis animi magni nulla at. lorem Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Eos, fugit eveniet facilis quis
+              minus perspiciatis dolores quisquam omnis non excepturi accusamus,
+              sapiente consequuntur cum, possimus a aperiam corporis expedita.
+              Consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Dicta reiciendis, sequi molestiae fuga harum minus! Tenetur
+              consequuntur placeat numquam ab culpa. Vero perferendis accusamus
+              totam itaque minima quisquam nam dolor!
+            </p>
+            <p className="my-2">
+              officiis accusantium blanditiis temporibus sint quibusdam
+              obcaecati facilis debitis nostrum, voluptate, tempore, ullam
+              voluptatem nobis animi magni nulla at. lorem Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Eos, fugit eveniet facilis quis
+              minus perspiciatis dolores quisquam omnis non excepturi accusamus,
+              sapiente consequuntur cum, possimus a aperiam corporis expedita.
+              Consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Dicta reiciendis, sequi molestiae fuga harum minus! Tenetur
+              consequuntur placeat numquam ab culpa. Vero perferendis accusamus
+              totam itaque minima quisquam nam dolor! officiis accusantium
+              blanditiis temporibus sint quibusdam obcaecati facilis debitis
+              nostrum, voluptate, tempore, ullam voluptatem nobis animi magni
+              nulla at. lorem
+            </p>
+            <p className="my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              fugit eveniet facilis quis minus perspiciatis dolores quisquam
+              omnis non excepturi accusamus, sapiente consequuntur cum, possimus
+              a aperiam corporis expedita. Consectetur. Lorem ipsum dolor, sit
+              amet consectetur adipisicing elit. Dicta reiciendis, sequi
+              molestiae fuga harum minus! Tenetur consequuntur placeat numquam
+              ab culpa. Vero perferendis accusamus totam itaque minima quisquam
+              nam dolor! officiis accusantium blanditiis temporibus sint
+              quibusdam obcaecati facilis debitis nostrum, voluptate, tempore,
+              ullam voluptatem nobis animi magni nulla at. lorem Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Eos, fugit eveniet
+              facilis quis minus perspiciatis dolores quisquam omnis non
+              excepturi accusamus, sapiente consequuntur cum, possimus a aperiam
+              corporis expedita. Consectetur. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Dicta reiciendis, sequi molestiae
+              fuga harum minus! Tenetur consequuntur placeat numquam ab culpa.
+              Vero perferendis accusamus totam itaque minima quisquam nam dolor!
+              sit amet consectetur adipisicing elit. Dicta reiciendis, sequi
+              molestiae fuga harum minus! Tenetur consequuntur placeat numquam
+              ab culpa. Vero perferendis accusamus totam itaque minima quisquam
+              nam dolor! officiis accusantium blanditiis temporibus sint
+              quibusdam obcaecati facilis debitis nostrum, voluptate, tempore,
+              ullam voluptatem nobis animi magni nulla at. lorem Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Eos, fugit eveniet
+              facilis quis minus perspiciatis dolores quisquam omnis non
+              excepturi accusamus, sapiente consequuntur cum, possimus a aperiam
+              corporis expedita. Consectetur. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Dicta reiciendis, sequi molestiae
+              fuga harum minus! Tenetur consequuntur placeat numquam ab culpa.
+              Vero perferendis accusamus totam itaque minima quisquam nam dolor!
+              officiis accusantium blanditiis temporibus sint quibusdam
+              obcaecati facilis debitis nostrum, voluptate, tempore, ullam
+              voluptatem nobis animi magni nulla at. lorem Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Eos, fugit eveniet facilis quis
+              minus perspiciatis dolores quisquam omnis non excepturi accusamus,
+              sapiente consequuntur cum, possimus a aperiam corporis expedita.
+              Consectetur.
+            </p>
+            <p className="my-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+              reiciendis, sequi molestiae fuga harum minus! Tenetur consequuntur
+              placeat numquam ab culpa. Vero perferendis accusamus totam itaque
+              minima quisquam nam dolor!sit amet consectetur adipisicing elit.
+              Dicta reiciendis, sequi molestiae fuga harum minus! Tenetur
+              consequuntur placeat numquam ab culpa. Vero perferendis accusamus
+              totam itaque minima quisquam nam dolor! officiis accusantium
+              blanditiis temporibus sint quibusdam obcaecati facilis debitis
+              nostrum, voluptate, tempore, ullam voluptatem nobis animi magni
+              nulla at. lorem Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Eos, fugit eveniet facilis quis minus perspiciatis dolores
+              quisquam omnis non excepturi accusamus, sapiente consequuntur cum,
+              possimus a aperiam corporis expedita. Consectetur. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Dicta reiciendis,
+              sequi molestiae fuga harum minus! Tenetur consequuntur placeat
+              numquam ab culpa. Vero perferendis accusamus totam itaque minima
+              quisquam nam dolor! officiis accusantium blanditiis temporibus
+              sint quibusdam obcaecati facilis debitis nostrum, voluptate,
+              tempore, ullam voluptatem nobis animi magni nulla at. lorem Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Eos, fugit
+              eveniet facilis quis minus perspiciatis dolores quisquam omnis non
+              excepturi accusamus, sapiente consequuntur cum, possimus a aperiam
+              corporis expedita. Consectetur. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Dicta reiciendis, sequi molestiae
+              fuga harum minus! Tenetur consequuntur placeat numquam ab culpa.
+              Vero perferendis accusamus totam itaque minima quisquam nam dolor!
+            </p>
+          </div>
         </article>
       </div>
       <footer>

@@ -81,11 +81,11 @@ function Alumnos() {
           </div>
         </div>
 
-        <div className=" mx-2 lg:col-start-2 lg:col-span-3 lg:row-start-1 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56  sm:mx-20 lg:mx-10">
-          <h1 className="font-bold text-xl my-4" id="titulouno">
+        <div className="lg:col-start-2 lg:col-span-3 lg:row-start-1 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56  sm:mx-20 lg:mx-10">
+          <h1 className="font-bold text-xl my-4 px-2" id="titulouno">
             Titulo 1
           </h1>
-          <p>
+          <p className="px-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             dolor enim repellendus esse vel, maxime laborum pariatur, expedita
             provident magnam quidem dolorem? Ab perspiciatis ex voluptatum,
@@ -94,7 +94,7 @@ function Alumnos() {
             hic voluptate eligendi, quos dolorum voluptas nulla eaque aliquam
             saepe rem nobis optio culpa ullam? Omnis, sint.
           </p>
-          <p>
+          <p className="px-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam
             asperiores qui nostrum porro officiis eos, molestiae mollitia
             architecto quis quia? Perspiciatis, excepturi dicta corrupti illo
@@ -110,10 +110,10 @@ function Alumnos() {
               alt="estudiantes"
             />
           </div>
-          <h2 className="font-bold text-xl my-4" id="titulodos">
+          <h2 className="font-bold text-xl my-4 px-2" id="titulodos">
             Titulo 2/Subtitulo
           </h2>
-          <p className="">
+          <p className="px-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam
             asperiores qui nostrum porro officiis eos, molestiae mollitia
             architecto quis quia? Perspiciatis, excepturi dicta corrupti illo
