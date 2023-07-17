@@ -12,6 +12,18 @@ import festival from "../imagenes/festival.jpg";
 function Home() {
   useEffect(() => {
     document.title = "IADEV - Home"; // Cambia 'Nuevo título de la página' por el título deseado
+
+    // IMPIDE INSPECCIONAR ELEMENTO:
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextMenu);
+    const handleKeyDown = (event) => {
+      if (event.key === "F12") {
+        event.preventDefault();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
   }, []);
   const images = [
     "https://esfadev.com/wp-content/uploads/2023/06/PortadaFB-1024x576.png",

@@ -11,6 +11,17 @@ import Reticula from "../assets/ReticulaIADEV.pdf";
 function Academia() {
   useEffect(() => {
     document.title = "IADEV - Academia"; // Cambia 'Nuevo título de la página' por el título deseado
+    // IMPIDE INSPECCIONAR ELEMENTO:
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextMenu);
+    const handleKeyDown = (event) => {
+      if (event.key === "F12") {
+        event.preventDefault();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
   }, []);
   // ARREGLO DE TEXTO PARA COLOCARLO EN EL COMPONENTE DE LISTA ORDENADA
   const items = [

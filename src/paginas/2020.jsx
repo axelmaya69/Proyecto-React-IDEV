@@ -9,6 +9,18 @@ import { Slide } from "react-awesome-reveal";
 function Veinte() {
   useEffect(() => {
     document.title = "FADEV - 2020"; // Cambia 'Nuevo título de la página' por el título deseado
+
+    // IMPIDE INSPECCIONAR ELEMENTO:
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextMenu);
+    const handleKeyDown = (event) => {
+      if (event.key === "F12") {
+        event.preventDefault();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
   }, []);
   return (
     <div>

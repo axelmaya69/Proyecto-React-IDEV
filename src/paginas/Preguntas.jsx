@@ -7,6 +7,18 @@ import PreguntasFrec from "../componentes/PreguntasFrec";
 function Preguntas() {
   useEffect(() => {
     document.title = "IADEV - Preguntas Frecuentes"; // Cambia 'Nuevo título de la página' por el título deseado
+
+    // IMPIDE INSPECCIONAR ELEMENTO:
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextMenu);
+    const handleKeyDown = (event) => {
+      if (event.key === "F12") {
+        event.preventDefault();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
   }, []);
   return (
     <div>

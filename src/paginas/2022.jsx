@@ -8,6 +8,18 @@ import GridImg from "../componentes/GridImg";
 function Veintidos() {
   useEffect(() => {
     document.title = "FADEV - 2022"; // Cambia 'Nuevo título de la página' por el título deseado
+
+    // IMPIDE INSPECCIONAR ELEMENTO:
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+    };
+    document.addEventListener("contextmenu", handleContextMenu);
+    const handleKeyDown = (event) => {
+      if (event.key === "F12") {
+        event.preventDefault();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
   }, []);
   //SE DECLARAN 3 ARREGLOS DE IMAGENES PARA MOSTRARLAS EN EL COMPONENTE GRIDIMG
   // DE ACUERDO CON EL ASPECTO
