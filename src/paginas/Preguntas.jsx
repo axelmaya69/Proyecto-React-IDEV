@@ -28,6 +28,7 @@ function Preguntas() {
 
       <div>
         <div
+          // IMPORTACION DE IMAGEN CON TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -61,7 +62,9 @@ function Preguntas() {
           </Fade>
         </div>
       </div>
+      {/* CREACION DE GRID PARA ASIDE Y ARTICLE */}
       <article className="grid grid-cols-4 gap-2 mx-2 my-10 lg:relative">
+        {/* INICIA EL ASIDE */}
         <div className="col-span-4 md:mx-20 lg:mx-0 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 lg:shadow-2xl lg:bg-slate-100 lg:border-2">
           <img
             src="https://img.freepik.com/vector-premium/concepto-preguntas-respuestas-o-preguntas-frecuentes-busqueda-soluciones-informacion-util_194360-309.jpg"
@@ -88,8 +91,13 @@ function Preguntas() {
               FADEV
             </button>
           </div>
+          {/* TERMINA EL ASIDE */}
         </div>
+
+        {/* INICIA EL ARTICLE */}
         <div className="col-span-4 lg:col-span-3 lg:col-start-2 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
+          {/* SE IMPORTA MULTIPLES VECES EL COMPONENTE PreguntasFrec EL CUAL YA ESTA ESTILIZADO 
+          A ESTE COMO PROPIEDAES SE LE PASA UNA PREGUNTA Y SU RESPUESTA */}
           <PreguntasFrec
             pregunta={
               "Pregunta uno... Similique numquam a officiis maxime eligendi. Sint ullam aspernatur odio sequi nam non rem saepe vel odit fuga eligendi, minus inventore suscipit!"
@@ -110,7 +118,9 @@ function Preguntas() {
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nobis suscipit? Cupiditate nemo obcaecati suscipit tenetur esse repellat at aspernatur deserunt, dolorum cum aliquam praesentium saepe doloremque fugit vel velit?"
             }
           />
+          {/* FIN DEL ARTICLE */}
         </div>
+        {/* FIN DEL GRID */}
       </article>
       <footer>
         <Footer />

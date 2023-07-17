@@ -27,6 +27,7 @@ function Servicio() {
 
       <div>
         <div
+          // IMPORTACION DE IMAGEN CON TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -61,7 +62,9 @@ function Servicio() {
         </div>
       </div>
 
+      {/* CREACION DE GRID PARA ASIDE Y ARTICLE */}
       <div className="grid grid-cols-1 lg:grid-cols-4 mx-2 lg:relative my-10">
+        {/* INICIO DEL ASIDE */}
         <div className="col-span-4 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 lg:shadow-2xl bg-white lg:border-2">
           <div className="flex flex-col justify-items-center m-4 lg:mt-0">
             <img
@@ -91,8 +94,10 @@ function Servicio() {
               FADEV
             </button>
           </div>
+          {/* TEMINA EL ASIDE */}
         </div>
 
+        {/* INICIO DEL ARTICLE */}
         <div className="col-span-1 lg:col-span-3 lg:col-start-2 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
           <div>
             <h4 className="ml-2 font-bold my-4 text-lg">Acerca del trámite</h4>
@@ -147,7 +152,7 @@ function Servicio() {
                 <li className="mx-2">
                   Solicitud Registro/Autorización.
                   <a
-                    className="text-blue-600 border-b border-blue-800"
+                    className="text-blue-600 border-b px-1 border-blue-800"
                     href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/SOLICITUD%20REGISTRO-AUTORIZACION.xls"
                   >
                     Registro de autorización
@@ -169,7 +174,7 @@ function Servicio() {
                 <li className="mx-2">
                   Informe global
                   <a
-                    className="text-blue-600 border-b border-blue-800"
+                    className="text-blue-600 px-1 border-b border-blue-800"
                     href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/serviciosocial%20y%20residencia/SS/3_INFORME%20GLOBAL%20DE%20SERVICIO%20SOCIAL%20para%20imprimir.pdf"
                     target="_blank"
                   >
@@ -179,7 +184,7 @@ function Servicio() {
                 <li className="mx-2">
                   Carta de Término y Evaluación de Servicio Social.
                   <a
-                    className="text-blue-600 border-b border-blue-800"
+                    className="text-blue-600 px-1 border-b border-blue-800"
                     href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/CARTA%20DE%20TERMINO%20Y%20EVALUACIO%CC%81N%20DE%20SS.doc"
                     target="_blank"
                   >
@@ -216,7 +221,7 @@ function Servicio() {
                 <li className="mx-2">
                   Una Solicitud de incorporación en hoja membretada.
                   <a
-                    className="text-blue-600 border-b border-blue-800"
+                    className="text-blue-600 px-1 border-b border-blue-800"
                     href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/Estudiantes/Servicos%20Escolares/Servicio%20Social%20y%20Residencia%20Profesional/SOLICITUD%20DE%20INCORPORACION.doc"
                     target="_blank"
                   >
@@ -255,7 +260,7 @@ function Servicio() {
                   procurar que las fechas de alta y término sean en días
                   hábiles. El periodo mínimo es de 6 meses).
                   <a
-                    className="text-blue-600 border-b border-blue-800"
+                    className="text-blue-600 px-1 border-b border-blue-800"
                     href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/ANEXO%20TECNICO%20SECTOR%20SOCIAL%20Y%20PRIVADO.xls"
                     target="_blank"
                   >
@@ -296,7 +301,10 @@ function Servicio() {
             <span className="mx-2 font-bold my-2">Horario de atención</span>
             <p className="mx-2 mb-8">Lunes a Viernes de 9:00 a 18:00 horas.</p>
           </div>
+          {/* FIN DEL ARTICLE */}
         </div>
+
+        {/* FIN DEL GRID */}
       </div>
       <footer>
         <Footer />

@@ -27,6 +27,7 @@ function Dual() {
 
       <div>
         <div
+          // IMAGEN CON TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -60,7 +61,9 @@ function Dual() {
           </Fade>
         </div>
       </div>
+      {/* CREACION DE GRID PARA ASIDE Y ARTICLE */}
       <div className="grid grid-cols-1 lg:grid-cols-4 mx-2 my-10 lg:relative">
+        {/* INICIO DEL ASIDE */}
         <div className="col-span-4 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 lg:shadow-2xl bg-white  lg:border-2 flex flex-col justify-items-center">
           <div className="flex flex-col justify-items-center m-4 lg:mt-0">
             <img
@@ -90,8 +93,10 @@ function Dual() {
               FADEV
             </button>
           </div>
+          {/* FIN DEL ASIDE */}
         </div>
 
+        {/* INICIO DEL ARTICLE */}
         <div className="col-span-2 sm:col-span-3 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
           <h1 className="font-bold text-xl">¿En qué consiste?</h1>
           <p>
@@ -151,7 +156,9 @@ function Dual() {
             officiis, quia numquam eum. Quas accusamus neque atque rerum iste
             error vel!
           </p>
+          {/* FIN DEL ARTICLE: */}
         </div>
+        {/* FIN DEL GRID: */}
       </div>
       <footer>
         <Footer />

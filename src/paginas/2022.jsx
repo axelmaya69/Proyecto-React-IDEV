@@ -42,7 +42,7 @@ function Veintidos() {
   const convocatoriasTesjo = [
     "https://iadevtesjo.files.wordpress.com/2022/06/basquet.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/ilustracion.png",
-    "https://iadevtesjo.files.wordpress.com/2022/06/fotografia.png", //ARREGLO DE CONVOCATORIAS
+    "https://iadevtesjo.files.wordpress.com/2022/06/fotografia.png", //ARREGLO DE IMAGENES DE CONVOCATORIAS
     "https://iadevtesjo.files.wordpress.com/2022/06/animacion.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/torneorumble.png",
     "https://iadevtesjo.files.wordpress.com/2022/06/rally.png",
@@ -57,7 +57,7 @@ function Veintidos() {
   const talleres = [
     "https://iadevtesjo.files.wordpress.com/2022/06/taller_redessociales.png?w=1024",
     "https://iadevtesjo.files.wordpress.com/2022/06/taller_videojuegos.png?w=1024",
-    "https://iadevtesjo.files.wordpress.com/2022/06/taller_audio.png",
+    "https://iadevtesjo.files.wordpress.com/2022/06/taller_audio.png", //ARREGLO PARA PROGRAMAS
     "https://iadevtesjo.files.wordpress.com/2022/06/taller_storyboard.png?w=1024",
     "https://iadevtesjo.files.wordpress.com/2022/06/taller_drone.png?w=1024",
   ];

@@ -27,6 +27,7 @@ function Residencia() {
 
       <div>
         <div
+          // IMPORTACION DE IMAGEN CON TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -61,7 +62,9 @@ function Residencia() {
         </div>
       </div>
 
+      {/* CREACION DE GRID PARA ASIDE Y ARTICLE */}
       <div className="grid grid-cols-1 lg:grid-cols-4 mx-2 lg:relative my-10">
+        {/* INICIA EL ASIDE */}
         <div className="col-span-4 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 lg:shadow-2xl bg-white lg:border-2">
           <div className="flex flex-col justify-items-center m-4 lg:mt-0">
             <img
@@ -91,7 +94,10 @@ function Residencia() {
               FADEV
             </button>
           </div>
+          {/* FINALIZA EL ASIDE */}
         </div>
+
+        {/* INICIA EL ARTICLE */}
         <div className="col-span-1 lg:col-span-3 lg:col-start-2 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen bg-white mb-56 sm:mx-20 lg:mx-10">
           <div className="sm:mx-10  ">
             <h4 className="ml-2 font-bold my-4 text-lg  2xl:text-2xl">
@@ -221,6 +227,8 @@ function Residencia() {
             <p className="mx-2 mb-4  2xl:text-xl my-2">
               Lunes a Viernes de 9:00 a 18:00 horas.
             </p>
+
+            {/* SECCION PARA MOSTRAR LOS ENLACES O LINKS A LOS FORMATOS DE RESIDENCIA */}
             <div className="flex flex-wrap mb-8">
               <a
                 href="https://tesjo.edomex.gob.mx/sites/tesjo.edomex.gob.mx/files/files/Estudiantes/Servicos%20Escolares/Servicio%20Social%20y%20Residencia%20Profesional/FO-TESJO-064.doc"
@@ -280,7 +288,9 @@ function Residencia() {
               </a>
             </div>
           </div>
+          {/* TERMINA EL ARTICLE */}
         </div>
+        {/* TERMINA EL GRID */}
       </div>
 
       <footer>

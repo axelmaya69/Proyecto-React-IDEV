@@ -34,8 +34,6 @@ function Home() {
     "https://iadevtesjo.files.wordpress.com/2021/06/osvaldo_pasillas_bernal.png?w=1024",
     "https://iadevtesjo.files.wordpress.com/2021/06/carolina_rubi_garcia_sanchez_armass.png?w=1024",
   ];
-  const fondo =
-    "https://www.esdesignbarcelona.com/sites/default/files/imagenes/animacion-digital-que-es-y-que-tipos-de-animacion-existen_0_1.jpg";
 
   return (
     // <div
@@ -48,6 +46,7 @@ function Home() {
       <div>
         <Menu />
         <div
+          // IMAGNE CON TEXTO DE FONDO
           className="relative  min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover  bg-no-repeat p-12 text-center"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -70,17 +69,20 @@ function Home() {
         </div>
       </div>
 
+      {/* SECCION DEL SLIDER */}
       <div className="  w-full">
         <div className=" justify-center">
           {images && images.length > 0 ? (
+            // IMPORTA LAS IMAGENES DEFINIDAS EN EL ARREGLO VISTO MAS ARRIBA
             <Slider images={images} />
           ) : (
             <p>No hay imágenes disponibles</p>
           )}
         </div>
       </div>
-
+      {/* CREACION DE GRID PARA ASIDE Y ARTICLE */}
       <div className="grid grid-cols-4 gap-2 my-10 mx-2 lg:relative">
+        {/* INICIO DEL ASIDE */}
         <div className="col-span-4 lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded sm:px-4 lg:shadow-2xl lg:bg-slate-100 lg:border-2 flex flex-col justify-items-center">
           <Fade cascade={true} damping={0.3}>
             <div className="mt-20 flex flex-col justify-items-center m-4 lg:mt-0">
@@ -112,11 +114,15 @@ function Home() {
               </button>
             </div>
           </Fade>
+          {/* FIN DEL ASIDE */}
         </div>
 
+        {/* INICIO DEL ARTICLE     */}
         <div className="col-span-4 lg:col-span-3 lg:col-start-2 rounded  min-h-screen  mb-36">
           <Fade cascade={true} damping={0.5}>
             <div id="p1">
+              {/* SE IMPORTA EL COMPONENTE ArticleLeft Y SE LE PASAN SUS PROPIDADES DE 
+              TITULO, IMAGEN, PARRAFO1 Y PARRAFO 2 */}
               <ArticleLeft
                 title="Titulo 1"
                 image={
@@ -131,6 +137,8 @@ function Home() {
               />
             </div>
             <div id="p2" class="snap-center">
+              {/* SE IMPORTA EL COMPONENTE ArticleRight Y SE LE PASAN SUS PROPIDADES DE 
+              TITULO, IMAGEN, PARRAFO1 Y PARRAFO 2 */}
               <ArticleRight
                 title="Titulo 2"
                 image={
@@ -146,6 +154,8 @@ function Home() {
             </div>
           </Fade>
           <div>
+            {/* SE IMPORTA EL COMPONENTE OnlyText Y SE LE PASAN SUS PROPIDADES DE 
+              TITULO y TEXTO*/}
             <OnlyText
               title={"Solo Texto"}
               text={
@@ -155,6 +165,7 @@ function Home() {
           </div>
           <Fade cascade={true}>
             <div id="p3">
+              {/* SE IMPORTA DE NUEVO EL COMPONENTE ArticleLeft Y SE LE PASAN SUS PROPIDADES*/}
               <ArticleLeft
                 title={"Otro párrafo"}
                 image={
@@ -169,7 +180,9 @@ function Home() {
               />
             </div>
           </Fade>
+          {/* TERMINA ARTICLE */}
         </div>
+        {/* TERMINA GRID */}
       </div>
       <footer>
         <Footer />

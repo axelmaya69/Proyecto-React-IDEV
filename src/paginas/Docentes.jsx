@@ -4,6 +4,8 @@ import Footer from "../elementos/Footer";
 import DocentesCard from "../componentes/DocentesCard";
 import { Fade, Slide } from "react-awesome-reveal";
 
+// ESTA PAGINA SIRVE PARA MOSTRAR INFORMACION DE LOS DOCENTES
+
 function Docentes() {
   useEffect(() => {
     document.title = "IADEV - Docentes"; // Cambia 'Nuevo título de la página' por el título deseado
@@ -23,11 +25,13 @@ function Docentes() {
   return (
     <div>
       <header>
+        {/* SE IMPORTA EL COMMPONENTE DEL MENU */}
         <Menu />
       </header>
 
       <div>
         <div
+          // IMAGEN CON TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -67,6 +71,7 @@ function Docentes() {
       </div>
       <div className="flex flex-wrap justify-around my-10">
         <div>
+          {/* SE IMPORTA EL COMPONENTE DocentesCard y se le pasan las propiedades para el primer docente */}
           <DocentesCard
             imagen={
               "https://www.wikihow.com/images/6/68/Link-Within-a-Page-Using-HTML-Step-8.jpg"
@@ -81,6 +86,7 @@ function Docentes() {
           />
         </div>
         <div className="flex">
+          {/* SE IMPORTA EL COMPONENTE DocentesCard y se le pasan las propiedades para el segundo docente */}
           <DocentesCard
             imagen={
               // "https://concepto.de/wp-content/uploads/2018/08/persona-e1533759204552.jpg"

@@ -28,6 +28,7 @@ function Fadev() {
 
       <div>
         <div
+          // IMAGEN CON TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -63,7 +64,9 @@ function Fadev() {
           </Fade>
         </div>
       </div>
+      {/* CREACION DE GRID PARA ASIDE Y ARTICLE */}
       <div className="grid grid-cols-4 mx-2 my-2 lg:relative">
+        {/* INICIO DEL ASIDE */}
         <div className="col-span-4 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 lg:shadow-2xl lg:bg-slate-100 lg:border-2 flex flex-col justify-items-center">
           <div className="flex flex-col justify-items-center m-4 lg:mt-0">
             <img
@@ -93,8 +96,9 @@ function Fadev() {
               FADEV
             </button>
           </div>
+          {/* FIN DEL ASIDE */}
         </div>
-
+        {/* INICIO DEL ARTICLE */}
         <div className=" col-span-4 lg:col-span-3 lg:col-start-2 mb-56 min-h-screen sm:mx-20 lg:mx-10">
           <div className="border sm:border-2 rounded p-2 sm:p-4 shadow-2xl bg-white mb-10 ">
             <h1 className="font-bold text-xl m-4">¿Qué es?</h1>
@@ -133,9 +137,11 @@ function Fadev() {
             <h3 className="mx-4 font-bold text-2xl my-4 justify-start">
               Nuestros Festivales:
             </h3>
+            {/* CREACION DE OTRO GRID PARA MOSTRAR COLUMNAS DE LOS FADEV ANUALES */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 font-bold lg:mx-10 text-white text-xl ">
               <Fade cascade={true} delay={150} damping={0.2}>
                 <div
+                  // SECCION FADEV 2020
                   className="bg-gradient-to-r from-orange-400 to-red-700 my-10 shadow-2xl m-5 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded w-4/5 h-4/5 cursor-pointer border sm:border-2 border-black p-2 sm:p-4 lg:border-none"
                   onClick={() => (window.location.href = "/2020")}
                 >
@@ -149,6 +155,7 @@ function Fadev() {
                   />
                 </div>
                 <div
+                  // SECCION FADEV 2021
                   className="bg-gradient-to-l from-red-700 to-cyan-950 my-10 drop-shadow-2xl mx-5 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded w-4/5 h-4/5 cursor-pointer border sm:border-2 border-black p-2 sm:p-4 lg:border-none"
                   onClick={() => (window.location.href = "/2021")}
                 >
@@ -162,6 +169,7 @@ function Fadev() {
                   />
                 </div>
                 <div
+                  // SECCION FADEV 2022
                   className="bg-gradient-to-t from-green-400 to-red-700 my-10 shadow-2xl mx-5 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded w-4/5 h-4/5 cursor-pointer border sm:border-2 border-black p-2 sm:p-4 lg:border-none"
                   onClick={() => (window.location.href = "/2022")}
                 >
@@ -174,6 +182,7 @@ function Fadev() {
                   />
                 </div>
                 <div
+                  // SECCION FADEV 2023
                   className="bg-gradient-to-b from-yellow-400 to-red-700 my-10 shadow-2xl mx-5 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded w-4/5 h-4/5 cursor-pointer border sm:border-2 border-black p-2 sm:p-4 lg:border-none"
                   onClick={() => (window.location.href = "/2023")}
                 >
@@ -186,6 +195,7 @@ function Fadev() {
                   />
                 </div>
                 <div
+                  // SECCION ROAD TO FADEV 2024
                   className="bg-gradient-to-r from-red-700 to-blue-600 shadow-2xl my-10 mx-2 flex items-center justify-center flex-col hover:scale-110 transition-all duration-400 rounded w-4/5 h-4/5 cursor-pointer border sm:border-2 border-black p-2 sm:p-4 lg:border-none"
                   onClick={() => alert("En Planeación... \n  ;)")}
                 >
@@ -198,8 +208,10 @@ function Fadev() {
                   />
                 </div>
               </Fade>
+              {/* TERMINA EL GRID PARA LOS FADEV ANUALES */}
             </div>
           </div>
+          {/* FIN DEL ARTICLE */}
         </div>
       </div>
 

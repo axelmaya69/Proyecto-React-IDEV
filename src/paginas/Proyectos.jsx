@@ -28,6 +28,7 @@ function Proyectos() {
 
       <div>
         <div
+          // IMPORTACION DE IMAGEN CON TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -56,7 +57,9 @@ function Proyectos() {
           </Fade>
         </div>
       </div>
+      {/* CREACION DEL GRID PARA EL ASIDE Y ARTICLE */}
       <div className="grid grid-cols-1 lg:grid-cols-4 mx-2 lg:relative ">
+        {/* INICIO DEL ASIDE */}
         <div className="col-span-4 h-auto lg:col-span-1 lg:col-start-1 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 rounded p-2 sm:p-4 lg:shadow-2xl bg-white lg:border-2 ">
           <img
             src="https://blogs.iadb.org/conocimiento-abierto/wp-content/uploads/sites/10/2019/12/banner-lecciones-aprendidas-proyectos-desarrollo-2019.jpg"
@@ -83,7 +86,10 @@ function Proyectos() {
               FADEV
             </button>
           </div>
+          {/* FIN DEL ASIDE */}
         </div>
+
+        {/* INICIO DEL ARTICLE */}
         <div className="col-span-1 lg:col-span-3 lg:col-start-2 border sm:border-2 rounded p-2 sm:p-4 shadow-2xl min-h-screen sm:mx-20 lg:mx-10 bg-white mb-56">
           <p className="font-bold text-xl my-4 mx-2 sm:mx-10 2xl:mx-40">
             En este apartado..
@@ -91,7 +97,9 @@ function Proyectos() {
           <p className="mx-2 sm:mx-10 2xl:mx-40">
             Se presentan algunos proyectos relacionados y en curso
           </p>
+          {/* CREACION DE OTRO GRID PARA PRESENTAR TARJETAS DONDE MOSTRAR A LOS PROYECTOS REALIZADOS */}
           <div className="grid grid-cols-1 lg:grid-cols-2">
+            {/* SE IMPORTA VARIAS VECES AL COMPONENTE ProyectosCard Y SE LE PASA EL NOMBRE Y UNA DESCRIPCION */}
             <ProyectosCard
               name={
                 "CREACIÓN DE GRANJAS DE RENDER CON LA APLICACIÓN DE UNA APP"
@@ -112,9 +120,13 @@ function Proyectos() {
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,inventore consequatur blanditiis libero eum doloribus laboriosam quo assumenda quis, voluptates optio reprehenderit facere delectus repellat ratione, asperiores nulla quas numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet laboriosam quam perferendis possimus ducimus labore, reiciendis a sed beatae eaque iure rem unde voluptas consectetur assumenda et quia quidem?"
               }
             />
+            {/* TERMINA EL GRID PARA LAS TARJETAS DE PROYECTO */}
           </div>
+          {/* TERMINA EL ARTICLE */}
         </div>
+        {/* TERMINA EL GRID  */}
       </div>
+
       <footer>
         <Footer />
       </footer>

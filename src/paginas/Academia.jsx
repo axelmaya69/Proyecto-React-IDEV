@@ -85,6 +85,7 @@ function Academia() {
       </div>
 
       <div className="2xl:mx-40 ">
+        {/* PRESENTACION  */}
         <div className="flex flex-col items-center justify-center border sm:border-2 rounded p-2 sm:p-4 shadow-2xl my-4 mx-2 ">
           <Fade cascade={true} damping={0.5}>
             <h1 className="p-5 text-3xl md:text-5xl font-bold lg:text-8xl lg:py-16">
@@ -95,8 +96,9 @@ function Academia() {
             </h2>
           </Fade>
         </div>
-
+        {/* SE CREA GRID PARA ESTILO EN ASIDE Y ARTICLE */}
         <div className="grid grid-cols-4 gap-4 sm:mx-5 my-10 mx-2 lg:relative min-h-screen">
+          {/* INICIA ASIDE */}
           <div className="col-span-4 lg:col-span-1 sm:mx-20 lg:mx-2 col-start-1 px-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 lg:bg-slate-100 lg:border-2 rounded p-2 sm:p-4 lg:shadow-2xl ">
             <img className="flex max-w-full" src={MiImagen} alt="tesjo" />
             <Fade cascade={true}>
@@ -128,10 +130,13 @@ function Academia() {
                 FADEV
               </button>
             </div>
+            {/* TERMINA ASIDE */}
           </div>
+          {/* INICIA SECCION ARTICLE */}
           <div className="col-span-4 lg:col-span-3 lg:col-start-2 bg-white lg:px-4 lg:mb-56 sm:mx-20 lg:mx-10">
             <div className="border sm:border-2 rounded p-2 sm:p-4 shadow-2xl  ">
               <Fade cascade={true}>
+                {/* SE IMPORTA EL COMPONENTE Y LE PASAN LOS PARAMETROS */}
                 <AcademiaCard
                   titulo={"Objetivo General"}
                   parrafo={
@@ -142,6 +147,7 @@ function Academia() {
               <div className=" py-2">
                 <Fade cascade={true}>
                   <h4 className="font-bold text-xl">Objetivos Educacionales</h4>
+                  {/* COMPONENTE LISTA ORDENADA PASANDOLE LOS "ITEMS" DEFINIDOS MAS ARRIBA: */}
                   <OrderList items={items} />
                 </Fade>
               </div>
@@ -151,12 +157,13 @@ function Academia() {
                 <h3 className=" font-bold text-xl py-2 pt-3 ">
                   Perfil de Egreso
                 </h3>
-
+                {/* IMPORTACION DEL MISMO COMPONENTE DE LISTA ORDENADA CON LAS NUEVOS PROPIEDADES */}
                 <OrderList items={perfilEgreso} />
               </Fade>
             </div>
             <div className="border sm:border-2 rounded p-2 sm:p-4 shadow-2xl  mt-10">
               <Fade cascade={true}>
+                {/* SECCION CAMPO LABORAL */}
                 <h4 className=" font-bold text-xl py-2 pt-3">Campo Laboral</h4>
                 <p className="p-2 ">
                   El Ingeniero en Animación Digital y Efectos Visuales
@@ -207,6 +214,7 @@ function Academia() {
             <div className=" border sm:border-2 rounded p-2 sm:p-4 shadow-2xl mt-10">
               <h6 className="py-3">
                 <a
+                  // LINK PARA DESCARGAR LA RETICULA DE IADEV
                   href={Reticula}
                   target="_blank"
                   className="text-xl lg:text-xl text-blue-400 hover:text-blue-700 border-b border-blue-400 font-semibold"
@@ -216,6 +224,7 @@ function Academia() {
               </h6>
 
               <iframe
+                // IMPORTACION DE LA VISTA DEL ARCHIVO PDF DE LA RETICULA DE IADEV
                 src={Reticula}
                 frameborder="0"
                 className="lg:min-h-screen lg:w-full hidden lg:block"

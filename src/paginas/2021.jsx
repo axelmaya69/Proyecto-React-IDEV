@@ -160,11 +160,14 @@ function Veintiuno() {
               />
               <ArtStation link={"https://www.artstation.com/avii"} />
             </div>
+            {/* ------------------------------------------------------------------------------- */}
+            {/* OTRO INVITADO */}
             <InvitadosCard
               imagen={
                 "https://iadevtesjo.files.wordpress.com/2021/06/ficha_fadev_rubi-1.png?w=1024"
               }
             />
+            {/* LINKS A SUS REDES SOCIALES */}
             <div className="flex flex-wrap justify-center pb-4 xl:pb-10">
               <Behance link={"https://www.behance.net/rArmass"} />
               <LinkedIn
@@ -174,7 +177,7 @@ function Veintiuno() {
               <Instagram link={"https://www.instagram.com/rubiarmass/"} />
               <ArtStation link={"https://www.artstation.com/rubiarmass"} />
             </div>
-
+            {/* ------------------------------------------------------------------------------- */}
             <InvitadosCard
               imagen={
                 "https://iadevtesjo.files.wordpress.com/2021/06/ficha_fadev_nuria-1.png?w=1024"
@@ -185,6 +188,7 @@ function Veintiuno() {
               <ArtStation link={"https://www.artstation.com/nuria_min"} />
               <Instagram link={"https://instagram.com/nuriamin_art/"} />
             </div>
+            {/* ------------------------------------------------------------------------------- */}
             <InvitadosCard
               imagen={
                 "https://iadevtesjo.files.wordpress.com/2021/06/ficha_fadev_osvaldo-1.png?w=1024"
@@ -195,6 +199,7 @@ function Veintiuno() {
               <ArtStation link={"https://www.artstation.com/vinman99999"} />
               <Instagram link={"https://www.instagram.com/osvaldo.pasillas"} />
             </div>
+            {/* ------------------------------------------------------------------------------- */}
             <InvitadosCard
               imagen={
                 "https://iadevtesjo.files.wordpress.com/2021/06/ficha_fadev_casa-anafre-1.png?w=1024"
@@ -209,6 +214,7 @@ function Veintiuno() {
                 }
               />
             </div>
+            {/* ------------------------------------------------------------------------------- */}
             <InvitadosCard
               imagen={
                 "https://iadevtesjo.files.wordpress.com/2021/06/ficha_fadev_roxi-1.png?w=1024"
@@ -217,6 +223,7 @@ function Veintiuno() {
             <div className="flex flex-wrap justify-center pb-4 xl:pb-10">
               <Instagram link={"https://www.instagram.com/la_cringe_queen/"} />
             </div>
+            {/* ------------------------------------------------------------------------------- */}
             <InvitadosCard
               imagen={
                 "https://iadevtesjo.files.wordpress.com/2021/06/ficha_fadev_alberto-3.png?w=1024"
@@ -270,6 +277,7 @@ function Veintiuno() {
             </p>
             <InvitadosCard
               imagen={
+                //TALLER 1
                 "https://iadevtesjo.files.wordpress.com/2021/06/taller-abiel-1.png?w=1024"
               }
             />
@@ -278,6 +286,7 @@ function Veintiuno() {
             </div>
             <InvitadosCard
               imagen={
+                //TALLER 2
                 "https://iadevtesjo.files.wordpress.com/2021/06/taller-fran.png?w=1024"
               }
             />
@@ -290,6 +299,7 @@ function Veintiuno() {
             </div>
             <InvitadosCard
               imagen={
+                //TALLER 3
                 "https://iadevtesjo.files.wordpress.com/2021/06/taller-diana.png?w=1024"
               }
             />

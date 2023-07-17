@@ -20,6 +20,8 @@ function Destacados() {
     };
     document.addEventListener("keydown", handleKeyDown);
   }, []);
+  // SE CREA UN ARREGLO PARA MOSTRAR LOS VIDEOS DE  ALUMNOS DESTACADOS, TIENE DOS ELEMENTOS, embedUrl QUE CORRESPONDE AL LINK DEL VIDEO
+  // Y LA DESCRIPCION QUE CORRESPONDE AL TITULO QUE APARECERÁ
   const videos = [
     {
       embedUrl:
@@ -58,6 +60,7 @@ function Destacados() {
 
       <div>
         <div
+          // IMAGEN CON TEXTO DE FONDO
           className="relative min-h-screen overflow-hidden bg-[url('https://images.reporteindigo.com/wp-content/uploads/2023/01/cine-de-animacion-pixelatl.jpg')] bg-cover bg-no-repeat p-12 text-start"
           style={{ height: "900px", backgroundPosition: "start center" }}
         >
@@ -108,7 +111,7 @@ function Destacados() {
                 animación, HECHOS POR ESTUDIANTES, que son destacados.
               </p>
             </Slide>
-
+            {/* SE MUESTRAN TOODS LOS VIDEOS CON EL COMPONETE "DESTACADOSCARD" */}
             <DestacadosCard videos={videos} />
           </Fade>
         </div>

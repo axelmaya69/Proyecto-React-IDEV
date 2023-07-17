@@ -7,7 +7,7 @@ import Veintiuno from "./paginas/2021";
 import Veintidos from "./paginas/2022";
 import Veintitres from "./paginas/2023";
 import Academia from "./paginas/Academia";
-import Alumnos from "./paginas/Alumnos";
+import Alumnos from "./paginas/Alumnos"; //SE IMPORTAN TODOS LOS .JSX PERTENECIENTES A LAS PAGINAS
 import Destacados from "./paginas/Destacados";
 import Docentes from "./paginas/Docentes";
 import Dual from "./paginas/Dual";
@@ -21,6 +21,7 @@ import SitioOf from "./paginas/SitioOf";
 import Titulacion from "./paginas/Titulacion";
 import Error from "./paginas/404";
 
+// SE CREAN LOS "ENLACES" O RUTAS A ESTOS
 const router = createBrowserRouter([
   {
     path: "/",
@@ -105,6 +106,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+  // SE RENDERIZAN CON RouterProvider
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>

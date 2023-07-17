@@ -90,29 +90,29 @@ function Veintitres() {
       {/* GRID PARA ASIDE Y ARTICLE */}
       <div className="grid grid-cols-1 lg:grid-cols-4 my-5 lg:relative  sm:mx-20 lg:mx-10">
         {/* INICIA ASIDE */}
-        <div className="col-span-1 lg:col-start-1 border border-blue-500 mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-32 ">
+        <div className="col-span-1 lg:col-start-1 border py-4 shadow-2xl mx-2 lg:sticky lg:top-0 lg:left-0 lg:bottom-0 lg:max-h-screen lg:mb-56 ">
           <Fade cascade={true} damping={0.1}>
             <div className="flex flex-col justify-center items-center  ">
               <button
-                className="bg-red-600 text-white shadow-2xl hover:text-violet-800 transition-all duration-300 font-bold text-sm xl:text-xl h-16 w-40 text-center justify-center sm:text-xl items-center p-2 my-1  rounded shadow-black-500/50 hover:-translate-y-1.5"
+                className="bg-gradient-to-r from-violet-950 to-blue-800 font-semibold shadow-2xl text-white text-sm xl:text-xl h-12 text-center justify-center items-center px-2 my-1 w-40 sm:text-xl transition-all duration-300 rounded-full lg:hover:scale-110"
                 onClick={() => (window.location.href = "#invitados")}
               >
                 Invitados
               </button>
               <button
-                className="bg-green-400 text-white shadow-2xl font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40  hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5"
+                className="bg-gradient-to-l from-blue-800 to-violet-950 font-semibold shadow-2xl text-white text-sm xl:text-xl h-12 text-center justify-center items-center px-2 my-1 w-40 sm:text-xl transition-all duration-300 rounded-full lg:hover:scale-110"
+                onClick={() => (window.location.href = "#convocatorias")}
+              >
+                Convocatorias
+              </button>
+              <button
+                className="bg-gradient-to-tr from-violet-950 to-blue-800 font-semibold shadow-2xl text-white text-sm  xl:text-xl h-12 text-center justify-center items-center px-2 my-1 w-40 sm:text-xl transition-all duration-300 rounded-full lg:hover:scale-110"
                 onClick={() => (window.location.href = "#programa")}
               >
                 Programa
               </button>
               <button
-                className="bg-yellow-400 text-white shadow-2xl font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5"
-                onClick={() => (window.location.href = "#conferencias")}
-              >
-                Conferencias
-              </button>
-              <button
-                className="bg-indigo-400 text-white shadow-2xl font-bold text-sm xl:text-xl h-16 text-center justify-center items-center p-2 my-1 w-40 hover:text-violet-800 sm:text-xl transition-all duration-300 rounded hover:-translate-y-1.5"
+                className="bg-gradient-to-bl from-blue-800 to-violet-950 font-semibold shadow-2xl text-white text-sm xl:text-xl h-12 text-center justify-center items-center px-2 my-1 w-40 sm:text-xl transition-all duration-300 rounded-full lg:hover:scale-110"
                 onClick={() => (window.location.href = "#talleres")}
               >
                 Talleres
@@ -122,21 +122,31 @@ function Veintitres() {
           {/* TERMINA ASIDE */}
         </div>
         {/* INICIA ARTICLE */}
-        <div className="col-span-1 lg:col-start-2 lg:col-span-3 mx-2">
+        <div className="col-span-1 lg:col-start-2 lg:col-span-3 mx-2 shadow-2xl mb-56 border-2 p-4">
           {/* INICIA SECCION INVITADOS */}
           <div id="invitados">
+            <h2 className="border-b-2 border-yellow-300 font-bold m-2 w-32 pb-1 text-2xl">
+              Invitados
+            </h2>
             {/* MUESTRA A LOS INVITADOS */}
             <GridImg images={images} />
           </div>
-          <div className="bg-red-400" id="programa">
-            dos
+          <div className="" id="convocatorias">
+            <h3 className="border-b-2 border-violet-600 font-bold m-2 w-40 pb-1 text-2xl">
+              Convocatorias
+            </h3>
           </div>
-          <div className="bg-yellow-400" id="conferencias">
-            tres
+          <div className="" id="conferencias">
+            <h4 className="border-b-2 border-red-600 font-bold m-2 w-36 pb-1 text-2xl">
+              Conferencias
+            </h4>
           </div>
-          <div className="bg-blue-400" id="talleres">
-            cuatro
+          <div className="" id="talleres">
+            <h5 className="border-b-2 border-green-600 font-bold m-2 w-28 pb-1 text-2xl">
+              Talleres
+            </h5>
           </div>
+          {/* termina artcle */}
         </div>
       </div>
 

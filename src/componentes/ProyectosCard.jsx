@@ -1,5 +1,9 @@
 import React from "react";
 
+//ESTE COMPONENTE SIRVE PARA MOSTRAR UNA "TARJETA" QUE MUESTRA
+//LOS PROYECTOS DE LA IADEV, INCLUYE EL NOMBRE DEL PROYECTO Y LA
+//DESCRIPCION.
+
 function ProyectosCard({ name, description }) {
   return (
     <div>
